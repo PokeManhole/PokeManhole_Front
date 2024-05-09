@@ -241,7 +241,15 @@ footer {
 footer p {
   margin: 10px 0;
 }
-
+.facebook {
+  background-image: url(./src/icon_fb_b.svg);
+}
+.google {
+  background-image: url(./src/free-icon-google-2702602.png);
+}
+.twitter {
+  background-image: url(./src/icon_x_b.svg);
+}
 footer i {
   color: red;
 }
