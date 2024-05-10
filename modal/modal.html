@@ -1,0 +1,135 @@
+<style>
+  .modal_container { position:relative;
+                              top:50%;
+
+
+                              width: 90%;
+                  max-width: 805px;
+                  height: 90vh;
+  }
+
+  .modal{
+     position:absolute;
+                            display:none;
+
+                            justify-content: center;
+                            top:0;
+                            left:0;
+
+                            width:100%;
+                            height:100%;
+
+
+
+                            background-color: rgba(0,0,0,0.4);}
+                  .modal_body{
+                              position:absolute;
+                              top:50%;
+
+
+                              width: 90%;
+                  max-width: 805px;
+                  height: 90vh;
+                              left
+                              padding:40px;
+                              text-align: center;
+                                  text-align: left;
+                  background: #fff;
+                  border: 5px solid #dedede;
+              margin: 0 auto;
+                  position: relative;
+                              background-color: rgb(255,255,255);
+                              border-radius:10px;
+                              box-shadow: 0 2px 3px 0 rgba(34,36,38,0.15);
+
+                              transform:translateY(-50%);
+                          }
+                          .modal_body h1 {display: flex;
+                align-items: center;
+                justify-content: center;
+                max-width: 92%;
+                font-size: 30px;
+                color: #bab9b9;
+                margin: 0 auto;
+            padding: 32px 0;}
+
+          .manhole-area {
+              width: 100%;
+              height: calc(100% - 140px);
+              border-top: 1px solid #288e44;
+              position: absolute;
+              top: 90px;
+              left: 0;
+              overflow: hidden;
+          }
+
+          .manhole-mfpbtn {
+            display: flex;
+            justify-content: center;
+            width: calc(100% + 2px);
+            height: 51px;
+            background: #288e44;
+            position: absolute;
+            bottom: -1px;
+            left: -1px;
+        }
+        .mfp-close, .mfp-arrow {
+          display: block;
+          background: none;
+          cursor: pointer;
+          border: 0;
+          outline: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          -webkit-appearance: none;
+          appearance: none;
+          -webkit-tap-highlight-color: transparent;
+          padding: 0;
+          transition: all 0.2s;
+          z-index: 1046 !important;
+      }
+            .modal_body h1::before {content: "";
+              display: inline-block;
+              width: 34px;
+              height: 34px;
+              background: url(./src/icon_mb_g_grey.png) no-repeat;
+              background-size: contain;
+              margin: 0 13px; }
+              .modal_body h1::after {content: "";
+              display: inline-block;
+              width: 34px;
+              height: 34px;
+              background: url(./src/icon_mb_g_grey.png) no-repeat;
+              background-size: contain;
+              margin: 0 13px; }
+</style>
+
+<div class="modal">
+  <div class="modal_body">
+    <h1>간토</h1>
+  </div>
+  <div class="manhole-area">
+    <ul>
+      <li>1</li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+  <div class="manhole-mfpbtn">
+    <a class="mfp-close"></a>
+  </div>
+</div>
+<button class="btn-open-modal">Modal열기</button>
+<script>
+  const modal = document.querySelector(".modal");
+  const btnOpenModal = document.querySelector(".btn-open-modal");
+
+  btnOpenModal.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+</script>
