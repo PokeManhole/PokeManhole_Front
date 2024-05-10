@@ -72,16 +72,19 @@
         padding: 11px 20px;
         position: absolute;
         background-color: rgb(255, 255, 255);
-        background-image: ;
+        
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.22);
 }
+      .logoshadow {filter: drop-shadow(10px 20px 5px rgba(0, 0, 0, 0.55)) }
+      
+      /* Region text color */
       .pink:hover { color: rgb(246, 92, 118);}
       .yellow:hover { color:  rgb(214, 214, 0);}
       .red:hover { color: red;}
       .green:hover { color: rgba(0, 206, 0, 0.584);}
       .orange:hover { color: orange;}
       .blue:hover { color: rgba(0, 128, 248, 0.711);}
-
+      /* Region text color end */
     </style>
   </head>
 
@@ -147,6 +150,8 @@
     >
       <h1 class="pink">규슈•오키나와</h1>
     </div>
+
+
     <!-- logo 스크립트 -->
 <!-- <script>
   var containmove = document.querySelector(".containmove");
@@ -181,7 +186,7 @@
       <div style="position: absolute; right: 40px; bottom: 40px">
         <a
           href="file:///Users/tamura/Documents/GitHub/PokeManhole_Front/hello.html">
-          <img src="./src/manhole_title_ko_grey.png" alt="" width="400px">
+          <img src="./src/manhole_title_ko_grey_clean.png" alt="" width="400px" class="logoshadow" >
         </a>
       </div>
     </div>
@@ -225,12 +230,15 @@
     <div class="overlay-container">
       <div class="overlay">
         <div class="overlay-panel overlay-left">
-          <h1>모험으로 떠나세요!</h1>
+          <h1>모험으로 <br>떠나세요!</h1>
           <p>항상 새로움으로 가득한 포켓몬 세상으로</p>
           <button class="ghost" id="signIn">시작하기</button>
         </div>
         <div class="overlay-panel overlay-right">
-          <h2>안녕하세요, 트레이너님!</h2>
+          <h1>안녕하세요,
+          트레이너님 !</h1> 
+          
+         
           <p>새로운 여정을 떠날 준비가 되셨나요?</p>
           <button class="ghost" id="signUp">등록하기</button>
         </div>
