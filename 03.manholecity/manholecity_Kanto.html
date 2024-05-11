@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background-image: url(../01.mainpage/src/bg_dot.png);
+      }
+      .cityname {
+        width: 100%;
+        height: 20vh;
+        background-color: white;
+        background-size: 100% 20px;
+        position: relative;
+      }
+      .cityname h1 {
+        text-align: center;
+        line-height: 20vh;
+        font-size: 3em;
+        margin: 0;
+      }
+      .cityname h1::before {
+        content: "";
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        background-image: url(../02.manholetable/src/icon_mb_g_red.png);
+        background-size: contain;
+        margin: 0 13px;
+      }
+      .cityname h1::after {
+        content: "";
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        background-image: url(../02.manholetable/src/icon_mb_g_red.png);
+        background-size: contain;
+        margin: 0 13px;
+      }
+      .city {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./src/manhole_main_grey.png);
+        background-repeat: no-repeat;
+        background-size: 1300px 800px;
+        background-position: center;
+        border: 20px solid #dbdbdb;
+        box-sizing: border-box;
+      }
+      .citymanhole {
+        width: 52%;
+        height: 70vh;
+        background-color: white;
+        position: relative;
+        left: 25%;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 2px 4px 2px 2px rgba(55, 55, 55, 0.25);
+      }
+      .citymanhole ul {
+        display: flex;
+        max-width: 1300px;
+        flex-wrap: wrap;
+        margin: 0px;
+        position: absolute;
+        left: -40px;
+      }
+      ul {
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+        unicode-bidi: isolate;
+      }
+      li {
+        list-style: none;
+        display: list-item;
+        unicode-bidi: isolate;
+      }
+      /* 중요 */
+      .manholitem {
+        display: block;
+        margin-bottom: 30px;
+        position: relative;
+        height: auto;
+        font-weight: 500;
+        position: relative;
+        width: 130px;
+        height: 150px;
+        font-size: 18px;
+        line-height: 1.4;
+        padding: 0px;
+        margin: 4px 23.2px;
+        outline: none;
+      }
+
+      .manholitem img {
+        filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.55));
+      }
+
+      .pikahang {
+        width: 200px;
+        position: absolute;
+        right: 40px;
+        top: 41px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- container -->
+    <div class="city">
+      <div class="cityname"><h1>도쿄</h1></div>
+      <div style="position: absolute; left: 40px; top: 40px">
+        <a
+          href="file:///Users/tamura/Documents/GitHub/PokeManhole_Front/hello.html"
+        >
+          <img
+            src="../01.mainpage/src/manhole_title_ko_grey_clean.png"
+            alt=""
+            width="250px"
+            class="logoshadow"
+          />
+        </a>
+      </div>
+      <div class="citymanhole">
+        <ul>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+          <li class="manholitem">
+            <img src="../src/hole/red.png" alt="" width="130px" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <img class="pikahang" src="../src/pikahang.png" alt="" />
+  </body>
+</html>

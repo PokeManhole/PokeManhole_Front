@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>manholetable_Kanto</title>
+    <style>
+      body {
+        margin: 0;
+        background-image: url(../01.mainpage/src/bg_dot.png);
+      }
+      .tablecontainer {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./src/manhole_main_grey.png);
+        background-repeat: no-repeat;
+        background-size: 1300px 800px;
+        background-position: center;
+        border: 20px solid #dbdbdb;
+        box-sizing: border-box;
+      }
+      .tablecontainer audio {
+        position: absolute;
+      }
+      .redstand {
+        position: absolute;
+        width: 100px;
+        right: 250px;
+        bottom: 0px;
+      }
+      .greenstand {
+        position: absolute;
+        width: 100px;
+        right: 140px;
+        bottom: 0px;
+      }
+      .bluestand {
+        position: absolute;
+        width: 90px;
+        right: 10px;
+        bottom: 0px;
+      }
+      .pikaoko {
+        position: absolute;
+        width: 100px;
+        left: 400px;
+        bottom: 10px;
+      }
+      .jamman {
+        position: absolute;
+        width: 300px;
+        left: 50px;
+        bottom: 10px;
+        transform: scaleX(-1);
+        /* filter: drop-shadow(1px 3px 10px rgba(0, 0, 0, 0.55)); */
+      }
+      .manholetable {
+        position: relative;
+        top: 30px;
+        left: 50%;
+        width: 100%;
+        max-width: 805px;
+        height: 86vh;
+        background-color: white;
+        border: 5px solid #c5c5c5;
+        border-collapse: collapse;
+        margin-left: -402px;
+
+        border-radius: 10px;
+        box-shadow: 0 7px 10px 0 black;
+        padding: 10px;
+      }
+      .manholetable h1 {
+        display: flex;
+        justify-content: center;
+        max-width: 92%;
+        font-size: 35px;
+        color: #929191;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+      .manholetable h1::before {
+        content: "";
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        background-image: url(./src/icon_mb_g_red.png);
+        background-size: contain;
+        margin: 0 13px;
+      }
+      .manholetable h1::after {
+        content: "";
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        background-image: url(./src/icon_mb_g_red.png);
+        background-size: contain;
+        margin: 0 13px;
+      }
+      .manholetableline th {
+        width: 120px;
+        height: 90px;
+        border: 3px solid #dbdbdb;
+        border-collapse: collapse;
+        border-right: white;
+        position: relative;
+        top: 10px;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        border-radius: 10px;
+        font-size: larger;
+      }
+      .manholetableline td {
+        width: 1000px;
+        height: 90px;
+        border: 3px solid #dbdbdb;
+        border-collapse: collapse;
+        border-left: white;
+        position: relative;
+        top: 10px;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tablecontainer">
+      <audio
+        id="player"
+        src="../bgm/1-40. Goldenrod City.mp3"
+        autoplay
+        controls
+        loop
+        onloadstart="this.volume=0.15"
+      ></audio>
+      <img class="pikaoko" src="../src/gif/pikagif.gif" alt="" />
+      <img class="redstand" src="../src/gif/redgif.gif" alt="" />
+      <img class="greenstand" src="../src/gif/greengif.gif" alt="" />
+      <img class="bluestand" src="../src/gif/bluegif2.gif" alt="" />
+      <img class="jamman" src="../src/gif/jammangif.gif" alt="" />
+
+      <div class="manholetable">
+        <h1>간토</h1>
+        <table class="manholetableline">
+          <tr>
+            <th>토치기</th>
+            <td colspan="6"></td>
+          </tr>
+          <tr>
+            <th>사이타마</th>
+            <td colspan="6"></td>
+          </tr>
+          <tr>
+            <th>치바</th>
+            <td colspan="6"></td>
+          </tr>
+          <tr>
+            <th>도쿄</th>
+            <td colspan="6"></td>
+          </tr>
+          <tr>
+            <th>카나가와</th>
+            <td colspan="6"></td>
+          </tr>
+          <tr>
+            <th>이바라키</th>
+            <td colspan="6"></td>
+          </tr>
+          <tr>
+            <th>군마</th>
+            <td colspan="6"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
