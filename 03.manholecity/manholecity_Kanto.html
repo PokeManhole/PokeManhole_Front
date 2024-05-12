@@ -21,13 +21,11 @@
         background-color: white;
         background-size: 100% 20px;
         position: relative;
-      }
-      .cityname h1 {
         text-align: center;
-        line-height: 20vh;
-        font-size: 3em;
-        margin: 0;
+        padding-top: 70px;
+        font-size: larger;
       }
+
       .cityname h1::before {
         content: "";
         display: inline-block;
@@ -71,7 +69,6 @@
         flex-wrap: wrap;
         margin: 0px;
         position: absolute;
-        left: -40px;
       }
       ul {
         display: block;
@@ -80,13 +77,21 @@
         margin-block-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-        padding-inline-start: 40px;
         unicode-bidi: isolate;
+        padding: 0px;
       }
       li {
         list-style: none;
         display: list-item;
         unicode-bidi: isolate;
+      }
+      li img {
+        position: relative;
+        left: 9px;
+      }
+      li h4,
+      h5 {
+        text-align: center;
       }
       /* 중요 */
       .manholitem {
@@ -96,17 +101,17 @@
         height: auto;
         font-weight: 500;
         position: relative;
-        width: 130px;
+        width: 149px;
         height: 150px;
         font-size: 18px;
         line-height: 1.4;
         padding: 0px;
-        margin: 4px 23.2px;
+        margin: 26px 6px;
         outline: none;
       }
 
       .manholitem img {
-        filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.55));
+        filter: drop-shadow(10px 6px 5px rgba(0, 0, 0, 0.55));
       }
 
       .pikahang {
@@ -120,72 +125,92 @@
   <body>
     <!-- container -->
     <div class="city">
-      <div class="cityname"><h1>도쿄</h1></div>
-      <div style="position: absolute; left: 40px; top: 40px">
-        <a
-          href="file:///Users/tamura/Documents/GitHub/PokeManhole_Front/hello.html"
-        >
-          <img
-            src="../01.mainpage/src/manhole_title_ko_grey_clean.png"
-            alt=""
-            width="250px"
-            class="logoshadow"
-          />
-        </a>
+      <div class="cityname">
+        <h1>도쿄</h1>
+        <h4>&nbsp;77%</h4>
       </div>
+
       <div class="citymanhole">
         <ul>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
           <li class="manholitem">
             <img src="../src/hole/red.png" alt="" width="130px" />
+            <h5>우에노</h5>
           </li>
         </ul>
       </div>
     </div>
     <img class="pikahang" src="../src/pikahang.png" alt="" />
+    <div style="position: absolute; left: 40px; top: 40px">
+      <a
+        href="file:///Users/tamura/Documents/GitHub/PokeManhole_Front/hello.html"
+      >
+        <img
+          src="../01.mainpage/src/manhole_title_ko_grey_clean.png"
+          alt=""
+          width="250px"
+          class="logoshadow"
+        />
+      </a>
+    </div>
   </body>
 </html>

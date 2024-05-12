@@ -76,7 +76,14 @@
         font-size: 35px;
         color: #929191;
         margin: 0 auto;
-        padding: 20px 0;
+        padding-top: 20px;
+      }
+      .manholetable h5 {
+        display: flex;
+        justify-content: center;
+
+        color: black;
+        margin: 0 auto;
       }
       .manholetable h1::before {
         content: "";
@@ -120,16 +127,25 @@
         top: 10px;
         left: 0;
         margin: 0;
-        padding: 0;
+        padding-left: 10px;
         border-radius: 10px;
+      }
+      td img {
+        width: 70px;
+        margin: 0px;
       }
     </style>
   </head>
   <body>
     <div class="tablecontainer">
-      <audio id="player" <!-- src="../bgm/1-48. Ecruteak City.mp3" -->
-        autoplay controls loop onloadstart="this.volume=0.15" >
-      </audio>
+      <audio
+        id="player"
+        src="../bgm/1-48. Ecruteak City.mp3"
+        autoplay
+        controls
+        loop
+        onloadstart="this.volume=0.15"
+      ></audio>
       <img class="pikaoko" src="../src/pikaoko.png" alt="" />
       <img class="redstand" src="../src/red.png" alt="" />
       <img class="greenstand" src="../src/green.png" alt="" />
@@ -138,34 +154,77 @@
 
       <div class="manholetable">
         <h1>긴키</h1>
+        <h5>&nbsp;55%</h5>
         <table class="manholetableline">
           <tr>
             <th>미에</th>
-            <td colspan="6"></td>
+            <td colspan="6">
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+            </td>
           </tr>
           <tr>
             <th>시가</th>
-            <td colspan="6"></td>
+            <td colspan="6">
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+            </td>
           </tr>
           <tr>
             <th>교토</th>
-            <td colspan="6"></td>
+            <td colspan="6">
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+            </td>
           </tr>
           <tr>
             <th>오사카</th>
-            <td colspan="6"></td>
+            <td colspan="6">
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" /><img
+                src="../src/hole/red.png"
+                alt=""
+                width=""
+              />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+            </td>
           </tr>
           <tr>
             <th>효고</th>
-            <td colspan="6"></td>
+            <td colspan="6">
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+            </td>
           </tr>
           <tr>
             <th>나라</th>
-            <td colspan="6"></td>
+            <td colspan="6">
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+            </td>
           </tr>
           <tr>
             <th>와카야마</th>
-            <td colspan="6"></td>
+            <td colspan="6">
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+              <img src="../src/hole/red.png" alt="" width="" />
+            </td>
           </tr>
         </table>
       </div>

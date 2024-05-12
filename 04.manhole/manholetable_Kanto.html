@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>manholetable_Kanto</title>
+    <style>
+      body {
+        margin: 0;
+        background-image: url(../01.mainpage/src/bg_dot.png);
+      }
+      .tablecontainer {
+        width: 100%;
+        height: 100vh;
+        background-image: url(./src/manhole_main_grey.png);
+        background-repeat: no-repeat;
+        background-size: 1300px 800px;
+        background-position: center;
+        border: 20px solid #dbdbdb;
+        box-sizing: border-box;
+      }
+      .tablecontainer audio {
+        position: absolute;
+      }
+
+      .manhole {
+        position: absolute;
+        top: 50px;
+        left: 10%;
+        width: 100%;
+        max-width: 600px;
+        height: 86vh;
+        background-color: white;
+        border: 5px solid #c5c5c5;
+        border-collapse: collapse;
+
+        border-radius: 10px;
+        box-shadow: 0 7px 10px 0 black;
+        padding: 10px;
+      }
+      .manhole2 {
+        position: absolute;
+        top: 50px;
+        right: 10%;
+        width: 100%;
+        max-width: 805px;
+        height: 86vh;
+        background-color: white;
+        border: 5px solid #c5c5c5;
+        border-collapse: collapse;
+
+        border-radius: 10px;
+        box-shadow: 0 7px 10px 0 black;
+        padding: 10px;
+      }
+      .manholetable h1 {
+        display: flex;
+        justify-content: center;
+        max-width: 92%;
+        font-size: 35px;
+        color: #929191;
+        margin: 0 auto;
+        padding: 20px 0;
+      }
+      .manholetable h1::before {
+        content: "";
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        background-image: url(./src/icon_mb_g_red.png);
+        background-size: contain;
+        margin: 0 13px;
+      }
+      .manholetable h1::after {
+        content: "";
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        background-image: url(./src/icon_mb_g_red.png);
+        background-size: contain;
+        margin: 0 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tablecontainer">
+      <audio
+        id="player"
+        src="../bgm/1-40. Goldenrod City.mp3"
+        autoplay
+        controls
+        loop
+        onloadstart="this.volume=0.15"
+      ></audio>
+      <div class="manhole"></div>
+      <div class="manhole2"></div>
+    </div>
+  </body>
+</html>
