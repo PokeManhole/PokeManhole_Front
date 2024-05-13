@@ -42,7 +42,7 @@ a {
   margin: 15px 0;
 }
 
-button {
+.container button {
   border-radius: 20px;
   border: 1px solid #cad3cc;
   background-color: #e31616;
