@@ -23,6 +23,7 @@
   height: 100vh;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 9000;
 }
 .modal .modal_popup {
   /*팝업*/
@@ -32,13 +33,18 @@
   transform: translate(-50%, -50%);
   padding: 20px;
   background: #ffffff;
+  background-image: url(../src/gif/jiwoo.gif);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position-x: right;
+  background-position-y: bottom;
   border-radius: 20px;
   z-index: 9999;
 }
 .modal .modal_popup .close_btn {
   display: block;
   padding: 10px 20px;
-  background-color: rgb(116, 0, 0);
+  background-color: #e31616;
   border: none;
   border-radius: 5px;
   color: #fff;

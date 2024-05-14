@@ -16,6 +16,8 @@
       margin: 0;
       background-image: url(./src/bg_dot.png);
     }
+    img { display: flex;
+      object-fit: contain;}
 
     .container1 {
       width: 100%;
@@ -34,9 +36,12 @@
 
     .map {
       position: relative;
+      display: flex;
+      object-fit: contain;
       width: 1000px;
       left: 600px;
       top: 100px;
+
     }
 
     .trainerpika {
@@ -169,10 +174,9 @@
   <!-- <audio src="../bgm/1-05. New Bark Town.mp3" autoplay loop onloadstart="this.volume=0.2"></audio> -->
   <div class="modal">
     <div class="modal_popup">
-        <h3>우리가 누구라고 물으신다면</h3> 
-        <h4>대답해 드리는게 인지상정</h4>
-        <p>김상준 트레이너, 길민서 트레이너, 박수호 트레이너, 이민재 트레이너, 조건하 트레이너, 조민수 트레이너</p>
-        <button type="button" class="close_btn">닫기</button>
+        <h3>우리가 누구냐고 물으신다면</h3> 
+        <p>상준,민서,수호,민재,건하,민수다냐옹</p>
+        <button type="button" class="close_btn">알겠어!</button>
     </div>
   </div>
 <!--end 모달 팝업-->
