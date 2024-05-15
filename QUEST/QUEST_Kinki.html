@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUEST</title>
+    <style>
+        .manhole {
+            position: relative;
+            top: -250px;
+            left: -380px;
+            width: 1250px;
+            max-width: 1250px;
+            height: 1550px;
+            background-color: white;
+            border: 5px solid #c5c5c5;
+            border-collapse: collapse;
+            border-radius: 10px;
+            box-shadow: 0 7px 10px 0 black;
+            padding: 10px;
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        div {
+            display: block;
+            unicode-bidi: isolate;
+        }
+
+        body {
+            margin:auto; 
+            padding:500px;
+            border:20px solid #dbdbdb;
+            background: url(bg_dots.png) center 0;
+            
+        }
+
+        .achievement-section {
+            margin-bottom: 20px;
+            float: left;
+            width: 150px;
+            padding: 10px;
+            margin-right: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 2px 4px black;
+        }
+
+        .achievement-container {
+            margin-bottom: 10px;
+        }
+
+        .achievement-image {
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+        }
+
+        .achievement-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .achievement-description {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .achievement-collected {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+<div class="manhole">
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;긴키</h1>
+<br>
+<hr>
+<br>
+<div class="achievement-section">
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;미에</h2>
+    <hr>
+    <div id="achievements-container-1" class="achievement-container"></div>
+</div>
+<div class="achievement-section">
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;시가</h2>
+    <hr>
+    <div id="achievements-container-2" class="achievement-container"></div>
+</div>
+<div class="achievement-section">
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;교토</h2>
+    <hr>
+    <div id="achievements-container-3" class="achievement-container"></div>
+</div>
+<div class="achievement-section">
+    <h2>&nbsp;&nbsp;&nbsp;오사카</h2>
+    <hr>
+    <div id="achievements-container-4" class="achievement-container"></div>
+</div>
+<div class="achievement-section">
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;효고</h2>
+    <hr>
+    <div id="achievements-container-5" class="achievement-container"></div>
+</div>
+<div class="achievement-section">
+    <h2>&nbsp;&nbsp;&nbsp;&nbsp;나라</h2>
+    <hr>
+    <div id="achievements-container-6" class="achievement-container"></div>
+</div>
+<div class="achievement-section">
+    <h2>&nbsp;&nbsp;와카야마</h2>
+    <hr>
+    <div id="achievements-container-7" class="achievement-container"></div>
+</div>
+</div>
+
+<script>
+    // 업적 창을 생성하고 HTML에 추가하는 함수
+    function createAchievementElement(achievement) {
+        const container = document.createElement('div');
+        container.classList.add('achievement-container');
+        if (achievement.collected) {
+            container.classList.add('achievement-collected');
+        }
+
+        const image = document.createElement('img');
+        image.classList.add('achievement-image');
+        image.src = achievement.image;
+        image.alt = achievement.title;
+
+        const title = document.createElement('div');
+        title.classList.add('achievement-title');
+        title.textContent = achievement.title;
+
+        const description = document.createElement('div');
+        description.classList.add('achievement-description');
+        description.textContent = achievement.description;
+
+        container.appendChild(image);
+        container.appendChild(title);
+        container.appendChild(description);
+
+        // 클릭 이벤트 핸들러 추가
+        container.addEventListener('click', function() {
+            if (!achievement.collected) {
+                achievement.collected = true;
+                container.classList.add('achievement-collected');
+                // 업적을 수집한 후 자동으로 완료되는 함수 호출
+                checkAndCompleteAchievement(achievement);
+            }
+        });
+
+        return container;
+    }
+
+    // 업적 표시 함수
+    function displayAchievements(achievements, containerId) {
+        const container = document.getElementById(containerId);
+
+        // 각 업적 데이터 배열 순회하여 업적 컨테이너 생성 및 표시
+        achievements.forEach(achievement => {
+            const achievementElement = createAchievementElement(achievement);
+            container.appendChild(achievementElement);
+        });
+    }
+
+    // 각각의 업적 데이터 배열
+    const achievements1 = [
+        // 업적 데이터
+        { id: 1, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 2, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 3, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 4, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 5, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 6, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 7, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 8, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 9, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+    ];
+
+    const achievements2 = [
+        // 업적 데이터
+        { id: 10, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 11, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 12, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 13, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 14, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false }
+    ];
+
+    const achievements3 = [
+        // 업적 데이터
+        { id: 15, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 16, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 17, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 18, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 19, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false }
+    ];
+
+    const achievements4 = [
+        // 업적 데이터
+        { id: 20, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 21, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 22, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 23, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 24, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false }
+    ];
+
+    const achievements5 = [
+        // 업적 데이터
+        { id: 25, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 26, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 27, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false }
+    ];
+    const achievements6 = [
+        // 업적 데이터
+        { id: 28, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 29, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 30, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 31, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 32, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false }
+    ];
+
+    const achievements7 = [
+        // 업적 데이터
+        { id: 33, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 34, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 35, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 36, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false },
+        { id: 37, image: '파이리.png', title: '무슨 맨홀', description: '무슨 맨홀을 모았습니다.', collected: false }
+    ];
+
+    // 페이지 로드 시 각 업적 표시
+    displayAchievements(achievements1, 'achievements-container-1');
+    displayAchievements(achievements2, 'achievements-container-2');
+    displayAchievements(achievements3, 'achievements-container-3');
+    displayAchievements(achievements4, 'achievements-container-4');
+    displayAchievements(achievements5, 'achievements-container-5');
+    displayAchievements(achievements6, 'achievements-container-6');
+    displayAchievements(achievements7, 'achievements-container-7');
+</script>
+
+</body>
+</html>
