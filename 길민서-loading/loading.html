@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading Page</title>
+<style>
+            .manhole {
+            position: relative;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            width: 875px;
+            max-width: 875px;
+            height: 100vh;
+            background-color: white;
+            border: 5px solid #c5c5c5;
+            border-collapse: collapse;
+            border-radius: 10px;
+            box-shadow: 0 7px 10px 0 black;
+            padding: 10px;
+        }
+  body {
+    margin:auto;
+    padding:500px;
+    border:20px solid #dbdbdb;
+    background: url(bg_dots.png) center 0;
+  }
+  html{
+    height:100%
+  }
+  .loading-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .loading-image {
+    width: 75%; /* 이미지 너비 조절 */
+    height: auto; /* 이미지 높이 자동 조절 */
+  }
+
+  .loading-text {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<div class="manhole">
+<div class="loading-wrapper" id="loadingWrapper">
+  <img src="pokemon.gif" class="loading-image">
+  <div class="loading-text"><h1>loading...</h1></div>
+</div>
+</div>
+    <!-- <script>
+    window.addEventListener("load", function() {
+      // 페이지 로딩이 완료되면 로딩 페이지를 숨깁니다.
+      document.getElementById("loadingWrapper").style.display = "none";
+    });
+    </script> -->
+</body>
+</html>
