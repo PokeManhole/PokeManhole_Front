@@ -1,3 +1,3 @@
 ## Site
 
-https://pokemanhole.github.io/PokeManhole_Front/01.mainpage/mainpage.html?
+https://pokemanhole.github.io/PokeManhole_Front/01.mainpage/mainpage.html
