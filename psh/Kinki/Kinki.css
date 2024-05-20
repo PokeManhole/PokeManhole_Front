@@ -1,0 +1,282 @@
+* {padding:0; box-sizing:border-box; -webkit-box-sizing:border-box;}
+
+body { font-size:62.5%; line-height:1; -webkit-text-size-adjust:100%;}
+
+h1, h2, h3, h4, h5, h6 { font-size:100%;}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+a,embed,object,button { outline:none;}
+
+img { border:none; box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+li { list-style:none;}
+
+a { background-color:transparent;}
+
+a { color:#222; text-decoration:none; transition:all 0.2s;}
+
+img { border:none; box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+img { display:block; width:100%; margin:0 auto;}
+
+@media screen and (min-width: 768px) {
+    .manhole-area li a > span:nth-child(1) {
+        width: 7em;
+        padding-left: 1em;
+    }
+}
+
+body.manhole {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.detail-manhole.area {
+    width: 90%;
+    max-width: 805px;
+    height: 90vh;
+    text-align: left;
+    top: 30px;
+    background: #fff;
+    border: 5px solid #f95001;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.detail-manhole.area .heading {
+    height: 90px;
+    text-align: center;
+    padding: 32px 0 28px;
+    position: relative;
+}
+
+.detail-manhole.area .heading h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 92%;
+    font-size: 30px;
+    color: #f95001;
+    margin: 0 auto;
+}
+
+.detail-manhole.area {
+	width:90%; max-width:805px; height:90vh; text-align:left;
+	background:#fff; border:5px solid #f95001; border-radius:10px;
+	margin:0 auto; position:relative;
+}
+.detail-manhole.area .heading {
+	height:90px; text-align:center;
+	padding:32px 0 28px; position:relative;
+}
+.detail-manhole.area .heading h1 {
+	display:flex; align-items:center; justify-content:center;
+	max-width:92%; font-size:30px; color:#f95001;
+	margin:0 auto;
+}
+.detail-manhole.area .heading h1:before,
+.detail-manhole.area .heading h1:after {
+	content:""; display:inline-block;
+	width:50px; height:55px;
+	background:url(Sport\ Ball.png) no-repeat;
+	background-size:contain;
+	margin:0 13px;
+}
+.manhole-area {
+	width:100%; height:calc(100% - 140px);
+	border-top:1px solid #f95001;
+	position:absolute; top:90px; left:0;
+	overflow:hidden;
+}
+.manhole-area ul {
+	width:100%; height:100%;
+	position:absolute; top:0; left:0;
+	overflow-y:auto;
+}
+.manhole-area li {
+	font-size:28px; font-weight:bold;
+	border-bottom:1px solid  #f95001;
+}
+.manhole-area li a { display:flex; width:100%; height:80px; align-items:center; color:#f95001;}
+.manhole-area li a:not([href]) { color:#b5b6b5;}
+.manhole-area li a > span:nth-child(1) {text-align:center;}
+.manhole-area li a > span:nth-child(2) {
+	display:block; width:calc(100% - 140px); height:56px;
+	font-size:0; padding-right:40px; overflow:hidden;
+}
+.manhole-area li a > span:nth-child(2) span { display:inline-block; position:relative;}
+.manhole-area li a > span:nth-child(2) img { width:50px; margin:3px;}
+.manhole-area li a > span span:nth-child(n+11) { display:none;}
+.manhole-area li a > span span:nth-child(10):after {
+	content:"…"; font-size:22px;
+	position:absolute; bottom:-5px; right:-1.3em;
+}
+.manhole-area li a[href]:hover,
+.manhole-area li a[href].hover { background:#fff001;}
+
+.mfp-container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.mfp-content {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    margin: 0 auto;
+    z-index: 1045;
+}
+
+.mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
+    width: 100%;
+    cursor: auto;
+}
+
+.mfp-auto-cursor .mfp-content {
+    cursor: auto;
+}
+
+.manhole-mfpbtn {
+	display:flex; justify-content:center;
+	width:calc(100% + 2px); height:51px;
+	background:#f95001;
+	position:absolute; bottom:-1px; left:-1px;
+}
+.manhole-mfpbtn .mfp-close {
+	width:100px; height:100%;
+	text-indent:150%; overflow:hidden; white-space:nowrap;
+	cursor:pointer; transition:all 0.2s;
+}
+.manhole-mfpbtn .mfp-close:before,
+.manhole-mfpbtn .mfp-close:after {
+	content:''; display:block;
+	width:28px; height:3px; background:#fff;
+	position:absolute; top:50%; left:50%;
+	margin:1px 0 0 -14px;
+	-webkit-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+}
+.manhole-mfpbtn .mfp-close:after {
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
+
+body {
+    background: url(bg_dot.png) center 0;
+    background-size: auto 12px;
+    font-weight: 400;
+    text-align: center;
+    color: #222;
+    min-width: 1140px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    border: 20px solid #f95001;
+    height: 100vh;
+    margin: 0;
+}
+
+.diglett {
+    position: absolute;
+    width: 100px;
+    left: 250px;
+    bottom: 20px;
+    transform: scaleX(-1);
+}
+
+.dodrio {
+    position: absolute;
+    width: 250px;
+    left: 190px;
+    bottom: 280px;
+    transform: scaleX(-1);
+}
+
+.kangaskhan {
+    position: absolute;
+    width: 200px;
+    right: 200px;
+    bottom: 280px;
+}
+
+.tauros {
+    position: absolute;
+    width: 200px;
+    right: 200px;
+    bottom: 20px;
+}
+
+.entel {
+    position: absolute;
+    width: 180px;
+    right: 250px;
+    bottom: 600px;
+}
+
+.zigzagoon {
+    position: absolute;
+    width: 120px;
+    left: 250px;
+    bottom: 600px;
+    transform: scaleX(-1);
+}
+
+.audio {
+    position: fixed;
+    top: 40px; 
+    left: 120px; 
+    padding: 10px;
+}
+
+.audio-player {
+    position: fixed;
+    top: 20px; 
+    left: 120px; 
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+audio {
+    display: none; 
+}
+
+.controls {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#playPause {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#playPause img {
+    width: 50px;
+    height: 50px;
+}
+
+#seekBar {
+    margin-left: 10px;
+    width: 200px;
+}
