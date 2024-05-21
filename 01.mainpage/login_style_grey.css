@@ -93,10 +93,118 @@ input {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 40px 30px rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
-  width: 768px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 768px;
   min-height: 480px;
 }
+
+.trainertop h1 {
+  font-size: 44px;
+  text-align: center;
+  margin: 10px 10px;
+}
+
+.trainertop h1::before {
+
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  background-image: url(../02.manholetable/src/icon_mb_g_red.png);
+  background-size: contain;
+  margin: 0px 0px;
+}
+
+.trainertop {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  border: solid black;
+}
+
+.trainerleft {
+  position: absolute;
+  width: 35%;
+  height: 380px;
+  border: solid black;
+}
+
+.trainerright {
+  position: absolute;
+  width: 65%;
+  height: 380px;
+  right: 0%;
+  border: solid black;
+}
+
+.trainerright-upper {
+  position: absolute;
+  border: solid black;
+  width: 100%;
+  height: 130px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.trainerright-upper img {
+  width: 80px;
+  margin: 20px 7px;
+  filter: drop-shadow(7px 7px 2px rgba(0, 0, 0, 0.55))
+}
+
+.trainerright-left {
+  position: absolute;
+  border: solid black;
+  max-width: 300px;
+  width: 100%;
+  max-height: 244px;
+  height: 100%;
+  bottom: 0;
+}
+
+.trainerright-left-bottom {
+  position: absolute;
+  max-width: 300px;
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
+  bottom: 0;
+  overflow: auto;
+}
+
+.trainerright-left h5 {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.trainerright-left table {
+  width: 100%;
+  height: 100%;
+  border: solid black;
+}
+
+.trainerright-left table th {
+  border-radius: 15%;
+  border: solid black;
+}
+
+.trainerright-left table td {
+  border: solid black;
+  border-radius: 15%;
+  text-align: center;
+}
+
+.trainerright-right {
+  position: absolute;
+  border: solid black;
+  max-width: 194px;
+  width: 100%;
+  max-height: 244px;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
+
 
 .form-container {
   position: absolute;
@@ -130,6 +238,7 @@ input {
 }
 
 @keyframes show {
+
   0%,
   49.99% {
     opacity: 0;
@@ -159,9 +268,9 @@ input {
 }
 
 .overlay {
-  background: #6cd087;
+  /* background: #6cd087;
   background: -webkit-linear-gradient(to right, #288e44, #6cd087);
-  background: linear-gradient(to right, #288e44, #6cd087);
+  background: linear-gradient(to right, #288e44, #6cd087); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
@@ -198,9 +307,11 @@ input {
   transform: translateX(-20%);
   font-size: 1.5em;
 }
+
 .overlay-left p {
   font-weight: bold;
 }
+
 .container.right-panel-active .overlay-left {
   transform: translateX(0);
 }
@@ -214,9 +325,11 @@ input {
 .container.right-panel-active .overlay-right {
   transform: translateX(20%);
 }
+
 .overlay-right p {
   color: rgb(0, 0, 0);
 }
+
 .social-container {
   margin: 20px 0;
 }
@@ -247,15 +360,19 @@ footer {
 footer p {
   margin: 10px 0;
 }
+
 .facebook {
   background-image: url(./src/icon_fb_b.svg);
 }
+
 .google {
   background-image: url(./src/free-icon-google-2702602.png);
 }
+
 .twitter {
   background-image: url(./src/icon_x_b.svg);
 }
+
 footer i {
   color: red;
 }
@@ -264,6 +381,7 @@ footer a {
   color: #3c97bf;
   text-decoration: none;
 }
+
 /*  */
 .loginwalk {
   position: absolute;
