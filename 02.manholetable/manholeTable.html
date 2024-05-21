@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanto</title>
+    <link rel="stylesheet" href="manholeTable.css" />
+  </head>
+  <body>
+    <div class="tablecontainer">
+      <audio
+        id="player"
+        src="../bgm/1-40. Goldenrod City.mp3"
+        autoplay
+        controls
+        loop
+        onloadstart="this.volume=0.15"
+      ></audio>
+      <img class="pikaoko" src="../src/gif/pikagif.gif" alt="" />
+      <img class="redstand" src="../src/gif/redgif.gif" alt="" />
+      <img class="greenstand" src="../src/gif/greengif.gif" alt="" />
+      <img class="bluestand" src="../src/gif/bluegif2.gif" alt="" />
+      <img class="jamman" src="../src/gif/jammangif.gif" alt="" />
+
+      <div class="manholetable">
+        <h1>간토</h1>
+        <h5>&nbsp;55%</h5>
+        <table class="manholetableline"></table>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./manholeTable.js"></script>
+</html>
