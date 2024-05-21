@@ -19,15 +19,19 @@
       background-image: url(./src/bg_dot.png);
     }
 
-    /* img {
+    img {
       display: flex;
       object-fit: contain;
-    } */
+    }
 
     .container1 {
       position: relative;
       width: 100%;
       height: 100vh;
+      /* background-image: url(./src/manhole_main_grey.png);
+      background-repeat: no-repeat;
+      background-size: 1000px;
+      background-position: 600px 100px; */
       border: 20px solid #dbdbdb;
       box-sizing: border-box;
       display: flex;
@@ -35,23 +39,19 @@
 
     }
 
-    .top_bar {
-      position: fixed;
-      background-color: #dbdbdb;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 100%;
-      height: 20px;
-      z-index: 9003;
-
-    }
-
     .container1 audio {
       position: absolute;
     }
 
+    /* .map {
+      position: absolute;
+      display: flex;
+      object-fit: contain;
+      width: 1000px;
+      left: 600px;
+      top: 100px;
 
+    } */
 
     .trainercredit {
       position: absolute;
@@ -92,24 +92,21 @@
     }
 
     .map {
+      display: inline-block;
       position: relative;
       margin: 0 auto;
+      max-width: 100vh;
       width: 100%;
-      max-width: 800px;
-      height: auto;
-      max-height: 550px;
-      left: 10%;
-      top: 20%;
-
+      height: 80vh;
+      max-height: 80vh;
+      left: 170px;
+      top: 150px;
     }
 
     .map>img {
-
-      position: absolute;
-      display: flex;
+      max-width: 1000px;
       width: 100%;
       height: auto;
-
     }
 
     .regionbox {
@@ -118,7 +115,7 @@
       padding: 11px 20px;
       position: absolute;
       /* max-width:max-content; */
-
+      height: auto;
       background-color: rgb(255, 255, 255);
       box-shadow: 0 2px 40px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.22);
     }
@@ -156,6 +153,7 @@
     /* Region text color end */
   </style>
 </head>
+
 <div class="modal">
   <div class="modal_popup">
     <h3>우리가 누구냐고 물으신다면</h3>
@@ -167,64 +165,73 @@
   <audio id="player" src="../bgm/1-40. Goldenrod City.mp3" autoplay controls loop
     onloadstart="this.volume=0.15"></audio>
   <!-- <audio src="../bgm/1-05. New Bark Town.mp3" autoplay loop onloadstart="this.volume=0.2"></audio> -->
+
   <!--end 모달 팝업-->
   <main>
     <section>
       <!-- <button class="modal_btn"> <img class="trainerpika" src="../src/trainerwalk.png" width="50px" alt=""></button> -->
       <a href="#" class="modal_btn"> <img class="trainercredit" src="../src/trainerwalk.png" width="50px" alt=""></a>
+
     </section>
   </main>
   <!-- modal end -->
   <div class="map">
-    <img src="./src/manhole_main_grey.png" alt="">
+    <img src="./src/manhole_main_grey.png" width="1000px" alt="">
     <a href="../02.manholetable/manholetable_Kanto.html">
       <div class="regionbox" style="    
-        left: 0%;
-        bottom: 0%;
+        left: 76%;
+        bottom: 25%;
       ">
         <h1 class="orange">간토</h1>
       </div>
     </a>
     <a href="">
       <div class="regionbox" style="
-        left: 0%;
-        bottom: 0%;
+   
+        left: 67%;
+        bottom: 70%;
       ">
         <h1 class="blue">홋카이도•도호쿠</h1>
       </div>
     </a><a href="">
       <div class="regionbox" style="
-        left: 0%;
-        bottom: 0%;
+       
+        left: 58%;
+        bottom: 30%;
       ">
         <h1 class="green">주부</h1>
       </div>
     </a><a href="">
-      <div class="regionbox" style="    
-        left: 0%;
-        bottom: 0%;
+      <div class="regionbox" style="
+       
+        left: 43%;
+        bottom: 20%;
       ">
         <h1 class="red">긴키</h1>
       </div>
     </a><a href="">
       <div class="regionbox" style="
         
-        left: 0%;
-        bottom: 0%;
+        left: 22%;
+        bottom: 30%;
       ">
         <h1 class="yellow">주고쿠•시코쿠</h1>
       </div>
     </a><a href="">
       <div class="regionbox" style="
         
-        left: 0%;
-        bottom: 0%;
+        left: 2%;
+        bottom: 15%;
       ">
         <h1 class="pink">규슈•오키나와</h1>
+
       </div>
   </div>
+
   <img class="world" src="../src/worldearth.png" alt="">
   <img class="trainerwalk" src="../src/gif/trainerwalkgif.gif" alt="">
+
+
   <!-- logo 스크립트 -->
   <!-- <script>
   var containmove = document.querySelector(".containmove");
@@ -234,11 +241,14 @@
     var y = e.offsetY;
     var rotateY = (-1 / 10) * x + 50;
     var rotateX = (-1 / 10) * y + 50;
+
     logoray.style = `background-position : ${
       x / 5 + y / 5
     }%; filter : opacity(${x / 750}) brightness(1.2)`;
+
     containmove.style = `transform : perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   });
+
   containmove.addEventListener("mouseout", function () {
     logoray.style = "filter : opacity(0)";
     containmove.style =
@@ -256,8 +266,10 @@
   <div style="position: absolute; right: 40px; bottom: 50px">
     <a href="file:///Users/tamura/Documents/GitHub/PokeManhole_Front/hello.html">
       <img src="./src/manhole_title_ko_grey_clean.png" alt="" width="250px" class="logoshadow">
+
     </a>
   </div>
+
 </div>
 </body>
 <!-- login -->
@@ -278,7 +290,7 @@
     </form>
   </div>
   <div class="form-container sign-in-container">
-    <form action="#" id="login-form">
+    <form id="login-form" action="#">
       <h1>Sign in</h1>
       <div class="social-container">
         <a href="#" class="social"><img src="./src/Google__G__logo.svg" alt="" width="30px"></a>
@@ -286,7 +298,7 @@
         <a href="#" class="social"><img src="./src/icon_x_b.svg" alt="" width="30px"></a>
       </div>
       <span>오랜만이에요!</span>
-      <input id="login-email" type="email" placeholder="Email" />
+      <input  id="login-email"  type="email" placeholder="Email" />
       <img class="loginwalk" src="../src/gif/trainerwithpika.gif" alt="">
       <input id="login-password" type="password" placeholder="Password" />
       <a href="#">비밀번호를 잊으셨나요?</a>
@@ -303,6 +315,8 @@
       <div class="overlay-panel overlay-right">
         <h1>안녕하세요,
           트레이너님 !</h1>
+
+
         <p>새로운 여정을 떠날 준비가 되셨나요?</p>
         <button class="ghost" id="signUp">등록하기</button>
       </div>
