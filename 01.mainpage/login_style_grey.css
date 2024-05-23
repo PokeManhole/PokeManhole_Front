@@ -91,18 +91,33 @@ input {
   background-color: #fff;
   border: solid #dbdbdb 5px;
   border-radius: 10px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 40px 30px rgba(0, 0, 0, 0.05);
-  position: relative;
+  box-shadow: 0 0px 28px rgba(0, 0, 0, 0.05), 0px 0px 20px 1px rgb(0, 0, 0, 0.3);
+  position: absolute;
   overflow: hidden;
   width: 100%;
   max-width: 768px;
   min-height: 480px;
+  z-index: 10;
 }
 
-.trainertop h1 {
-  font-size: 35px;
+.containerlicense {
+  background-color: #fff;
+  border: solid #dbdbdb 5px;
+  border-radius: 10px;
+  box-shadow: 0 0px 28px rgba(0, 0, 0, 0.05), 0px 0px 20px 1px rgb(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  max-width: 768px;
+  min-height: 480px;
+  z-index: 9;
+}
+
+.trainertop h2 {
+  font-size: 20px;
   text-align: left;
-  color: whitesmoke;
+  color: rgb(219, 219, 219);
+  margin: 0;
 
 }
 
@@ -131,7 +146,7 @@ input {
   position: absolute;
   width: 35%;
   height: 380px;
-  background-color: ;
+  /* background-color: ; */
   background-image: url(../01.mainpage/src/bg_dot.png);
   /* background-image: url(../src/background/backgreen2.jpeg); */
   /* background-size: 230px; */
@@ -169,7 +184,7 @@ input {
 .trainerright-upper img {
   width: 80px;
   margin: 15px 10px;
-  filter: drop-shadow(7px 7px 10px rgba(0, 0, 0, 0.55))
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.55))
 }
 
 .trainerright-left {
