@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  background: url(bg_dot.png) center 0;
+  background-size: auto 12px;
+  font-weight: 400;
+  text-align: center;
+  color: #222;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+  border: 20px solid #dbdbdb;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; 
+}
+
+.loading {
+  position: relative; 
+}
+
+.progress-bar {
+  width: 406px;
+  height: 22px;
+  background: #dbdbdb;
+  border-radius: 13px;
+  padding: 3px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.progress {
+  height: 100%;
+  background: red;
+  border-radius: 13px;
+  width: 0;
+  transition: width 0.1s linear;
+}
+
+.percent {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 22px;
+}
+
+.loading-image {
+  position: absolute; 
+  width: 100px; 
+  height: 100px; 
+  top: -110px;
+  left: 0;
+  transition: left 0.1s linear; 
+}
+
+.moving-image {
+  position: absolute; 
+  width: 50px; 
+  height: 50px; 
+  background-size: contain; 
+}
+
+.left {
+  left: -70px;
+  top: 0%;
+  background-image: url('monball0.gif');
+}
+
+.right {
+  right: -70px;
+  top: 0%;
+  background-image: url('monball0.gif'); 
+}
+
+.container_Loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.logo-container {
+  margin-top: 40px;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 150px;
+}
+
+.loading-bar {
+  margin-bottom: 20px;
+}
+
+.logo-image {
+  width: 350px; 
+  height: auto; 
+}
