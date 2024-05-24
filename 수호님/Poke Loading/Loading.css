@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100");
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
   border: 20px solid #dbdbdb;
   height: 100vh;
   margin: 0;
-  overflow: hidden; 
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,11 +27,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative; 
+  position: relative;
 }
 
 .loading {
-  position: relative; 
+  position: relative;
 }
 
 .progress-bar {
@@ -55,9 +56,9 @@ body {
 
 .percent {
   position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
   font-size: 15px;
   font-weight: bold;
@@ -66,19 +67,21 @@ body {
 }
 
 .loading-image {
-  position: absolute; 
-  width: 100px; 
-  height: 100px; 
-  top: -110px;
+  position: absolute;
+  width: 15%;
+  top: -85px;
   left: 0;
-  transition: left 0.1s linear; 
+  transition: left 0.1s linear;
+  transform: scaleX(-1);
 }
 
 .moving-image {
-  position: absolute; 
-  width: 50px; 
-  height: 50px; 
-  background-size: contain; 
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  margin: 0px;
+  top: 20px;
 }
 
 .left {
@@ -90,7 +93,7 @@ body {
 .right {
   right: -70px;
   top: 0%;
-  background-image: url('monball0.gif'); 
+  background-image: url('monball0.gif');
 }
 
 .container_Loading {
@@ -119,6 +122,6 @@ body {
 }
 
 .logo-image {
-  width: 350px; 
-  height: auto; 
+  width: 350px;
+  height: auto;
 }

@@ -7,7 +7,7 @@ var loading = setInterval(animate, 50);
 
 function animate() {
   if (count >= 100) {
-    image.src = "pikachu_finish.png";
+    image.src = "trainerwalk.png";
     clearInterval(loading);
   } else {
     per += 4.06; 
