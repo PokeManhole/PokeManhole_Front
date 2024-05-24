@@ -7,15 +7,10 @@ const component = (props) => {
     <th>${preManhole[0].prefecture}</th>
     <td colspan="6">
     ${preManhole.map(
-      (m) => `
-    <img
-        src="${m.manhole_img[0] === "h" ? "" : "http://localhost:5000/"}${
-        m.manhole_img
-      }"
-        alt=""
-        width=""
-      />
-    `
+      (m) =>
+        `<img src="${m.manhole_img[0] === "h" ? "" : "http://localhost:5000/"}${
+          m.manhole_img
+        }" alt=""/>`
     )}
     
     </td>
@@ -23,9 +18,9 @@ const component = (props) => {
   );
 };
 
-const getManholeData = async () => {
+const getManholeData = async (queryText) => {
   const url = SERVER.SERVER + "/manhole";
-  const query = encodeURIComponent("'간토'");
+  const query = encodeURIComponent(`'${queryText}'`);
   try {
     const response = await fetch(`${url}?land=${query}`).then((res) =>
       res.json()
@@ -38,20 +33,42 @@ const getManholeData = async () => {
 };
 
 const render = (root, component) => {
-  root.innerHTML = component;
+  root.innerHTML = component.join("");
 };
 
-const init = async () => {
+const openTable = async (queryText) => {
   const table = document.querySelector(".manholetableline");
-  const data = getManholeData();
-  console.log(123);
-
+  const name = document.querySelector(".manholetable-name");
+  name.innerText = queryText;
+  const data = getManholeData(queryText);
   data.then((d) => {
-    console.log(d);
     render(table, component(d));
   });
 };
 
+const handleLand = (e) => {
+  const manholeTableModal = document.querySelector(".manholetable-modal");
+
+  manholeTableModal.style = "display:auto";
+
+  openTable(e.target.innerText);
+};
+
+const init = () => {
+  const landBox = document.querySelectorAll(".land-box");
+  const manholeTable = document.querySelector(".manholetable");
+  const manholeTableModal = document.querySelector(".manholetable-modal");
+
+  manholeTableModal.addEventListener(
+    "click",
+    (e) => {
+      manholeTableModal.style = "display:none";
+    },
+    false
+  );
+  manholeTable.addEventListener("click", (e) => e.stopPropagation());
+  landBox.forEach((node) => node.addEventListener("click", handleLand));
+};
 init();
 
 // const test = () => {
