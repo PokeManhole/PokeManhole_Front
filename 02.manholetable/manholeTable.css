@@ -144,7 +144,11 @@ body {
 /* 맨홀 */
 td img {
   width: 70px;
+  min-width: 70px;
+  min-height: 70px;
   margin: 0px;
+  background-color: #929191;
+  border-radius: 50%;
 }
 
 a {

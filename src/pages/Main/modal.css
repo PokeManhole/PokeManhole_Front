@@ -1,0 +1,58 @@
+.modal_btn {
+  display: block;
+  margin: auto;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: 50px;
+  bottom: 10px;
+  transition: box-shadow 0.2s;
+}
+.modal_btn:hover {
+  /* box-shadow: 3px 4px 11px 0px #00000040; */
+}
+
+/*모달 팝업 영역 스타일링*/
+.modal {
+  /*팝업 배경*/
+  display: none; /*평소에는 보이지 않도록*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9000;
+}
+.modal .modal_popup {
+  /*팝업*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: #ffffff;
+  background-image: url(../src/gif/jiwoo.gif);
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position-x: right;
+  background-position-y: bottom;
+  border-radius: 20px;
+  z-index: 9999;
+}
+.modal .modal_popup .close_btn {
+  display: block;
+  padding: 10px 20px;
+  background-color: #e31616;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.modal_popup h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
