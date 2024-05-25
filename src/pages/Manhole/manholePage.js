@@ -1,7 +1,6 @@
 import SERVER from "/src/config/config.json" assert { type: "json" };
 
 const component = (props) => {
-  console.log(props);
   return props
     .map(
       (manhole) =>
@@ -35,10 +34,18 @@ const getPrefectureManholeDatas = async (queryText) => {
   }
 };
 
-const init = async () => {
+const render = (props) => {
   const container = document.querySelector(".citymanhole-ul");
-  const data = await getPrefectureManholeDatas("도쿄");
-  container.innerHTML = component(data);
+  const cityName = document.querySelector(".cityname-item");
+  cityName.innerText = props.prefecture;
+  container.innerHTML = component(props.data);
+};
+
+const init = async () => {
+  const url = new URLSearchParams(location.search);
+  const prefecture = url.get("prefecture");
+  const data = await getPrefectureManholeDatas(prefecture);
+  render({ data, prefecture });
 };
 
 init();
