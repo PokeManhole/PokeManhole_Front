@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>manhole</title>
+  <style>
+    body {
+      margin: 0;
+      background-image: url(../01_Mainpage/src/bg_dot.png);
+    }
+
+    .tablecontainer {
+      width: 100%;
+      height: 100vh;
+
+      border: 20px solid #dbdbdb;
+      box-sizing: border-box;
+    }
+
+    .tablecontainer audio {
+      position: absolute;
+    }
+
+
+    .manhole {
+      position: relative;
+      top: 30px;
+      width: 100%;
+      max-width: 1200px;
+      height: 86vh;
+      background-color: #dbdbdb;
+      border: 5px solid #dbdbdb;
+      border-collapse: collapse;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 7px 10px 0 black;
+    }
+
+    .manholeleft {
+      position: absolute;
+      width: 100%;
+      max-width: 530px;
+      height: 85vh;
+      background-color: white;
+      border: 5px solid #dbdbdb;
+      border-collapse: collapse;
+      border-radius: 10px;
+      /* box-shadow: 0 7px 10px 0 black; */
+
+    }
+
+    .manholeleft img {
+      width: 90%;
+      justify-content: center;
+      display: flex;
+      margin: auto;
+      ;
+    }
+
+    .manholeshadow {
+      filter: drop-shadow(0px 0px 15px rgb(255, 143, 15))
+    }
+
+    .manholeleft h1 {
+      display: flex;
+      justify-content: center;
+      max-width: 92%;
+      font-size: 35px;
+      color: #929191;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    .manholeleft h1::before {
+      content: "";
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      background-image: url(../src/assets/icon_mb_g_grey.png);
+      background-size: contain;
+      margin: 0 13px;
+    }
+
+    .manholeleft h1::after {
+      content: "";
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      background-image: url(../src/assets/icon_mb_g_grey.png);
+      background-size: contain;
+      margin: 0 13px;
+    }
+
+    .manholeleft_under {
+      position: absolute;
+      width: 100%;
+      max-width: 530px;
+      height: 100%;
+      max-height: 190px;
+      bottom: 0%;
+      /* background-color: black; */
+      /* border: 5px solid #dbdbdb; */
+      /* border-collapse: collapse; */
+      border-radius: 10px;
+      /* box-shadow: 0 7px 10px 0 black; */
+      background-image: url(../src/assets/background/ocean2.png);
+      background-size: 530px 100%;
+
+    }
+
+    .manholeright {
+      position: absolute;
+      right: 0;
+      width: 100%;
+      max-width: 650px;
+      height: 85vh;
+      background-color: white;
+      border: 5px solid #dbdbdb;
+      border-collapse: collapse;
+      border-radius: 10px;
+      /* box-shadow: 0 7px 10px 0 black; */
+      margin: 0;
+    }
+
+    .manholeinfo {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      max-height: 394px;
+      box-sizing: border-box;
+      /* border: 3px solid rgb(0, 183, 255); */
+      border-radius: 7px;
+      overflow-y: auto;
+      background-image: url(../src/assets/bg_dot.png)
+    }
+
+
+    .pokemoninfo {
+      position: relative;
+      width: 90%;
+      font-weight: 400;
+      line-height: 1.7;
+      text-align: left;
+      font-family: 'Noto Sans', 'Noto Sans KR', 'Apple SD Gothic Neo', '맑은 고딕', sans-serif;
+      word-break: keep-all;
+      font-size: 16px;
+      letter-spacing: -.04em;
+      color: #000;
+      box-sizing: border-box;
+      padding: 20px 30px 20px;
+      /* border: 1px solid #dbdbdb; */
+      border-radius: 7px;
+      background-color: white;
+      box-shadow: 0px 0px 10px 10px #dbdbdb;
+
+    }
+
+    .pokemoninfo table,
+    th,
+    td {
+      border: solid #dbdbdb 1px;
+      border-radius: 10px;
+      padding: 2px;
+    }
+
+    .pokemoninfo td img {
+      height: 22px
+    }
+
+    .manholemap {
+      width: 100%;
+      height: 100%;
+      max-height: 450px;
+      border-top: solid #dbdbdb 10px;
+      /* border-radius: 5px; */
+      position: absolute;
+      bottom: 0px;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="tablecontainer">
+    <!-- <audio id="player" src="../bgm/1-40. Goldenrod City.mp3" autoplay controls loop -->
+    <!-- onloadstart="this.volume=0.15"></audio> -->
+    <div>
+      <div class="manhole">
+        <div class="manholeleft">
+          <h1>마치다</h1>
+          <img class="manholeshadow" src="../src/assets/hole/Kanto/Tokyo/machida5/machida5_l.png" alt="">
+          <div class="manholeleft_under">
+            <img src="../src/assets/achv/gif/pairi.webp" alt=""
+              style="position: absolute; width: 35px; left: 55%; bottom: 10%;">
+            <!-- <img src="../src/assets/gif/trainerfront.gif" alt=""
+              style="position: absolute; width: 50px; left: 30%; bottom: 10%;"> -->
+            <img src="../src/assets/gif/" alt="" style="position: absolute; width: 50px; left: 20%; bottom: 10%;">
+            <img src="../src/assets/gif/" alt="" style="position: absolute; width: 50px; left: 30%; bottom: 10%;">
+            <img src="../src/hole/moninfo/trainer.gif" alt=""
+              style="position: absolute; width: 80px; left: 40%; bottom: 10%; transform: scaleX(-1) ;">
+            <img src="../src/assets/gif/" alt="" style="position: absolute; width: 50px; left: 50%; bottom: 10%;">
+            <img src="../src/assets/gif/" alt="" style="position: absolute; width: 50px; left: 60%; bottom: 10%;">
+            <img src="../src/assets/gif/" alt="" style="position: absolute; width: 50px; left: 70%; bottom: 10%;">
+            <img src="../src/assets/gif/" alt="" style="position: absolute; width: 50px; left: 80%; bottom: 10%;">
+          </div>
+        </div>
+        <div class="manholeright">
+          <div>
+            <div class="manholeinfo">
+              <ul style="list-style: none; margin-left: 3%;">
+                <li>
+                  <div class="pokemoninfo">
+                    <table>
+                      <tr>
+                        <th rowspan="2"><img src="../src/assets/achv/mini/pairi.webp" alt="" style="margin: 0 10px ;">
+                        </th>
+                        <th>이름</th>
+                        <th>도감번호</th>
+                        <th colspan="2">타입</th>
+                        <th>키</th>
+                        <th>분류</th>
+                        <th>성별</th>
+                        <th>몸무게</th>
+                      </tr>
+                      <tr>
+                        <td>파이리</td>
+                        <td>No.0007</td>
+                        <td>
+                          <div style="display:  table-cell; vertical-align:middle;"><img
+                              src="../src/hole/moninfo/fire.png" alt="">
+                          </div>
+                        </td>
+                        <td>불꽃</td>
+                        <td>0.6m</td>
+                        <td>도롱뇽포켓몬</td>
+                        <td><img src="../src/hole/moninfo/m.png" alt=""><img src="../src/hole/moninfo/f.png" alt="">
+                        </td>
+                        <td>8.5kg</td>
+                      </tr>
+                    </table>
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+          <!-- <img src="../src/assets/achv/mini/kobugi.webp" width="40px" alt=""> -->
+          <div class="manholemap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.0926636541994!2d128.6134081390342!3d35.89799892982682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e1bb3ae69edd%3A0x8aa4f6b999146d66!2z7JiB7KeE7KCE66y464yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1716516139206!5m2!1sko!2skr"
+              width="100%" height="100%" style="border:0; position: absolute; bottom: 0px;" allowfullscreen=""
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

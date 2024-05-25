@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mainpage</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+    * {
+      font-family: "Noto Sans KR", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      background-image: url(./src/bg_dot.png);
+    }
+
+    /* img {
+      display: flex;
+      object-fit: contain;
+    } */
+
+    .container1 {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      border: 20px solid #dbdbdb;
+      box-sizing: border-box;
+      display: flex;
+      /* z-index: 8999; */
+
+    }
+
+    .top_bar {
+      position: fixed;
+      background-color: #dbdbdb;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 20px;
+      z-index: 9003;
+
+    }
+
+
+    /* Region text color end */
+  </style>
+</head>
+<div class="modal">
+  <div class="modal_popup">
+    <h3>우리가 누구냐고 물으신다면</h3>
+    <p>상준,민서,수호,민재,건하,민수다냐옹</p>
+    <button type="button" class="close_btn">알겠어!</button>
+  </div>
+</div>
+<div class="container1">
+
+  <!-- <audio src="../bgm/1-05. New Bark Town.mp3" autoplay loop onloadstart="this.volume=0.2"></audio> -->
+  <!--end 모달 팝업-->
+  <main>
+    <section>
+      <!-- <button class="modal_btn"> <img class="trainerpika" src="../src/trainerwalk.png" width="50px" alt=""></button> -->
+      <a href="#" class="modal_btn"> <img class="trainercredit" src="../src/trainerwalk.png" width="50px" alt=""></a>
+    </section>
+  </main>
+  <!-- modal end -->
+
+
+  <!-- logo 스크립트 -->
+  <!-- <script>
+  var containmove = document.querySelector(".containmove");
+  var logoray = document.querySelector(".logoray");
+  containmove.addEventListener("mousemove", function (e) {
+    var x = e.offsetX;
+    var y = e.offsetY;
+    var rotateY = (-1 / 10) * x + 50;
+    var rotateX = (-1 / 10) * y + 50;
+    logoray.style = `background-position : ${
+      x / 5 + y / 5
+    }%; filter : opacity(${x / 750}) brightness(1.2)`;
+    containmove.style = `transform : perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+  containmove.addEventListener("mouseout", function () {
+    logoray.style = "filter : opacity(0)";
+    containmove.style =
+      "transform : perspective(350px) rotateY(0deg) rotateX(0deg)";
+  });
+</script> -->
+  <!-- logo -->
+  <!-- <div class="containmove">
+  <div id="radial"></div>
+  <script src="../poke/script.js"></script>
+  <div class="logoray"></div>
+  <div class="logo"></div>
+</div> -->
+
+  </body>
+  <!-- login -->
+
+  <!-- 
+  <div class="container" id="container" style="position: absolute; left: 40px; top: 40px ">
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h1>트레이너 등록</h1>
+        <div class="social-container">
+          <a href="#" class="social"> <img src="./src/Google__G__logo.svg" alt="" width="30px"> </a>
+          <a href="#" class="social"> <img src="./src/icon_fb_b.svg" alt="" width="30px"></a>
+          <a href="#" class="social"><img src="./src/icon_x_b.svg" alt="" width="30px"></a>
+        </div>
+        <span>또는 이메일을 사용해주세요</span>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button>등록하기</button>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Sign in</h1>
+        <div class="social-container">
+          <a href="#" class="social"><img src="./src/Google__G__logo.svg" alt="" width="30px"></a>
+          <a href="#" class="social"><img src="./src/icon_fb_b.svg" alt="" width="30px"></a>
+          <a href="#" class="social"><img src="./src/icon_x_b.svg" alt="" width="30px"></a>
+        </div>
+        <span>오랜만이에요!</span>
+        <input type="email" placeholder="Email" />
+        <img class="loginwalk" src="../src/gif/trainerwithpika.gif" alt="">
+        <input type="password" placeholder="Password" />
+        <a href="#">비밀번호를 잊으셨나요?</a>
+        <button>Poke!</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>모험으로 <br>떠나세요!</h1>
+          <p>항상 새로움으로 가득한 포켓몬 세상으로</p>
+          <button class="ghost" id="signIn">시작하기</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>안녕하세요,
+            트레이너님 !</h1>
+          <p>새로운 여정을 떠날 준비가 되셨나요?</p>
+          <button class="ghost" id="signUp">등록하기</button>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- License -->
+  <div class="containerlicense" id="containerlicense" style="position: absolute; left: 40px; top: 40px; ;">
+    <div class="trainertop">
+      <h2>&nbsp;Pokémon Trainer License</h2>
+    </div>
+    <div class="trainerleft"><img src="./src/trainer.png" alt="" width="150px" style="display: block;
+  margin: 30px auto ;"></div>
+    <div class="trainerright">
+      <div class="trainerright-upper"><img src="../src/achv/badge/강철.webp" alt=""><img
+          src="../src/achv/badge/격투.webp" alt=""><img src="../src/achv/badge/독.webp" alt=""><img
+          src="../src/achv/badge/전기.webp" alt=""><img src="../src/achv/badge/에스퍼.webp" alt=""><img
+          src="../src/achv/badge/드래곤.webp" alt=""><img src="../src/achv/badge/풀.webp" alt=""></div>
+
+      <div class="trainerright-left">
+        <table>
+          <tr>
+            <th>
+              <h5 style="display: inline;">진행중인 도전과제 <h6 style="display: inline;">더보기</h6>
+              </h5>
+            </th>
+          </tr>
+        </table>
+
+        <div class="trainerright-left-bottom">
+          <table>
+            <tr>
+              <td>영원한 나의 친구</td>
+              <th><img src="../src/achv/mini/pika.webp" alt=""></th>
+            </tr>
+            <tr>
+              <td>다이아몬드보다 딱딱한 껍질</td>
+              <th><img src="../src/achv/mini/celler.png" alt=""></th>
+            </tr>
+            <tr>
+              <td>먹고나면 잘 뿐</td>
+              <th><img src="../src/achv/mini/jamman.webp" alt=""></th>
+            </tr>
+            <tr>
+              <td>손발에 불꽃을 두르고</td>
+              <th><img src="../src/achv/mini/bulkot.webp" alt=""></th>
+            </tr>
+            <tr>
+              <td>악몽 속에 나타난 정체</td>
+              <th><img src="../src/achv/mini/darkrai.webp" alt=""></th>
+            </tr>
+            <tr>
+              <td>기본적으로 멍하니 있음</td>
+              <th><img src="../src/achv/mini/yadoran.webp" alt=""></th>
+            </tr>
+            <tr>
+              <td>그림자 속의 저주</td>
+              <th><img src="../src/achv/mini/phantom.webp" alt=""></th>
+            </tr>
+            <tr>
+              <td>바다로 떨어진 무수한 별들</td>
+              <th><img src="../src/achv/mini/bulgasari.webp" alt=""></th>
+            </tr>
+            <tr>
+              <td>생명과 공존의 상징</td>
+              <th><img src="../src/achv/mini/lugia.webp" alt=""></th>
+            </tr>
+            <tr>
+              <td>모든 것들의 선조</td>
+              <th><img src="../src/achv/mini/myu.webp" alt=""></th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="trainerright-right">
+        <img src="../src/achv/mini/yadon.webp" alt="" style="left: 20%; top: 30%">
+        <img src="../src/achv/mini/eve.webp" alt="" style="left: 50%; top: 50%">
+        <img src="../src/achv/mini/tangguri.webp" alt="" style="left: 24%; top:60%; ">
+        <img src="../src/achv/mini/gorapaduk.webp" alt="" style="left: 70%; top: 80%">
+      </div>
+    </div>
+  </div>
+  <!-- License end -->
+  <!-- 트레이너 정보 -->
+
+  <!-- 트레이너 정보 end -->
+
+  <link rel="stylesheet" href="./modal.css">
+  <script> const modal = document.querySelector('.modal');
+    const modalOpen = document.querySelector('.modal_btn');
+    const modalClose = document.querySelector('.close_btn');
+
+    //열기 버튼을 눌렀을 때 모달팝업이 열림
+    modalOpen.addEventListener('click', function () {
+      //display 속성을 block로 변경
+      modal.style.display = 'block';
+    });
+    //닫기 버튼을 눌렀을 때 모달팝업이 닫힘
+    modalClose.addEventListener('click', function () {
+      //display 속성을 none으로 변경
+      modal.style.display = 'none';
+    });
+  </script>
+  <link rel="stylesheet" href="./login_style_grey.css" />
+  <script src="./login.js"></script>
+  <!-- login end -->
+
+</html>
