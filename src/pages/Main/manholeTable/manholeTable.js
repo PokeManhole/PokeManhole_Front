@@ -6,12 +6,14 @@ const component = (props) => {
       `<tr>
     <th>${preManhole[0].prefecture}</th>
     <td colspan="6">
-    ${preManhole.map(
-      (m) =>
-        `<img src="${m.manhole_img[0] === "h" ? "" : "http://localhost:5000/"}${
-          m.manhole_img
-        }" alt=""/>`
-    )}
+    ${preManhole
+      .map(
+        (m) =>
+          `<img src="${
+            m.manhole_img[0] === "h" ? "" : "http://localhost:5000/"
+          }${m.manhole_img}" alt=""/>`
+      )
+      .join("")}
     
     </td>
     </tr>`

@@ -3,31 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kanto</title>
-    <link rel="stylesheet" href="manholeTable.css" />
+    <title>Tokyo</title>
+    <link rel="stylesheet" href="manholePage.css" />
   </head>
-  <body>
-    <!-- <div class="tablecontainer">
-      <audio
-        id="player"
-        src="/src/assets/bgm/1-40. Goldenrod City.mp3"
-        autoplay
-        controls
-        loop
-        onloadstart="this.volume=0.15"
-      ></audio>
-      <img class="pikaoko" src="/src/assets/gif/pikagif.gif" alt="" />
-      <img class="redstand" src="/src/assets/gif/redgif.gif" alt="" />
-      <img class="greenstand" src="/src/assets/gif/greengif.gif" alt="" />
-      <img class="bluestand" src="/src/assets/gif/bluegif2.gif" alt="" />
-      <img class="jamman" src="/src/assets/gif/jammangif.gif" alt="" /> -->
 
-    <div class="manholetable">
-      <h1>간토</h1>
-      <h5>&nbsp;55%</h5>
-      <table class="manholetableline"></table>
+  <body>
+    <!-- container -->
+    <div class="city">
+      <div class="cityname">
+        <h1>도쿄</h1>
+        <h4>&nbsp;77%</h4>
+      </div>
+
+      <div class="citymanhole">
+        <ul class="citymanhole-ul"></ul>
+      </div>
     </div>
-    <!-- </div> -->
+    <img class="pikahang" src="/src/assets/pikahang.png" alt="" />
+    <div style="position: absolute; left: 40px; top: 40px">
+      <a
+        href="file:///Users/tamura/Documents/GitHub/PokeManhole_Front/hello.html"
+      >
+        <img
+          src="/src/assets/manhole_title_ko_grey_clean.png"
+          alt=""
+          width="250px"
+          class="logoshadow"
+        />
+      </a>
+    </div>
   </body>
-  <script type="module" src="./manholeTable.js"></script>
+  <script type="module" src="manholePage.js"></script>
 </html>
