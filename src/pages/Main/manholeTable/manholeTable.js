@@ -2,10 +2,10 @@ import SERVER from "/src/config/config.json" assert { type: "json" };
 
 const component = (props) => {
   return props.map(
-    (preManhole) =>
-      `<tr>
+    (preManhole, key) =>
+      `<tr class="manhole-tr" >
     <th>${preManhole[0].prefecture}</th>
-    <td colspan="6">
+    <td class="manhole-td" colspan="6" id="${preManhole[0].prefecture}" >
     ${preManhole
       .map(
         (m) =>
@@ -19,6 +19,11 @@ const component = (props) => {
     </tr>`
   );
 };
+
+function handlePrefecture() {
+  const table = document.querySelector(".manholetableline");
+  console.log(table);
+}
 
 const getManholeData = async (queryText) => {
   const url = SERVER.SERVER + "/manhole";
@@ -36,6 +41,15 @@ const getManholeData = async (queryText) => {
 
 const render = (root, component) => {
   root.innerHTML = component.join("");
+  const tds = document.querySelectorAll(".manhole-td");
+  tds.forEach((th) =>
+    th.addEventListener("click", (e) => {
+      location.href =
+        location.origin +
+        "/src/pages/Manhole/manholePage.html?prefecture=" +
+        e.currentTarget.id;
+    })
+  );
 };
 
 const openTable = async (queryText) => {
@@ -68,6 +82,7 @@ const init = () => {
     },
     false
   );
+
   manholeTable.addEventListener("click", (e) => e.stopPropagation());
   landBox.forEach((node) => node.addEventListener("click", handleLand));
 };

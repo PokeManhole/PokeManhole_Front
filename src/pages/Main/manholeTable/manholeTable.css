@@ -150,6 +150,7 @@ body {
   border-radius: 10px;
   overflow-x: auto;
   color: #dbdbdb;
+  cursor: pointer;
 }
 
 /* 맨홀 */
