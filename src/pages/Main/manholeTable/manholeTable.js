@@ -9,9 +9,7 @@ const component = (props) => {
     ${preManhole
       .map(
         (m) =>
-          `<img src="${
-            m.manhole_img[0] === "h" ? "" : "http://localhost:5000/"
-          }${m.manhole_img}" alt=""/>`
+          `<img src="http://localhost:5000/static/manhole/${m.manhole_img}" alt=""/>`
       )
       .join("")}
     
@@ -67,7 +65,7 @@ const handleLand = (e) => {
 
   manholeTableModal.style = "display:auto";
 
-  openTable(e.target.innerText);
+  openTable(e.currentTarget.id);
 };
 
 const init = () => {
@@ -89,20 +87,25 @@ const init = () => {
 init();
 
 // const test = () => {
+
 //   let text = "";
-//   datas.map(
-//     (data) =>
-//       (text =
-//         text +
-//         `('${data.land}','${data.prefecture}','${data.city}','${
-//           data.manhole_img
-//         }','${data.manhole_img}','${JSON.stringify(
-//           JSON.stringify(data.poketmon_json)
-//         )}','${data.lat.replaceAll("'", "\\'")}','${data.lon.replaceAll(
-//           "'",
-//           "\\'"
-//         )}'),`)
-//   );
+//   data.map((data) => {
+//     const json = JSON.stringify(JSON.stringify(data.poketmon_json));
+//     const img =
+//       data.manhole_img.split("/")[data.manhole_img.split("/").length - 1];
+//     // console.log(img);
+//     text =
+//       text +
+//       `('${data.land}','${data.prefecture}','${
+//         data.city
+//       }','${img}','${img}','${json.slice(
+//         1,
+//         json.length - 1
+//       )}','${data.lat.replaceAll("'", "\\'")}','${data.lon.replaceAll(
+//         "'",
+//         "\\'"
+//       )}'),`;
+//   });
 //   console.log(text);
 // };
 
