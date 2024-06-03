@@ -6576,5 +6576,24 @@
     ],
     "lat": "34°43'15.5",
     "lon": "137°25'46.0"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "돗토리시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/Tottori1_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      }
+    ],
+    "lat": "35°32'02.2",
+    "lon": "134°13'28.1"
   }
 ]
