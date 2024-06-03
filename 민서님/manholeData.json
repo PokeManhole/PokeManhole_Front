@@ -6591,9 +6591,176 @@
         "height":"0.6m",
         "class":"쥐포켓몬",
         "weight":"12.0kg"
+      },
+      {
+        "id": 27,
+        "name": "알로라 모래두지",
+        "descript": "설산에 산다. 강철의 등껍질은 아주 튼튼하지만 너무 딱딱해서 몸을 구부릴 수가 없다.",
+        "type":["얼음, 강철"],
+        "height":"0.7m",
+        "class":"쥐포켓몬",
+        "weight":"40.0kg"
+      },
+      {
+        "id": 59,
+        "name": "파르빗",
+        "descript": "귀로 구멍을 파는 것이 특기다. 지하 10m에 달하는 굴을 하룻밤 만에 만들어버린다.",
+        "type":["노말"],
+        "height":"0.4m",
+        "class":"땅구멍파기포켓몬",
+        "weight":"5.0kg"
       }
     ],
     "lat": "35°32'02.2",
     "lon": "134°13'28.1"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "고후정",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/kofu_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 27,
+        "name": "알로라 모래두지",
+        "descript": "설산에 산다. 강철의 등껍질은 아주 튼튼하지만 너무 딱딱해서 몸을 구부릴 수가 없다.",
+        "type":["얼음, 강철"],
+        "height":"0.7m",
+        "class":"쥐포켓몬",
+        "weight":"40.0kg"
+      }
+    ],
+    "lat": "35°17'45.0",
+    "lon": "133°28'26.7"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "히에즈촌",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/hiezu_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 132,
+        "name": "메타몽",
+        "descript": "변신은 완벽하지만 웃는 바람에 힘이 빠지면 변신이 풀려 버리고 만다.",
+        "type":["노말"],
+        "height":"0.3m",
+        "class":"변신포켓몬",
+        "weight":"4.0kg"
+      }
+    ],
+    "lat": "35°26'28.1",
+    "lon": "133°22'46.5"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "호쿠에이정",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/hokuei_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 27,
+        "name": "알로라 모래두지",
+        "descript": "설산에 산다. 강철의 등껍질은 아주 튼튼하지만 너무 딱딱해서 몸을 구부릴 수가 없다.",
+        "type":["얼음, 강철"],
+        "height":"0.7m",
+        "class":"쥐포켓몬",
+        "weight":"40.0kg"
+      }
+    ],
+    "lat": "35°29'57.3",
+    "lon": "133°49'04.6"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "야즈정",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/yazu_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "알로라 모래두지",
+        "descript": "설산에 산다. 강철의 등껍질은 아주 튼튼하지만 너무 딱딱해서 몸을 구부릴 수가 없다.",
+        "type":["얼음, 강철"],
+        "height":"0.7m",
+        "class":"쥐포켓몬",
+        "weight":"40.0kg"
+      },
+      {
+        "id": 28,
+        "name": "알로라 고지",
+        "descript": "강철로 된 가시를 얼음이 둘러싸고 있다. 찔리면 깊은 상처와 함께 동상도 걸릴 수 있다.",
+        "type":["얼음, 강철"],
+        "height":"1.2m",
+        "class":"쥐포켓몬",
+        "weight":"55.0kg"
+      }
+    ],
+    "lat": "35°21'59.2",
+    "lon": "134°20'21.9"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "지즈정",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/chizu_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 28,
+        "name": "고지",
+        "descript": "재빠르게 뛰어다니며 등의 가시와 날카로운 발톱으로 공격하는 것이 특기다.",
+        "type":["땅"],
+        "height":"1.0m",
+        "class":"쥐포켓몬",
+        "weight":"29.5kg"
+      },
+      {
+        "id": 185,
+        "name": "꼬지모",
+        "descript": "항상 나무인 척하고 있다. 몸의 구조는 식물보다 돌이나 바위에 가까운 듯하다.",
+        "type":["바위"],
+        "height":"1.2m",
+        "class":"흉내포켓몬",
+        "weight":"38.0kg"
+      }
+    ],
+    "lat": "35°15'55.5",
+    "lon": "134°13'34.0"
   }
 ]
