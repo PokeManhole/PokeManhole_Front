@@ -62,10 +62,19 @@ const handleManholeClick = async (e) => {
 
 const openManholeModal = (data) => {
   console.log(data);
+  renderModal(data);
 };
 
-const renderModal = () => {
-  const modal = document.querySelector(".tablecontainer");
+const renderModal = (props) => {
+  const manholeDetail = document.querySelector(".manholeDetail-container");
+  manholeDetail.innerHTML = manholeDetailComponent(props);
+  manholeDetail.style = "display: auto;";
+  const manhole = document.querySelector(".manhole");
+  manhole.addEventListener("click", (e) => e.stopPropagation());
+  manholeDetail.addEventListener(
+    "click",
+    () => (manholeDetail.style = "display: none;")
+  );
 };
 
 const manholeDetailComponent = (data) => {
