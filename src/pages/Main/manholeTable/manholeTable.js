@@ -31,9 +31,9 @@ const getManholeData = async (queryText) => {
   const url = SERVER.SERVER + "/manhole";
   const query = encodeURIComponent(`'${queryText}'`);
   try {
-    const response = await fetch(`${url}?land=${query}`).then((res) =>
-      res.json()
-    );
+    const response = await fetch(`${url}?land=${query}`, {
+      headers: { Authorization: localStorage.getItem("token") },
+    }).then((res) => res.json());
     return response.data;
   } catch (error) {
     console.error(error);

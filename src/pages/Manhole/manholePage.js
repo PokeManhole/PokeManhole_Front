@@ -21,7 +21,11 @@ const component = (props) => {
 const getId2ManholeDatas = async (id) => {
   const url = SERVER.SERVER + "/manhole?id=" + id;
   try {
-    const response = await fetch(`${url}`).then((res) => res.json());
+    const response = await fetch(`${url}`, {
+      headers: {
+        Authorization: localStorage.getItem("token"),
+      },
+    }).then((res) => res.json());
     response.data.poketmon_json = JSON.parse(response.data.poketmon_json);
 
     return response.data;
@@ -35,9 +39,11 @@ const getPrefectureManholeDatas = async (queryText) => {
   const url = SERVER.SERVER + "/manhole";
   const query = encodeURIComponent(`'${queryText}'`);
   try {
-    const response = await fetch(`${url}?prefecture=${query}`).then((res) =>
-      res.json()
-    );
+    const response = await fetch(`${url}?prefecture=${query}`, {
+      headers: {
+        Authorization: localStorage.getItem("token"),
+      },
+    }).then((res) => res.json());
     return response.data;
   } catch (error) {
     console.error(error);
