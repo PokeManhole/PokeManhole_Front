@@ -101,21 +101,20 @@
 
     .badge {
       position: absolute;
-      top: 40px;
+      top: 60px;
       left: 30px;
       width: 100%;
       height: 100%;
       max-width: 390px;
       max-height: 650px;
-      /* 스크롤 박스 */
-      /* background-image: url(../src/achv/map.jpeg); */
       background-color: whitesmoke;
       border: 5px solid #c5c5c5;
       border-collapse: collapse;
       border-radius: 10px;
       box-shadow: 0 7px 10px 0 black;
-      padding: 13px;
+      padding: 0 13px;
       overflow-y: auto;
+      text-align: center;
     }
 
     .badgetable {
@@ -124,7 +123,6 @@
 
     .badgetable ul {
       list-style: none;
-
       padding-left: 0px;
     }
 
@@ -141,8 +139,56 @@
 
     .badge_city {
       width: 100%;
-      max-width: 60px;
-      max-height: 60px;
+      max-width: 40px;
+      max-height: 40px;
+    }
+  
+    .badge h1 {
+  font-size: 40px;
+  margin-bottom: 0px; 
+  }
+
+  .badgetable {
+  margin-top: 0px;
+  }
+
+  .badge h3::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: 10px auto;
+  }
+
+  .badge_city::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: 10px auto;
+  }
+
+  .badge h1::before {
+      content: "";
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      background-image: url(Substitute.png);
+      background-size: contain;
+      margin: 0 13px;
+    }
+
+    .badge h1::after {
+      content: "";
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      background-image: url(Substitute.png);
+      background-size: contain;
+      margin: 0 13px;
+      transform: scaleX(-1);
     }
 
     .manholetable h1 {
@@ -261,13 +307,12 @@
       <ul>
         <li>
           <h3>간토</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/불꽃.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/드래곤.webp" alt="">
           <ul>
             <li><img class="badge_city" src="../src/assets/achv/badge/1.png" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/2.png" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/3.png" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/4.png" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/5.png" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/6.png" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/7.png" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/8.png" alt=""></li>
@@ -277,67 +322,74 @@
         </li>
         <li>
           <h3>긴키</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/불꽃.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/고스트.webp" alt="">
           <ul>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/11.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/12.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/13.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/14.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/15.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/16.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/17.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/18.webp" alt=""></li>
           </ul>
         </li>
         <li>
           <h3>주부</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/불꽃.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/바이올렛.webp" alt="">
           <ul>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/21.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/22.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/23.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/24.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/25.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/26.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/27.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/28.webp" alt=""></li>
           </ul>
         </li>
         <li>
           <h3>주고쿠•시코쿠</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/불꽃.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/독.webp" alt="">
           <ul>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/31.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/32.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/33.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/34.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/35.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/36.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/37.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/38.webp" alt=""></li>
           </ul>
         </li>
         <li>
           <h3>규슈•오키나와</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/불꽃.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/비행.webp" alt="">
           <ul>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/41.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/42.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/43.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/44.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/45.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/46.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/47.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/48.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/49.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/50.webp" alt=""></li>
           </ul>
         </li>
         <li>
           <h3>홋카이도•도호쿠</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/불꽃.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/물.webp" alt="">
           <ul>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/51.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/52.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/53.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/54.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/55.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/56.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/57.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/58.webp" alt=""></li>
           </ul>
         </li>
 
