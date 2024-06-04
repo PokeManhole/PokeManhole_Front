@@ -40,8 +40,27 @@ const submitLogin = async (e) => {
   }
 };
 
+const isLogin = () => {
+  const token = localStorage.getItem("token");
+  token && getUser(token).then(() => (container.style = "display:none"));
+};
+
+const getUser = async (token) => {
+  try {
+    const response = await fetch("http://127.0.0.1:5000/user", {
+      headers: {
+        Authorization: token,
+      },
+    }).then((res) => res.json());
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
 function init() {
   loginForm.addEventListener("submit", (e) => submitLogin(e));
+  isLogin();
 }
 
 init();
