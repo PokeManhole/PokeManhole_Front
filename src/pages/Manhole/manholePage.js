@@ -61,8 +61,27 @@ const handleManholeClick = async (e) => {
 };
 
 const openManholeModal = (data) => {
-  console.log(data);
   renderModal(data);
+};
+
+const PostAchieveManhole = async (manholeId) => {
+  const url = SERVER.SERVER + "/manhole/achieve";
+  try {
+    const response = await fetch(url, {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: localStorage.getItem("token"),
+      },
+      method: "POST",
+      body: JSON.stringify({ manholeId: manholeId }),
+    }).then((res) => {
+      res.json();
+      init();
+    });
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 const renderModal = (props) => {
@@ -70,6 +89,14 @@ const renderModal = (props) => {
   manholeDetail.innerHTML = manholeDetailComponent(props);
   manholeDetail.style = "display: auto;";
   const manhole = document.querySelector(".manhole");
+  const controlButton = document.querySelector(".manhole-control-button");
+  controlButton.addEventListener("click", async () => {
+    await PostAchieveManhole(props.id);
+    props.isAchieve = !props.isAchieve;
+    document.querySelector(".manholeshadow").id = props.isAchieve
+      ? ""
+      : "grayscale";
+  });
   manhole.addEventListener("click", (e) => e.stopPropagation());
   manholeDetail.addEventListener(
     "click",
