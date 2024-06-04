@@ -5,7 +5,7 @@ const component = (props) => {
     .map(
       (manhole) =>
         `<li class="manholitem" id="${manhole.id}" >
-                <img
+                <img id="${manhole.isAchieve ? "" : "grayscale"}"
                   src="${"http://localhost:5000/static/manhole/"}${
           manhole.manhole_img
         }"
@@ -83,10 +83,15 @@ const manholeDetailComponent = (data) => {
       <div class="manhole">
         <div class="manholeleft">
           <h1>${data.city}</h1>
-          <img class="manholeshadow" src="http://localhost:5000/static/manhole/${
-            data.manhole_img
-          }" alt="">
+          <img class="manholeshadow" id="${
+            data.isAchieve ? "" : "grayscale"
+          }"  src="http://localhost:5000/static/manhole/${
+    data.manhole_img
+  }" alt="">
           <div class="manholeleft_under">
+          <div class="manhole-control">
+            <button class="manhole-control-button">확인</button>
+          </div>
             <img src="" alt=""
               style="position: absolute; width: 155px; left: 35%; bottom: 30%;">
             <!-- <img src="../src/assets/gif/trainerfront.gif" alt=""

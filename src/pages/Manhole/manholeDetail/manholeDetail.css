@@ -177,3 +177,17 @@ td {
   height: 100vh;
   z-index: 1;
 } */
+.manhole-control {
+  width: 100%;
+  height: 100%;
+}
+
+.manhole-control-button {
+  width: 100%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#grayscale {
+  filter: grayscale(1);
+}

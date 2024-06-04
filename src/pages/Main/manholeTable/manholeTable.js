@@ -9,7 +9,11 @@ const component = (props) => {
     ${preManhole
       .map(
         (m) =>
-          `<img src="http://localhost:5000/static/manhole/${m.manhole_img}" alt=""/>`
+          `<img class="${
+            m.isAchieve ? "" : "grayscale"
+          }" src="http://localhost:5000/static/manhole/${
+            m.manhole_img
+          }" alt=""/>`
       )
       .join("")}
     
