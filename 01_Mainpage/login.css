@@ -105,7 +105,7 @@ input {
   background-repeat: no-repeat;
   background-size: 100%;
   border-radius: 10px;
-  /* filter: drop-shadow(black 2px 2px 10px); */
+  filter: drop-shadow(rgb(106, 106, 106) 2px 2px 10px);
   position: absolute;
   overflow: hidden;
   width: 100%;

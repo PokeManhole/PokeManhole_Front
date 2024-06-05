@@ -8,7 +8,7 @@
   <style>
     body {
       margin: 0;
-      background-image: url(../01.mainpage/src/bg_dot.png);
+      background-image: url(../src/assets/bg_dot.png);
     }
 
     .tablecontainer {
@@ -84,8 +84,8 @@
 
     .minimap {
       position: absolute;
-      top: 40px;
-      right: 30px;
+      top: 15%;
+      right: 3%;
       width: 100%;
       height: 100%;
       max-width: 390px;
@@ -101,13 +101,16 @@
 
     .badge {
       position: absolute;
-      top: 60px;
-      left: 30px;
+      top: 15%;
+      left: 5%;
       width: 100%;
       height: 100%;
-      max-width: 390px;
+      max-width: 360px;
       max-height: 650px;
-      background-color: whitesmoke;
+      background-image: url(../src/assets/background/klipartz.com\ \(1\).png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-color: rgb(255, 255, 255);
       border: 5px solid #c5c5c5;
       border-collapse: collapse;
       border-radius: 10px;
@@ -134,48 +137,55 @@
     .badge_prefecture {
       width: 100%;
       max-width: 90px;
-
+      filter: drop-shadow(3px 3px 5px);
+      margin-bottom: 20px;
     }
 
     .badge_city {
       width: 100%;
       max-width: 40px;
       max-height: 40px;
+      border: rgba(0, 0, 0, 0) 3px;
+      filter: drop-shadow(3px 3px 5px)
     }
-  
+
     .badge h1 {
-  font-size: 40px;
-  margin-bottom: 0px; 
-  }
+      font-size: 40px;
+      margin-bottom: 0px;
+    }
 
-  .badgetable {
-  margin-top: 0px;
-  }
+    .badgetable {
+      margin-top: 0px;
+    }
 
-  .badge h3::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: black;
-  margin: 10px auto;
-  }
+    .badge h3::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-image: linear-gradient(to right, rgb(186, 166, 19), rgb(222, 204, 43), rgb(216, 204, 39), rgb(186, 166, 19));
+      margin: 10px auto;
+    }
 
-  .badge_city::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: black;
-  margin: 10px auto;
-  }
+    .badge_city::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: black;
+      margin: 10px auto;
+    }
 
-  .badge h1::before {
+    .badge h3 {
+      color: rgb(116, 116, 116);
+    }
+
+    /* .badge h1::before {
       content: "";
       display: inline-block;
       width: 45px;
       height: 45px;
-      background-image: url(Substitute.png);
+      background-image: url(../src/assets/achv/Pok%3Fmon_World_Coronation_Series_Logo.webp);
       background-size: contain;
       margin: 0 13px;
     }
@@ -185,11 +195,11 @@
       display: inline-block;
       width: 45px;
       height: 45px;
-      background-image: url(Substitute.png);
-      background-size: contain;
+      background-image: url(../src/assets/achv/Pok%3Fmon_World_Coronation_Series_Logo.webp);
+      background-size: 10px;
       margin: 0 13px;
       transform: scaleX(-1);
-    }
+    } */
 
     .manholetable h1 {
       display: flex;
@@ -220,7 +230,7 @@
       display: inline-block;
       width: 34px;
       height: 34px;
-      background-image: url(../02.manholetable/src/icon_mb_g_red.png);
+      background-image: url(../src/assets/icon_mb_g_red.png);
       background-size: contain;
       margin: 0 13px;
     }
@@ -230,7 +240,7 @@
       display: inline-block;
       width: 34px;
       height: 34px;
-      background-image: url(../02.manholetable/src/icon_mb_g_red.png);
+      background-image: url(../src/assets/icon_mb_g_red.png);
       background-size: contain;
       margin: 0 13px;
     }
@@ -272,6 +282,10 @@
       filter: drop-shadow(0px 0px 15px rgb(169, 169, 169));
     }
 
+    .achv {
+      border: yellow solid 3px;
+    }
+
     td h3 {
       text-align: left;
       margin: 0px;
@@ -302,12 +316,12 @@
 </head>
 <div>
   <div class="badge">
-    <h1>Badge</h1>
+    <h1>메달</h1>
     <div class="badgetable">
       <ul>
         <li>
           <h3>간토</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/드래곤.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/전기.webp" alt="">
           <ul>
             <li><img class="badge_city" src="../src/assets/achv/badge/1.png" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/2.png" alt=""></li>
@@ -322,21 +336,24 @@
         </li>
         <li>
           <h3>긴키</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/고스트.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/벌레.webp" alt="">
           <ul>
-            <li><img class="badge_city" src="../src/assets/achv/badge/11.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/12.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/13.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/14.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/15.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/16.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/17.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/18.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/41.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/42.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/43.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/44.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/45.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/46.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/47.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/48.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/49.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/50.webp" alt=""></li>
           </ul>
+
         </li>
         <li>
           <h3>주부</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/바이올렛.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/에스퍼.webp" alt="">
           <ul>
             <li><img class="badge_city" src="../src/assets/achv/badge/21.webp" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/22.webp" alt=""></li>
@@ -350,7 +367,7 @@
         </li>
         <li>
           <h3>주고쿠•시코쿠</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/독.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/물.webp" alt="">
           <ul>
             <li><img class="badge_city" src="../src/assets/achv/badge/31.webp" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/32.webp" alt=""></li>
@@ -364,23 +381,21 @@
         </li>
         <li>
           <h3>규슈•오키나와</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/비행.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/얼음.webp" alt="">
           <ul>
-            <li><img class="badge_city" src="../src/assets/achv/badge/41.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/42.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/43.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/44.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/45.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/46.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/47.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/48.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/49.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/50.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/11.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/12.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/13.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/14.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/15.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/16.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/17.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/18.webp" alt=""></li>
           </ul>
         </li>
         <li>
           <h3>홋카이도•도호쿠</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/물.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/노말.webp" alt="">
           <ul>
             <li><img class="badge_city" src="../src/assets/achv/badge/51.webp" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/52.webp" alt=""></li>
@@ -430,13 +445,15 @@
     <img class="jamman" src="../src/achv/gif/perlgia.webp" alt="" /> -->
     <div>
       <div class="manholetable">
-        <h1>Challenge</h1>
+        <h1>도전 과제</h1>
         <h5>총 도전 과제: 115</h5>
         <h6>전체 플레이어 대비 비율 (%)&nbsp;</h6>
         <h5>도전 과제 진행률: 83 / 115 (72%)</h5>
         <table class="manholetableline">
           <tr>
-            <th><img src="../src/assets/achv/pika.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/pika.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>영원한 나의 친구</h3>
               <h4>5 / 13</h4>
