@@ -6799,6 +6799,1192 @@
     ],
     "lat": "35°14'30.9",
     "lon": "133°26'27.8"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "니치난",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/Nichinan_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 313,
+        "name": "볼비트",
+        "descript": "물이 깨끗한 연못에 서식한다. 밤이 되면 엉덩이가 빛나며 이를 깜빡여서 동료와 대화한다.",
+        "type": ["벌레"],
+        "height": "0.7m",
+        "class": "반딧불포켓몬",
+        "weight": "17.7kg"
+      },
+      {
+        "id": 314,
+        "name": "네오비트",
+        "descript": "달콤한 향기로 볼비트를 유도해서 200개 이상의 모양을 밤하늘에 그린다.",
+        "type": ["벌레"],
+        "height": "0.6m",
+        "class": "반딧불포켓몬",
+        "weight": "17.7kg"
+      }
+    ],
+    "lat": "35°10'13.9",
+    "lon": "133°18'39.4"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "호키",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/Houki_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 27,
+        "name": "알로라 모래두지",
+        "descript": "설산에 산다. 강철의 등껍질은 아주 튼튼하지만 너무 딱딱해서 몸을 구부릴 수가 없다.",
+        "type":["얼음","강철"],
+        "height":"0.7m",
+        "class":"쥐포켓몬",
+        "weight":"40.0kg"
+      },
+      {
+        "id": 362,
+        "name": "얼음귀신",
+        "descript": "커다란 입에서 뿜는 냉기로 먹이는 한순간에 꽁꽁. 그대로 아드득아드득 잡아먹는다.",
+        "type": ["얼음"],
+        "height": "1.5m",
+        "class": "얼굴포켓몬",
+        "weight": "256.5kg"
+      }
+    ],
+    "lat": "35°23'00.2",
+    "lon": "133°27'30.6"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "남부",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/nanbu_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 27,
+        "name": "알로라 모래두지",
+        "descript": "설산에 산다. 강철의 등껍질은 아주 튼튼하지만 너무 딱딱해서 몸을 구부릴 수가 없다.",
+        "type":["얼음","강철"],
+        "height":"0.7m",
+        "class":"쥐포켓몬",
+        "weight":"40.0kg"
+      },
+      {
+        "id": 328,
+        "name": "톱치",
+        "descript": "건조한 사막에 서식한다. 원뿔형의 보금자리 속에서 조용히 먹잇감을 계속 기다린다.",
+        "type": ["땅"],
+        "height": "0.7m",
+        "class": "개미지옥포켓몬",
+        "weight": "15.0kg"
+      }
+    ],
+    "lat": "35°20'50.9",
+    "lon": "133°25'24.2"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "다이센",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/Daisen_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "알로라 모래두지",
+        "descript": "설산에 산다. 강철의 등껍질은 아주 튼튼하지만 너무 딱딱해서 몸을 구부릴 수가 없다.",
+        "type":["얼음","강철"],
+        "height":"0.7m",
+        "class":"쥐포켓몬",
+        "weight":"40.0kg"
+      },
+      {
+        "id": 607,
+        "name": "불켜미",
+        "descript": "평소 불꽃은 꺼져 있지만 사람이나 포켓몬의 생명력을 흡수하면 불꽃이 반짝인다.",
+        "type": ["고스트","불꽃"],
+        "height": "0.3m",
+        "class": "양초포켓몬",
+        "weight": "3.1kg"
+      }
+    ],
+    "lat": "35°30'16.5",
+    "lon": "133°30'07.5"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "코토우라",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/Kotoura_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 27,
+        "name": "알로라 모래두지",
+        "descript": "설산에 산다. 강철의 등껍질은 아주 튼튼하지만 너무 딱딱해서 몸을 구부릴 수가 없다.",
+        "type":["얼음","강철"],
+        "height":"0.7m",
+        "class":"쥐포켓몬",
+        "weight":"40.0kg"
+      }
+    ],
+    "lat": "35°30'25.0",
+    "lon": "133°39'41.8"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "유리 하마",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/Yurihama_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 90,
+        "name": "셀러",
+        "descript": "다이아몬드보다 단단한 껍데기에 싸여 있지만 속은 의외로 말랑하다.",
+        "type": ["물"],
+        "height": "0.3m",
+        "class": "두조개포켓몬",
+        "weight": "4.0kg"
+      }
+    ],
+    "lat": "35°28'41.4",
+    "lon": "133°53'02.4"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "미사 사",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/misasa_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 27,
+        "name": "알로라 모래두지",
+        "descript": "설산에 산다. 강철의 등껍질은 아주 튼튼하지만 너무 딱딱해서 몸을 구부릴 수가 없다.",
+        "type":["얼음","강철"],
+        "height":"0.7m",
+        "class":"쥐포켓몬",
+        "weight":"40.0kg"
+      },
+      {
+        "id": 656,
+        "name": "개구마르",
+        "descript": "태평해 보이는 것은 적을 속이기 위한 연기다. 눈에 보이지 않는 스피드로 적을 압도한다.",
+        "type": ["물"],
+        "height": "0.3m",
+        "class": "거품개구리포켓몬",
+        "weight": "7.0kg"
+      }
+    ],
+    "lat": "35°24'33.6",
+    "lon": "133°53'39.8"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "와카사",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/Wakasa_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "알로라 모래두지",
+        "descript": "설산에 산다. 강철의 등껍질은 아주 튼튼하지만 너무 딱딱해서 몸을 구부릴 수가 없다.",
+        "type":["얼음","강철"],
+        "height":"0.7m",
+        "class":"쥐포켓몬",
+        "weight":"40.0kg"
+      },
+      {
+        "id": 459,
+        "name": "눈쓰개",
+        "descript": "추운 계절에는 산기슭까지 내려오지만 봄이 되면 눈이 남아 있는 산 정상으로 돌아간다.",
+        "type": ["풀","얼음"],
+        "height": "1.0m",
+        "class": "얼음나무포켓몬",
+        "weight": "50.5kg"
+      }
+    ],
+    "lat": "35°20'38.2",
+    "lon": "134°24'01.2"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "이와미",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/Iwami_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 178,
+        "name": "네이티오",
+        "descript": "과거와 미래를 내다볼 수 있다. 매일 태양의 움직임을 관찰하는 이상한 포켓몬이다.",
+        "type": ["에스퍼"],
+        "height": "1.5m",
+        "class": "정령포켓몬",
+        "weight": "15.0kg"
+      }
+    ],
+    "lat": "35°35'27.4",
+    "lon": "134°19'17.6"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "사카이 미나토",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/sakaiminato_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 27,
+        "name": "알로라 모래두지",
+        "descript": "설산에 산다. 강철의 등껍질은 아주 튼튼하지만 너무 딱딱해서 몸을 구부릴 수가 없다.",
+        "type":["얼음","강철"],
+        "height":"0.7m",
+        "class":"쥐포켓몬",
+        "weight":"40.0kg"
+      },
+      {
+        "id": 98,
+        "name": "크랩",
+        "descript": "모래 해변에 구멍을 파서 산다. 집게는 싸울 때 떨어져 나가도 다시 자라나 원래대로 돌아온다.",
+        "type": ["물"],
+        "height": "0.4m",
+        "class": "게포켓몬",
+        "weight": "6.5kg"
+      }
+    ],
+    "lat": "35°31'17.3",
+    "lon": "133°15'30.1"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "구라 요시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/Kurayoshi_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 27,
+        "name": "알로라 모래두지",
+        "descript": "설산에 산다. 강철의 등껍질은 아주 튼튼하지만 너무 딱딱해서 몸을 구부릴 수가 없다.",
+        "type":["얼음","강철"],
+        "height":"0.7m",
+        "class":"쥐포켓몬",
+        "weight":"40.0kg"
+      }
+    ],
+    "lat": "35°27'15.4",
+    "lon": "133°51'00.4"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "요나고",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/Yonago_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 83,
+        "name": "파오리",
+        "descript": "파 줄기가 없으면 살 수 없다. 그래서 파 줄기를 노리는 상대와는 목숨을 걸고 싸운다.",
+        "type": ["노말","비행"],
+        "height": "0.8m",
+        "class": "청둥오리포켓몬",
+        "weight": "15.0kg"
+      },
+      {
+        "id": 581,
+        "name": "스완나",
+        "descript": "무리의 리더를 중심으로 일사불란하게 춤을 추며 단결력을 높인다.",
+        "type": ["물","비행"],
+        "height": "1.3m",
+        "class": "백조포켓몬",
+        "weight": "24.2kg"
+      }
+    ],
+    "lat": "35°27'22.5",
+    "lon": "133°21'41.5"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "돗토리현",
+    "city": "돗토리",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tottori/Tottori2_l.png",
+    "poketmon_json": [
+      {
+        "id": 27,
+        "name": "모래두지",
+        "descript": "깊은 구멍을 파서 생활한다. 위험이 닥치면 몸을 말아 상대의 공격을 가만히 견딘다.",
+        "type":["땅"],
+        "height":"0.6m",
+        "class":"쥐포켓몬",
+        "weight":"12.0kg"
+      },
+      {
+        "id": 27,
+        "name": "알로라 모래두지",
+        "descript": "설산에 산다. 강철의 등껍질은 아주 튼튼하지만 너무 딱딱해서 몸을 구부릴 수가 없다.",
+        "type":["얼음","강철"],
+        "height":"0.7m",
+        "class":"쥐포켓몬",
+        "weight":"40.0kg"
+      },
+      {
+        "id": 427,
+        "name": "이어롤",
+        "descript": "말고 있던 귀를 기세 좋게 뻗어서 상대를 힘껏 친다. 어른이라도 펄쩍 뛸 만큼 아프다.",
+        "type": ["노말"],
+        "height": "0.4m",
+        "class": "토끼포켓몬",
+        "weight": "5.5kg"
+      }
+    ],
+    "lat": "35°32'22.8",
+    "lon": "134°14'14.2"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "오카야마현",
+    "city": "구라시키시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Okayama/kurashiki1_l.png",
+    "poketmon_json": [
+      {
+        "id": 521,
+        "name": "수컷 켄호로우",
+        "descript": "높은 비행 능력을 가졌다. 암컷은 지구력이 뛰어나며 수컷은 비행 속도가 뛰어나다.",
+        "type": ["노말"],
+        "height": "1.2m",
+        "class": "프라이드포켓몬",
+        "weight": "29.0kg"
+      },
+      {
+        "id": 521,
+        "name": "암컷 켄호로우",
+        "descript": "높은 비행 능력을 가졌으며 특히 지구력이 뛰어나다. 수컷보다 길들이기 어렵다.",
+        "type": ["노말"],
+        "height": "1.2m",
+        "class": "프라이드포켓몬",
+        "weight": "29.0kg"
+      }
+    ],
+    "lat": "34°35'53.8",
+    "lon": "133°46'13.0"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "오카야마현",
+    "city": "구라시키시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Okayama/kurashiki2_l.png",
+    "poketmon_json": [
+      {
+        "id": 810,
+        "name": "흥나숭",
+        "descript": "지니고 있는 스틱은 흥나숭의 체내에서 나오는 에너지를 받아 더 단단해지고 탄력이 생긴다.",
+        "type": ["풀"],
+        "height": "0.3m",
+        "class": "꼬마원숭이포켓몬",
+        "weight": "5.0kg"
+      },
+      {
+        "id": 830,
+        "name": "백솜모카",
+        "descript": "솜털이 붙은 씨는 영양 만점이다. 씨를 바람에 날려서 초목과 포켓몬들을 건강하게 만든다.",
+        "type": ["풀"],
+        "height": "0.5m",
+        "class": "솜장식포켓몬",
+        "weight": "2.5kg"
+      }
+    ],
+    "lat": "34°35'33.9",
+    "lon": "133°46'13.7"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "오카야마현",
+    "city": "구라시키시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Okayama/kurashiki3_l.png",
+    "poketmon_json": [
+      {
+        "id": 261,
+        "name": "포챠나",
+        "descript": "큰 이빨을 드러낸 채 맹렬히 짖어 대며 상대를 위협하는 것은 사실 겁이 많기 때문이다.",
+        "type": ["악"],
+        "height": "0.5m",
+        "class": "물어뜯기포켓몬",
+        "weight": "13.6kg"
+      },
+      {
+        "id": 267,
+        "name": "뷰티플라이",
+        "descript": "가늘고 긴 입을 깊이 찔러 상대의 체액을 흡수한다. 공격적인 성격이다.",
+        "type": ["벌레","비행"],
+        "height": "1.0m",
+        "class": "나비포켓몬",
+        "weight": "28.4kg"
+      }
+    ],
+    "lat": "34°35'44.0",
+    "lon": "133°46'08.0"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "오카야마현",
+    "city": "구라시키시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Okayama/kurashiki4_l.png",
+    "poketmon_json": [
+      {
+        "id": 448,
+        "name": "루카리오",
+        "descript": "파동을 포착하여 보이지 않는 상대의 모습도 볼 수 있다고 전해진다.",
+        "type": ["격투","강철"],
+        "height": "1.2m",
+        "class": "파동포켓몬",
+        "weight": "54.0kg"
+      }
+    ],
+    "lat": "34°26'03.4",
+    "lon": "133°48'50.0"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "야마구치현",
+    "city": "시모노세키시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Yamaguchi/shimonoseki1_l.png",
+    "poketmon_json": [
+      {
+        "id": 109,
+        "name": "또가스",
+        "descript": "얇은 풍선 상태의 몸에 맹독의 가스가 채워져 있어 가끔 대폭발을 일으킨다.",
+        "type": ["독"],
+        "height": "0.6m",
+        "class": "독가스포켓몬",
+        "weight": "1.0kg"
+      }
+    ],
+    "lat": "33°56'07.7",
+    "lon": "130°55'46.9"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "야마구치현",
+    "city": "시모노세키시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Yamaguchi/shimonoseki2_l.png",
+    "poketmon_json": [
+      {
+        "id": 23,
+        "name": "아보",
+        "descript": "자유롭게 턱을 뺄 수 있어서 큰 먹이도 삼킬 수 있지만 무거워져서 움직일 수 없게 된다.",
+        "type": ["독"],
+        "height": "2.0m",
+        "class": "뱀포켓몬",
+        "weight": "6.9kg"
+      }
+    ],
+    "lat": "33°56'02.7",
+    "lon": "130°55'51.3"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "야마구치현",
+    "city": "시모노세키시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Yamaguchi/shimonoseki3_l.png",
+    "poketmon_json": [
+      {
+        "id": 170,
+        "name": "초라기",
+        "descript": "빛이 닿지 않는 해저에 산다. 촉수를 빛내 동료들과 커뮤니케이션을 한다.",
+        "type": ["물","전기"],
+        "height": "0.5m",
+        "class": "아귀포켓몬",
+        "weight": "12.0kg"
+      },
+      {
+        "id": 211,
+        "name": "침바루",
+        "descript": "물을 들이마시기 시작하면 위험하다. 온몸에 난 독침을 흩뿌려서 공격해 오기 때문이다.",
+        "type": ["물","독"],
+        "height": "0.5m",
+        "class": "풍선포켓몬",
+        "weight": "3.9kg"
+      }
+    ],
+    "lat": "33°57'16.7",
+    "lon": "130°56'30.0"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "야마구치현",
+    "city": "시모노세키시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Yamaguchi/shimonoseki4_l.png",
+    "poketmon_json": [
+      {
+        "id": 395,
+        "name": "엠페르트",
+        "descript": "프라이드를 건드리는 자는 유빙까지도 절단하는 날개로 두 동강을 낸다.",
+        "type": ["물","강철"],
+        "height": "1.7m",
+        "class": "황제포켓몬",
+        "weight": "84.5kg"
+      },
+      {
+        "id": 320,
+        "name": "고래왕자",
+        "descript": "맑은 날에는 모래 해변에 올라가 공처럼 튀면서 논다. 코에서 물을 뿜어낸다.",
+        "type": ["물"],
+        "height": "2.0m",
+        "class": "둥근고래포켓몬",
+        "weight": "130.0kg"
+      }
+    ],
+    "lat": "33°57'29.6",
+    "lon": "130°56'55.3"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "도쿠시마현",
+    "city": "나루토시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tokushima/naruto1_l.png",
+    "poketmon_json": [
+      {
+        "id": 60,
+        "name": "발챙이",
+        "descript": "배의 소용돌이는 피부 너머로 비쳐 보이는 내장의 일부다. 먹이를 먹으면 선명하게 보인다.",
+        "type": ["물"],
+        "height": "0.6m",
+        "class": "올챙이포켓몬",
+        "weight": "12.4kg"
+      },
+      {
+        "id": 61,
+        "name": "슈륙챙이",
+        "descript": "두 다리가 발달하여 지상에서 살 수 있는데도 어째서인지 수중 생활을 좋아한다.",
+        "type": ["물"],
+        "height": "1.0m",
+        "class": "올챙이포켓몬",
+        "weight": "20.0kg"
+      },
+      {
+        "id": 50,
+        "name": "디그다",
+        "descript": "지하 1m 정도를 파고들어 가서 나무뿌리 등을 씹어 먹고 산다. 가끔 지상으로 얼굴을 내민다.",
+        "type": ["땅"],
+        "height": "0.2m",
+        "class": "두더지포켓몬",
+        "weight": "0.8kg"
+      }
+    ],
+    "lat": "34°10'05.1",
+    "lon": "134°36'58.9"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "도쿠시마현",
+    "city": "나루토시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tokushima/naruto2_l.png",
+    "poketmon_json": [
+      {
+        "id": 117,
+        "name": "시드라",
+        "descript": "수컷이 새끼를 키운다. 이때 접근하는 자가 있으면 맹독을 띠는 가시로 쫓아낸다.",
+        "type": ["물"],
+        "height": "1.2m",
+        "class": "드래곤포켓몬",
+        "weight": "25.0kg"
+      },
+      {
+        "id": 230,
+        "name": "킹드라",
+        "descript": "힘을 비축하기 위해 깊은 해저에서 잠들어 있는 듯하다. 눈을 뜨면 회오리를 일으킨다고 전해진다.",
+        "type": ["물","드래곤"],
+        "height": "1.8m",
+        "class": "드래곤포켓몬",
+        "weight": "152.0kg"
+      }
+    ],
+    "lat": "34°10'55.0",
+    "lon": "134°36'06.2"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "도쿠시마현",
+    "city": "나루토시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Tokushima/naruto3_l.png",
+    "poketmon_json": [
+      {
+        "id": 245,
+        "name": "스이쿤",
+        "descript": "세계 곳곳을 뛰어다니며 오염된 물을 정화시킨다. 북풍과 함께 떠나간다.",
+        "type": ["물"],
+        "height": "2.0m",
+        "class": "오로라포켓몬",
+        "weight": "187.0kg"
+      }
+    ],
+    "lat": "34°13'26.8",
+    "lon": "134°38'10.3"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "아야가와정",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Ayagawa1_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      },
+      {
+        "id": 79,
+        "name": "가라르 야돈",
+        "descript": "몸에서 자극적인 향기가 나는 것은 주식인 향신료의 성분이 몸에 배어들었기 때문이다.",
+        "type": ["에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      },
+      {
+        "id": 90,
+        "name": "셀러",
+        "descript": "다이아몬드보다 단단한 껍데기에 싸여 있지만 속은 의외로 말랑하다.",
+        "type": ["물"],
+        "height": "0.3m",
+        "class": "두조개포켓몬",
+        "weight": "4.0kg"
+      }
+    ],
+    "lat": "34°14'50.6",
+    "lon": "133°55'58.0"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "우타즈",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Utazu_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "가라르 야돈",
+        "descript": "몸에서 자극적인 향기가 나는 것은 주식인 향신료의 성분이 몸에 배어들었기 때문이다.",
+        "type": ["에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      },
+      {
+        "id": 195,
+        "name": "누오",
+        "descript": "느긋한 성격으로 늘 제멋대로 헤엄치다가 배의 밑바닥에 머리를 들이받곤 한다.",
+        "type": ["물","땅"],
+        "height": "1.4m",
+        "class": "수어포켓몬",
+        "weight": "75.0kg"
+      }
+    ],
+    "lat": "34°18'48.3",
+    "lon": "133°48'27.1"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "만노",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Manno_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      }
+    ],
+    "lat": "34°10'24.0",
+    "lon": "133°52'17.0"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "다도쓰",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Tadotsu_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      }
+    ],
+    "lat": "34°16'20.2",
+    "lon": "133°45'26.1"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "고토히라",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Kotohira_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      }
+    ],
+    "lat": "34°11'15.9",
+    "lon": "133°49'11.6"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "아야가와",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Ayagawa2_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      }
+    ],
+    "lat": "34°15'01.4",
+    "lon": "133°55'01.5"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "나오시마",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Naoshima_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      },
+      {
+        "id": 129,
+        "name": "잉어킹",
+        "descript": "힘없는 한심한 포켓몬이다. 가끔 높이 뛰어오르지만 2m를 겨우 넘기는 게 고작이다.",
+        "type": ["물"],
+        "height": "0.9m",
+        "class": "물고기포켓몬",
+        "weight": "10.0kg"
+      }
+    ],
+    "lat": "34°27'21.0",
+    "lon": "133°58'31.8"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "미키",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Miki_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      }
+    ],
+    "lat": "34°16'06.9",
+    "lon": "134°08'04.4"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "쇼도시마",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Shodoshima_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      }
+    ],
+    "lat": "34°28'15.1",
+    "lon": "134°14'09.1"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "도노쇼",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Tonosho_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      },
+      {
+        "id": 132,
+        "name": "메타몽",
+        "descript": "변신은 완벽하지만 웃는 바람에 힘이 빠지면 변신이 풀려 버리고 만다.",
+        "type": ["노말"],
+        "height": "0.3m",
+        "class": "변신포켓몬",
+        "weight": "4.0kg"
+      }
+    ],
+    "lat": "34°28'57.7",
+    "lon": "134°11'15.0"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "미토요",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Mitoyo_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      },
+      {
+        "id": 90,
+        "name": "셀러",
+        "descript": "다이아몬드보다 단단한 껍데기에 싸여 있지만 속은 의외로 말랑하다.",
+        "type": ["물"],
+        "height": "0.3m",
+        "class": "두조개포켓몬",
+        "weight": "4.0kg"
+      }
+    ],
+    "lat": "34°16'07.7",
+    "lon": "133°37'56.0"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "히가시카가와",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Higashikagawa_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      }
+    ],
+    "lat": "34°15'04.2",
+    "lon": "134°20'00.5"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "사누키",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Sanuki_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      },
+      {
+        "id": 35,
+        "name": "삐삐",
+        "descript": "삐삐들은 보름달 밤에 어디에서 왔는지도 모르게 모여 춤춘다. 달빛을 받으면 떠오른다.",
+        "type": ["페어리"],
+        "height": "0.6m",
+        "class": "요정포켓몬",
+        "weight": "7.5kg"
+      }
+    ],
+    "lat": "34°19'16.7",
+    "lon": "134°10'23.7"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "간온지",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/KAN-ONJI_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      },
+      {
+        "id": 199,
+        "name": "야도킹",
+        "descript": "물렸을 때 머리에 깊게 스며든 독소에 의해 심상치 않은 능력에 눈을 뜬 야돈이다.",
+        "type": ["물","에스퍼"],
+        "height": "2.0m",
+        "class": "임금포켓몬",
+        "weight": "79.5kg"
+      }
+    ],
+    "lat": "34°07'31.0",
+    "lon": "133°39'18.8"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "젠쓰지",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Zentsuji_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      },
+      {
+        "id": 80,
+        "name": "야도란",
+        "descript": "야돈이 바다로 먹이를 잡으러 갔다가 셀러에게 꼬리를 물려 야도란이 되었다.",
+        "type": ["물"],
+        "height": "1.6m",
+        "class": "기생포켓몬",
+        "weight": "78.5kg"
+      }
+    ],
+    "lat": "34°13'31.1",
+    "lon": "133°46'38.3"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "사카이데",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Sakaide_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      }
+    ],
+    "lat": "34°18'46.8",
+    "lon": "133°51'22.7"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "마루가메",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Marugame_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      }
+    ],
+    "lat": "34°17'31.3",
+    "lon": "133°47'38.2"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "카가와현",
+    "city": "다카마쓰",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Kagawa/Takamatsu_l.png",
+    "poketmon_json": [
+      {
+        "id": 79,
+        "name": "야돈",
+        "descript": "움직임이 둔하고 멍청하다. 맞아도 5초는 지나야 아픔을 느낄 정도다.",
+        "type": ["물","에스퍼"],
+        "height": "1.2m",
+        "class": "얼간이포켓몬",
+        "weight": "36.0kg"
+      }
+    ],
+    "lat": "34°20'20.0",
+    "lon": "134°02'56.6"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "에히메현",
+    "city": "마쓰야마시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Ehime/Matsuyama1_l.png",
+    "poketmon_json": [
+      {
+        "id": 589,
+        "name": "슈바르고",
+        "descript": "쪼마리의 껍질을 빼앗아 완전히 무장했다. 가라르지방에서는 매우 인기가 높다.",
+        "type": ["벌레","강철"],
+        "height": "1.0m",
+        "class": "기병포켓몬",
+        "weight": "33.0kg"
+      },
+      {
+        "id": 865,
+        "name": "창파나이트",
+        "descript": "많은 싸움에서 살아남은 자만이 이 모습으로 진화한다. 파가 시들면 전장을 떠난다.",
+        "type": ["격투"],
+        "height": "0.8m",
+        "class": "청둥오리포켓몬",
+        "weight": "117.0kg"
+      }
+    ],
+    "lat": "33°50'39.3",
+    "lon": "132°44'26.8"
+  },
+  {
+    "land": "주고쿠.시코쿠",
+    "prefecture": "에히메현",
+    "city": "마쓰야마시",
+    "manhole_img": "src/assets/hole/Chugoku-Shikoku/Ehime/Matsuyama2_l.png",
+    "poketmon_json": [
+      {
+        "id": 761,
+        "name": "달콤아",
+        "descript": "과일을 졸인 것만 같은 달콤한 땀을 흘리기 때문에, 달콤한 음식이 적었던 옛날에는 매우 귀하게 여겨졌 다.",
+        "type": ["풀"],
+        "height": "0.3m",
+        "class": "후르츠포켓몬",
+        "weight": "3.2kg"
+      },
+      {
+        "id": 763,
+        "name": "달코퀸",
+        "descript": "자존심이 강하고 공격적이지만 꼭지의 왕관을 건드리면 금세 얌전해진다고 한다.",
+        "type": ["풀"],
+        "height": "1.2m",
+        "class": "후르츠포켓몬",
+        "weight": "21.4kg"
+      }
+    ],
+    "lat": "33°50'27.8",
+    "lon": "132°46'12.9"
   }
-  
 ]
