@@ -1,94 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>manhole</title>
-  
-  <link rel="stylesheet" href="AchievementsPage.css">
-  </style>
-</head>
-
-<body>
-
-  <div class="tablecontainer">
-    <!-- <audio id="player" src="../bgm/1-40. Goldenrod City.mp3" autoplay controls loop -->
-    <!-- onloadstart="this.volume=0.15"></audio> -->
-    <div>
-      <div class="manhole">
-        <div class="manholeleft">
-          <h1>마치다</h1>
-          <img class="manholeshadow" src="/src/assets/hole/Kinki/Kyoto/kyoto5/kyoto5_l.png" alt="">
-          <div class="manholeleft_under">
-            <img src="/src/assets/achv/gif/chilsaekzo.webp" alt=""
-              style="position: absolute; width: 155px; left: 35%; bottom: 30%;">
-            <!-- <img src="../src/assets/gif/trainerfront.gif" alt=""
-              style="position: absolute; width: 50px; left: 30%; bottom: 10%;"> -->
-            <img src="/src/assets/gif/" alt="" style="position: absolute; width: 50px; left: 20%; bottom: 10%;">
-            <img src="/src/assets/gif/" alt="" style="position: absolute; width: 50px; left: 30%; bottom: 10%;">
-            <!-- <img src="../src/hole/moninfo/trainer.gif" alt=""
-              style="position: absolute; width: 80px; left: 40%; bottom: 10%; transform: scaleX(-1) ;"> -->
-            <img src="/src/assets/gif/" alt="" style="position: absolute; width: 50px; left: 50%; bottom: 10%;">
-            <img src="/src/assets/gif/" alt="" style="position: absolute; width: 50px; left: 60%; bottom: 10%;">
-            <img src="/src/assets/gif/" alt="" style="position: absolute; width: 50px; left: 70%; bottom: 10%;">
-            <img src="/src/assets/gif/" alt="" style="position: absolute; width: 50px; left: 80%; bottom: 10%;">
-          </div>
-        </div>
-        <div class="manholeright">
-          <div>
-            <div class="manholeinfo">
-              <ul style="list-style: none; margin-left: 3%;">
-                <li>
-                  <div class="pokemoninfo">
-                    <table>
-                      <tr>
-                        <th rowspan="2"><img src="/src/assets/achv/mini/chilsaekzo.webp" alt=""
-                            style="margin: 0 10px ;">
-                        </th>
-                        <th>이름</th>
-                        <th>도감번호</th>
-                        <th colspan="2">타입</th>
-                        <th>키</th>
-                        <th>분류</th>
-                        <th>성별</th>
-                        <th>몸무게</th>
-                      </tr>
-                      <tr>
-                        <td>칠색조</td>
-                        <td>No.0249</td>
-                        <td>
-                          <div style="display:  table-cell; vertical-align:middle;"><img
-                              src="/src/hole/moninfo/fly.png" alt=""><img src="/src/hole/moninfo/espher.png" alt="">
-                          </div>
-                        </td>
-                        <td>에스퍼,비행</td>
-                        <td>5.2m</td>
-                        <td>잠수포켓몬</td>
-                        <td>루기아</td>
-                        <td>216.0kg</td>
-                      </tr>
-                    </table>
-                  </div>
-                </li>
-
-              </ul>
-
-            </div>
-
-          </div>
-          <!-- <img src="../src/assets/achv/mini/kobugi.webp" width="40px" alt=""> -->
-          <div class="manholemap">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3857.0926636541994!2d128.6134081390342!3d35.89799892982682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e1bb3ae69edd%3A0x8aa4f6b999146d66!2z7JiB7KeE7KCE66y464yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1716516139206!5m2!1sko!2skr&center=33.8569,151.2152"
-              width="100%" height="100%" style="border:0; position: absolute; bottom: 0px;" allowfullscreen=""
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade"  ></iframe>
-          </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="AchievementsPage.css" />
+    <title>Achievement</title>
+  </head>
+  <div>
+    <!-- <div class="badge">
+      <h1>Badge</h1>
+      <div class="badgetable">
+        <ul>
+          <li>
+            <h3>간토</h3>
+            <img
+              class="badge_prefecture"
+              src="../src/assets/achv/badge/드래곤.webp"
+              alt=""
+            />
+            <ul>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/1.png"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/2.png"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/3.png"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/4.png"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/6.png"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/7.png"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/8.png"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/9.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>긴키</h3>
+            <img
+              class="badge_prefecture"
+              src="../src/assets/achv/badge/고스트.webp"
+              alt=""
+            />
+            <ul>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/11.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/12.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/13.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/14.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/15.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/16.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/17.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/18.webp"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>주부</h3>
+            <img
+              class="badge_prefecture"
+              src="../src/assets/achv/badge/바이올렛.webp"
+              alt=""
+            />
+            <ul>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/21.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/22.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/23.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/24.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/25.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/26.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/27.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/28.webp"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>주고쿠•시코쿠</h3>
+            <img
+              class="badge_prefecture"
+              src="../src/assets/achv/badge/독.webp"
+              alt=""
+            />
+            <ul>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/31.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/32.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/33.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/34.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/35.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/36.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/37.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/38.webp"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>규슈•오키나와</h3>
+            <img
+              class="badge_prefecture"
+              src="../src/assets/achv/badge/비행.webp"
+              alt=""
+            />
+            <ul>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/41.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/42.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/43.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/44.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/45.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/46.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/47.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/48.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/49.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/50.webp"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>홋카이도•도호쿠</h3>
+            <img
+              class="badge_prefecture"
+              src="../src/assets/achv/badge/물.webp"
+              alt=""
+            />
+            <ul>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/51.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/52.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/53.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/54.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/55.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/56.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/57.webp"
+                  alt=""
+                />
+              </li>
+              <li>
+                <img
+                  class="badge_city"
+                  src="../src/assets/achv/badge/58.webp"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-  </div>
-</body>
+  <div>
+    <div class="minimap">
+      <img
+        src="../src/assets/achv/gif/pikachu.webp"
+        alt=""
+        style="position: absolute; width: 30px; left: 47%; top: 80%"
+      />
+      <img
+        src="../src/assets/achv/gif/myu.webp"
+        alt=""
+        style="position: absolute; width: 50px; left: 20%; top: 12%"
+      />
+      <img
+        src="../src/assets/achv/gif/ingeo.webp"
+        alt=""
+        style="position: absolute; width: 20px; left: 80%; top: 50%"
+      />
+      <img
+        src="../src/assets/achv/gif/jamman.webp"
+        alt=""
+        style="position: absolute; left: 75%; top: 62%"
+      />
+      <img
+        src="../src/assets/achv/gif/tangguri.webp"
+        alt=""
+        style="position: absolute; left: 80%; top: 30%"
+      />
+      <img
+        src="../src/assets/achv/gif/yadoran.webp"
+        alt=""
+        style="position: absolute; width: 35px; left: 75%; top: 55%"
+      />
+      <img
+        src="../src/assets/achv/gif/eve.webp"
+        alt=""
+        style="position: absolute; width: 30px; left: 8%; top: 65%"
+      />
+      <img
+        src="../src/assets/achv/gif/byulgasari.webp"
+        alt=""
+        style="position: absolute; width: 30px; left: 85%; top: 48%"
+      />
+      <img
+        src="../src/assets/achv/gif/butterful.webp"
+        alt=""
+        style="position: absolute; width: 30px; left: 1%; top: 94%"
+      />
+      <img
+        src="../src/assets/achv/gif/paori.webp"
+        alt=""
+        style="position: absolute; width: 30px; left: 17%; top: 50%"
+      />
+      <img
+        src="../src/assets/achv/gif/arceus.webp"
+        alt=""
+        style="position: absolute; left: 30%; top: 34%"
+      />
+      <img
+        src="../src/assets/achv/gif/gorapaduk.webp"
+        alt=""
+        style="position: absolute; width: 30px; left: 40%; top: 22%"
+      />
+    </div>
+  </div> -->
 
+  <body>
+    <div class="tablecontainer">
+      <!-- <audio id="player" src="../bgm/1-40. Goldenrod City.mp3" autoplay controls loop
+      onloadstart="this.volume=0.15"></audio> -->
+      <!-- <img class="pikaoko" src="../src/achv/gif/ingeo.webp" alt="" />
+    <img class="redstand" src="../src/gif/redgif.gif" alt="" />
+    <img class="greenstand" src="../src/gif/greengif.gif" alt="" />
+    <img class="bluestand" src="../src/gif/bluegif2.gif" alt="" />
+    <img class="jamman" src="../src/achv/gif/perlgia.webp" alt="" /> -->
+      <div>
+        <div class="manholetable">
+          <h1>Challenge</h1>
+          <h5>총 도전 과제: 115</h5>
+          <h6>전체 플레이어 대비 비율 (%)&nbsp;</h6>
+          <h5>도전 과제 진행률: 83 / 115 (72%)</h5>
+          <table class="manholetableline">
+          
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="./achievementsPage.js"></script>
 </html>
