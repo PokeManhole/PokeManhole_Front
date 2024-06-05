@@ -5,7 +5,7 @@ const component = (props) => {
     .map(
       (manhole) =>
         `<li class="manholitem" id="${manhole.id}" >
-                <img
+                <img id="${manhole.isAchieve ? "" : "grayscale"}"
                   src="${"http://localhost:5000/static/manhole/"}${
           manhole.manhole_img
         }"
@@ -21,7 +21,11 @@ const component = (props) => {
 const getId2ManholeDatas = async (id) => {
   const url = SERVER.SERVER + "/manhole?id=" + id;
   try {
-    const response = await fetch(`${url}`).then((res) => res.json());
+    const response = await fetch(`${url}`, {
+      headers: {
+        Authorization: localStorage.getItem("token"),
+      },
+    }).then((res) => res.json());
     response.data.poketmon_json = JSON.parse(response.data.poketmon_json);
 
     return response.data;
@@ -35,9 +39,11 @@ const getPrefectureManholeDatas = async (queryText) => {
   const url = SERVER.SERVER + "/manhole";
   const query = encodeURIComponent(`'${queryText}'`);
   try {
-    const response = await fetch(`${url}?prefecture=${query}`).then((res) =>
-      res.json()
-    );
+    const response = await fetch(`${url}?prefecture=${query}`, {
+      headers: {
+        Authorization: localStorage.getItem("token"),
+      },
+    }).then((res) => res.json());
     return response.data;
   } catch (error) {
     console.error(error);
@@ -61,8 +67,27 @@ const handleManholeClick = async (e) => {
 };
 
 const openManholeModal = (data) => {
-  console.log(data);
   renderModal(data);
+};
+
+const PostAchieveManhole = async (manholeId) => {
+  const url = SERVER.SERVER + "/manhole/achieve";
+  try {
+    const response = await fetch(url, {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: localStorage.getItem("token"),
+      },
+      method: "POST",
+      body: JSON.stringify({ manholeId: manholeId }),
+    }).then((res) => {
+      res.json();
+      init();
+    });
+    return response;
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 const renderModal = (props) => {
@@ -70,6 +95,14 @@ const renderModal = (props) => {
   manholeDetail.innerHTML = manholeDetailComponent(props);
   manholeDetail.style = "display: auto;";
   const manhole = document.querySelector(".manhole");
+  const controlButton = document.querySelector(".manhole-control-button");
+  controlButton.addEventListener("click", async () => {
+    await PostAchieveManhole(props.id);
+    props.isAchieve = !props.isAchieve;
+    document.querySelector(".manholeshadow").id = props.isAchieve
+      ? ""
+      : "grayscale";
+  });
   manhole.addEventListener("click", (e) => e.stopPropagation());
   manholeDetail.addEventListener(
     "click",
@@ -83,10 +116,15 @@ const manholeDetailComponent = (data) => {
       <div class="manhole">
         <div class="manholeleft">
           <h1>${data.city}</h1>
-          <img class="manholeshadow" src="http://localhost:5000/static/manhole/${
-            data.manhole_img
-          }" alt="">
+          <img class="manholeshadow" id="${
+            data.isAchieve ? "" : "grayscale"
+          }"  src="http://localhost:5000/static/manhole/${
+    data.manhole_img
+  }" alt="">
           <div class="manholeleft_under">
+          <div class="manhole-control">
+            <button class="manhole-control-button">확인</button>
+          </div>
             <img src="" alt=""
               style="position: absolute; width: 155px; left: 35%; bottom: 30%;">
             <!-- <img src="../src/assets/gif/trainerfront.gif" alt=""

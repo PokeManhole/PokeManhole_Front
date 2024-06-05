@@ -9,7 +9,11 @@ const component = (props) => {
     ${preManhole
       .map(
         (m) =>
-          `<img src="http://localhost:5000/static/manhole/${m.manhole_img}" alt=""/>`
+          `<img class="${
+            m.isAchieve ? "" : "grayscale"
+          }" src="http://localhost:5000/static/manhole/${
+            m.manhole_img
+          }" alt=""/>`
       )
       .join("")}
     
@@ -27,9 +31,9 @@ const getManholeData = async (queryText) => {
   const url = SERVER.SERVER + "/manhole";
   const query = encodeURIComponent(`'${queryText}'`);
   try {
-    const response = await fetch(`${url}?land=${query}`).then((res) =>
-      res.json()
-    );
+    const response = await fetch(`${url}?land=${query}`, {
+      headers: { Authorization: localStorage.getItem("token") },
+    }).then((res) => res.json());
     return response.data;
   } catch (error) {
     console.error(error);
