@@ -57,7 +57,11 @@ const render = async (props) => {
   cityName.innerText = props.prefecture;
   container.innerHTML = component(props.data);
   const lis = document.querySelectorAll(".manholitem");
-  lis.forEach((li) => li.addEventListener("click", handleManholeClick));
+  lis.forEach((li) => {
+    li.addEventListener("click", handleManholeClick);
+
+    itemMotionInit(li.children[0]);
+  });
 };
 
 const handleManholeClick = async (e) => {
@@ -103,7 +107,7 @@ const renderModal = (props) => {
       ? ""
       : "grayscale";
   });
-  modalManholeActionInit();
+  itemMotionInit(document.querySelector(".manhole_container"));
 
   manhole.addEventListener("click", (e) => e.stopPropagation());
   manholeDetail.addEventListener(
@@ -112,18 +116,20 @@ const renderModal = (props) => {
   );
 };
 
-const modalManholeActionInit = () => {
-  var container = document.querySelector(".manhole_container");
-  container.addEventListener("mousemove", function (e) {
+const itemMotionInit = (object) => {
+  console.log((object.offsetHeight / 20).toFixed());
+  object.addEventListener("mousemove", function (e) {
     var x = e.offsetX;
     var y = e.offsetY;
-    var rotateY = (-1 / 10) * x + 22;
-    var rotateX = (-1 / 10) * y + 20;
-    container.style = `transform : perspective(700px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+
+    const rotateX = (-70 / object.offsetHeight) * y + 35;
+    const rotateY = (-70 / object.offsetHeight) * x + 35;
+
+    object.style = `transform : perspective(700px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
   });
-  container.onmouseout = function () {
-    container.style =
-      "transition: 0.5s all ease; transform: perspective(600px) rotateX(0deg) rotateY(0deg) translateZ(0px)";
+  object.onmouseout = function () {
+    object.style =
+      "transition: 1s all ease; transform: perspective(600px) rotateX(0deg) rotateY(0deg) translateZ(0px)";
   };
 };
 
