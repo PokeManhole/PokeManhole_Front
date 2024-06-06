@@ -118,11 +118,27 @@
   border-radius: 7px;
   overflow-y: auto;
   background-image: url(../src/assets/bg_dot.png);
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+}
+
+.manholeinfo > ul {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: space-around;
+}
+
+.manholeinfo > ul > li {
+  width: 100%;
 }
 
 .pokemoninfo {
   position: relative;
-  width: 90%;
+  width: 100%;
   font-weight: 400;
   line-height: 1.7;
   text-align: left;
@@ -140,12 +156,17 @@
   box-shadow: 0px 0px 10px 10px #dbdbdb;
 }
 
+.pokemoninfo > table {
+  width: 100%;
+}
+
 .pokemoninfo table,
 th,
 td {
   border: solid #dbdbdb 1px;
   border-radius: 10px;
   padding: 2px;
+  text-align: center;
 }
 
 .pokemoninfo td img {
@@ -159,7 +180,6 @@ td {
   border-top: solid #dbdbdb 10px;
   /* border-radius: 5px; */
   position: absolute;
-  bottom: 0px;
 }
 
 .manholeDetail-container {
@@ -179,13 +199,30 @@ td {
 } */
 .manhole-control {
   width: 100%;
-  height: 100%;
 }
 
 .manhole-control-button {
   width: 100%;
-  font-size: 2rem;
+  border-radius: 20px;
+  border: 1px solid #cad3cc;
+  background-color: #e31616;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
   cursor: pointer;
+}
+
+.achieve {
+  background-color: #7b7b7b;
+  color: #d7d7d7;
+}
+
+.manhole-control-button:active {
+  transform: scale(0.95);
 }
 
 #grayscale {

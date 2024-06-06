@@ -100,13 +100,20 @@ const renderModal = (props) => {
   manholeDetail.style = "display: auto;";
   const manhole = document.querySelector(".manhole");
   const controlButton = document.querySelector(".manhole-control-button");
-  controlButton.addEventListener("click", async () => {
-    await PostAchieveManhole(props.id);
-    props.isAchieve = !props.isAchieve;
-    document.querySelector(".manholeshadow").id = props.isAchieve
-      ? ""
-      : "grayscale";
-  });
+  !props.isAchieve &&
+    controlButton.addEventListener("click", async () => {
+      if (!props.isAchieve) {
+        await PostAchieveManhole(props.id);
+        props.isAchieve = !props.isAchieve;
+        document.querySelector(".manholeshadow").id = props.isAchieve
+          ? ""
+          : "grayscale";
+
+        const button = document.querySelector(".manhole-control-button");
+        button.classList.add("achieve");
+        button.innerText = "이미 발견 했습니다.";
+      }
+    });
   itemMotionInit(document.querySelector(".manhole_container"));
 
   manhole.addEventListener("click", (e) => e.stopPropagation());
@@ -147,9 +154,6 @@ const manholeDetailComponent = (data) => {
   }" alt="">
           </div>
           <div class="manholeleft_under">
-          <div class="manhole-control">
-            <button class="manhole-control-button">확인</button>
-          </div>
             <img src="" alt=""
               style="position: absolute; width: 155px; left: 35%; bottom: 30%;">
             <!-- <img src="../src/assets/gif/trainerfront.gif" alt=""
@@ -165,54 +169,7 @@ const manholeDetailComponent = (data) => {
           </div>
         </div>
         <div class="manholeright">
-          <div>
-            <div class="manholeinfo">
-              <ul style="list-style: none; margin-left: 3%;">
-                <li>
-                  <div class="pokemoninfo">
-                    <table>
-                      <tr>
-
-                        <th>이름</th>
-                        <th>도감번호</th>
-                        <th colspan="2">타입</th>
-                        <th>키</th>
-                        <th>분류</th>
-
-                        <th>몸무게</th>
-                      </tr>
-                      ${data.poketmon_json
-                        .map(
-                          (poketmon) =>
-                            `
-                        <tr>
-                          <td>${poketmon.name}</td>
-                          <td>No.${poketmon.id}</td>
-                          <td>
-                            <div style="display:  table-cell; vertical-align:middle;"><img
-                                src="/src/hole/moninfo/fly.png" alt=""><img src="/src/hole/moninfo/espher.png" alt="">
-                            </div>
-                          </td>
-                          <td>${poketmon.type.join()}</td>
-                          <td>${poketmon.height}</td>
-                          <td>${poketmon.class}</td>
-
-                          <td>${poketmon.weight}</td>
-                        </tr>
-                        `
-                        )
-                        .join("")}
-                    </table>
-                  </div>
-                </li>
-
-              </ul>
-
-            </div>
-
-          </div>
-          <!-- <img src="../src/assets/achv/mini/kobugi.webp" width="40px" alt=""> -->
-          <div class="manholemap">
+        <div class="manholemap">
           <iframe
           width="100%"
           height="100%"
@@ -226,6 +183,57 @@ const manholeDetailComponent = (data) => {
         >
         </iframe>
           </div>
+          <div>
+            <div class="manholeinfo">
+              <ul style="list-style: none;">
+                <li>
+                  <div class="pokemoninfo">
+                    <table>
+                      <tr>
+
+                        <th>이름</th>
+                        <th>도감번호</th>
+                        <th >타입</th>
+                        <th>키</th>
+                        <th>분류</th>
+
+                        <th>몸무게</th>
+                      </tr>
+                      ${data.poketmon_json
+                        .map(
+                          (poketmon) =>
+                            `
+                        <tr>
+                          <td>${poketmon.name}</td>
+                          <td>No.${poketmon.id}</td>
+                          
+                          <td>${poketmon.type.join()}</td>
+                          <td>${poketmon.height}</td>
+                          <td>${poketmon.class}</td>
+
+                          <td>${poketmon.weight}</td>
+                        </tr>
+                        `
+                        )
+                        .join("")}
+                    </table>
+                    
+                    </div>
+                    </li>
+                    
+                    <div class="manhole-control">
+                        <button class="manhole-control-button ${
+                          data.isAchieve ? "achieve" : ""
+                        }">${
+    data.isAchieve ? "이미 발견 했습니다." : "발견했다!"
+  }</button>
+                      </div>
+                    </ul>
+            </div>
+
+          </div>
+          <!-- <img src="../src/assets/achv/mini/kobugi.webp" width="40px" alt=""> -->
+          
         </div>
       </div>
     </div>
