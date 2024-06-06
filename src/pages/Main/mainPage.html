@@ -6,6 +6,7 @@
     <title>Mainpage</title>
     <link rel="stylesheet" href="./manholeTable/manholeTable.css" />
     <link rel="stylesheet" href="./MainPage.css" />
+    <link rel="stylesheet" href="main_trainer.css" />
   </head>
   <body>
     <div class="manholetable-modal" style="display: none">
@@ -209,109 +210,92 @@
     id="containerlicense"
     style="position: absolute; left: 40px; top: 40px"
   >
-    <div class="trainertop">
-      <h2>&nbsp;Pokémon Trainer License</h2>
-    </div>
-    <div class="trainerleft">
-      <img
-        src="/src/assets/trainer.png"
-        alt=""
-        width="150px"
-        style="display: block; margin: 30px auto"
-      />
-    </div>
-    <div class="trainerright">
-      <div class="trainerright-upper">
-        <img src="/src/assets/achv/badge/강철.webp" alt="" /><img
-          src="/src/assets/achv/badge/격투.webp"
+    <div class="trainer-info">
+      <div class="trainer-info-photo-wrapper inner-shadow-box">
+        <img
+          src="/src/assets/trainer.png"
+          class="trainer-info-photo-item"
           alt=""
-        /><img src="/src/assets/achv/badge/독.webp" alt="" /><img
-          src="/src/assets/achv/badge/전기.webp"
-          alt=""
-        /><img src="/src/assets/achv/badge/에스퍼.webp" alt="" /><img
-          src="/src/assets/achv/badge/드래곤.webp"
-          alt=""
-        /><img src="/src/assets/achv/badge/풀.webp" alt="" />
+        />
       </div>
 
-      <div class="trainerright-left">
-        <table>
-          <tr>
-            <th>
-              <h5 style="display: inline">
-                진행중인 도전과제
-                <h6 style="display: inline">더보기</h6>
-              </h5>
-            </th>
-          </tr>
-        </table>
-
-        <div class="trainerright-left-bottom">
-          <table>
-            <tr>
-              <td>영원한 나의 친구</td>
-              <th><img src="/src/assets/achv/mini/pika.webp" alt="" /></th>
-            </tr>
-            <tr>
-              <td>다이아몬드보다 딱딱한 껍질</td>
-              <th><img src="/src/assets/achv/mini/celler.png" alt="" /></th>
-            </tr>
-            <tr>
-              <td>먹고나면 잘 뿐</td>
-              <th><img src="/src/assets/achv/mini/jamman.webp" alt="" /></th>
-            </tr>
-            <tr>
-              <td>손발에 불꽃을 두르고</td>
-              <th><img src="/src/assets/achv/mini/bulkot.webp" alt="" /></th>
-            </tr>
-            <tr>
-              <td>악몽 속에 나타난 정체</td>
-              <th><img src="/src/assets/achv/mini/darkrai.webp" alt="" /></th>
-            </tr>
-            <tr>
-              <td>기본적으로 멍하니 있음</td>
-              <th><img src="/src/assets/achv/mini/yadoran.webp" alt="" /></th>
-            </tr>
-            <tr>
-              <td>그림자 속의 저주</td>
-              <th><img src="/src/assets/achv/mini/phantom.webp" alt="" /></th>
-            </tr>
-            <tr>
-              <td>바다로 떨어진 무수한 별들</td>
-              <th><img src="/src/assets/achv/mini/bulgasari.webp" alt="" /></th>
-            </tr>
-            <tr>
-              <td>생명과 공존의 상징</td>
-              <th><img src="/src/assets/achv/mini/lugia.webp" alt="" /></th>
-            </tr>
-            <tr>
-              <td>모든 것들의 선조</td>
-              <th><img src="/src/assets/achv/mini/myu.webp" alt="" /></th>
-            </tr>
-          </table>
+      <div class="trainer-info-side">
+        <div class="trainer-info-side-pokemon">
+          <div class="trainer-info-side-pokemon-box">
+            <img src="/src/assets/achv/mini/pika.webp" alt="" />
+          </div>
+          <div class="trainer-info-side-pokemon-box">
+            <img src="/src/assets/achv/mini/darkrai.png" alt="" />
+          </div>
+          <div class="trainer-info-side-pokemon-box">
+            <img src="/src/assets/achv/mini/jam.png" alt="" />
+          </div>
+          <div class="trainer-info-side-pokemon-box">
+            <img src="/src/assets/achv/mini/seller.png" alt="" />
+          </div>
+          <div class="trainer-info-side-pokemon-box">
+            <img src="/src/assets/achv/mini/myu.webp" alt="" />
+          </div>
+          <div class="trainer-info-side-pokemon-box">
+            <img src="/src/assets/achv/mini/chilsaekzo.webp" alt="" />
+          </div>
+        </div>
+        <div class="trainer-info-side-class inner-shadow-box">
+          견습 트레이너
         </div>
       </div>
-      <div class="trainerright-right">
+      <div class="trainer-info-status">
+        <div class="trainer-info-status-item inner-shadow-box">
+          <span> 이름: </span>
+          <span> 조민수 </span>
+        </div>
+        <div
+          class="trainer-info-status-item inner-shadow-box"
+          style="border-radius: 0 0 0 10px"
+        >
+          <span> 찾은 맨홀 수: </span>
+          <span>0</span>
+        </div>
+      </div>
+    </div>
+    <div class="trainer-main">
+      <div class="trainer-main-title">
+        <img src="/src/assets/trainerCard/trainerCard.png" alt="" />
+      </div>
+      <div class="trainer-main-badge-wrapper inner-shadow-box">
         <img
-          src="/src/assets/achv/mini/yadon.webp"
+          class="trainer-main-badge-item"
+          src="/src/assets/achv/Kanto.png"
           alt=""
-          style="left: 20%; top: 30%"
         />
         <img
-          src="/src/assets/achv/mini/eve.webp"
+          class="trainer-main-badge-item"
+          src="/src/assets/achv/Kinki.png"
           alt=""
-          style="left: 50%; top: 50%"
         />
         <img
-          src="/src/assets/achv/mini/tangguri.webp"
+          class="trainer-main-badge-item"
+          src="/src/assets/achv/Chubu.png"
           alt=""
-          style="left: 24%; top: 60%"
         />
         <img
-          src="/src/assets/achv/mini/gorapaduk.webp"
+          class="trainer-main-badge-item"
+          src="/src/assets/achv/Chugoku.png"
           alt=""
-          style="left: 70%; top: 80%"
         />
+        <img
+          class="trainer-main-badge-item"
+          src="/src/assets/achv/Kyusu.png"
+          alt=""
+        />
+        <img
+          class="trainer-main-badge-item"
+          src="/src/assets/achv/Hottkaido.png"
+          alt=""
+        />
+      </div>
+      <div class="trainer-main-empty">
+        <img src="/src/assets/trainerCard/pokeball.png" alt="" />
       </div>
     </div>
   </div>

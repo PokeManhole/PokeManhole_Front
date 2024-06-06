@@ -101,19 +101,6 @@ input {
   z-index: 10;
 }
 
-.containerlicense {
-  background-color: #fff;
-  border: solid #dbdbdb 5px;
-  border-radius: 10px;
-  box-shadow: 0 0px 28px rgba(0, 0, 0, 0.05), 0px 0px 20px 1px rgb(0, 0, 0, 0.3);
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-  max-width: 768px;
-  min-height: 480px;
-  z-index: 9;
-}
-
 .trainertop h2 {
   font-size: 20px;
   text-align: left;
