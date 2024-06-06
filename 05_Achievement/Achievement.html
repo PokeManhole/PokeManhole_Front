@@ -8,7 +8,12 @@
   <style>
     body {
       margin: 0;
-      background-image: url(../01.mainpage/src/bg_dot.png);
+      background-image: url(../src/assets/bg_dot.png);
+      -ms-overflow-style: none;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
     }
 
     .tablecontainer {
@@ -25,36 +30,36 @@
 
     .redstand {
       position: absolute;
-      width: 150px;
-      right: 250px;
+      width: 40px;
+      right: 180px;
       bottom: 10px;
     }
 
     .greenstand {
       position: absolute;
-      width: 130px;
+      width: 40px;
       right: 140px;
       bottom: 10px;
     }
 
     .bluestand {
       position: absolute;
-      width: 130px;
-      right: 30px;
+      width: 40px;
+      right: 100px;
       bottom: 10px;
     }
 
     .pikaoko {
       position: absolute;
-      width: 120px;
+      width: 40px;
       left: 400px;
       bottom: 10px;
     }
 
     .jamman {
       position: absolute;
-      width: 320px;
-      left: 50px;
+      width: 100px;
+      left: 150px;
       bottom: 10px;
       transform: scaleX(-1);
       /* filter: drop-shadow(1px 3px 10px rgba(0, 0, 0, 0.55)); */
@@ -84,38 +89,44 @@
 
     .minimap {
       position: absolute;
-      top: 40px;
-      right: 30px;
+      top: 15%;
+      right: 3%;
       width: 100%;
       height: 100%;
       max-width: 390px;
       max-height: 650px;
       /* 스크롤 박스 */
       background-image: url(../src/assets/achv/map.jpeg);
-      border: 5px solid #c5c5c5;
-      border-collapse: collapse;
+      border: 10px solid transparent;
       border-radius: 10px;
+      border-image: linear-gradient(to right, #fbfcb9, #ffcdf3, #65d3ff);
+      border-image-slice: 1;
+      /* border: 5px solid #c5c5c5;
+      border-collapse: collapse;
+      border-radius: 10px; */
       box-shadow: 0 7px 10px 0 black;
       padding: 13px;
     }
 
     .badge {
       position: absolute;
-      top: 40px;
-      left: 30px;
+      top: 15%;
+      left: 5%;
       width: 100%;
       height: 100%;
-      max-width: 390px;
+      max-width: 360px;
       max-height: 650px;
-      /* 스크롤 박스 */
-      /* background-image: url(../src/achv/map.jpeg); */
-      background-color: whitesmoke;
+      background-image: url(../src/assets/background/klipartz.com\ \(1\).png);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-color: rgb(234, 234, 234);
       border: 5px solid #c5c5c5;
       border-collapse: collapse;
       border-radius: 10px;
       box-shadow: 0 7px 10px 0 black;
-      padding: 13px;
+      padding: 0 13px;
       overflow-y: auto;
+      text-align: center;
     }
 
     .badgetable {
@@ -124,7 +135,6 @@
 
     .badgetable ul {
       list-style: none;
-
       padding-left: 0px;
     }
 
@@ -136,14 +146,70 @@
     .badge_prefecture {
       width: 100%;
       max-width: 90px;
-
+      filter: drop-shadow(3px 3px 5px);
+      margin-bottom: 20px;
     }
 
     .badge_city {
       width: 100%;
-      max-width: 60px;
-      max-height: 60px;
+      max-width: 40px;
+      max-height: 40px;
+      border: rgba(0, 0, 0, 0) 3px;
+      filter: drop-shadow(3px 3px 5px)
     }
+
+    .badge h1 {
+      font-size: 40px;
+      margin-top: 40px;
+      margin-bottom: 0px;
+    }
+
+    .badgetable {
+      margin-top: 0px;
+    }
+
+    .badge h3::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-image: linear-gradient(to right, rgb(186, 166, 19), rgb(222, 204, 43), rgb(216, 204, 39), rgb(186, 166, 19));
+      margin: 10px auto;
+    }
+
+    .badge_city::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: black;
+      margin: 10px auto;
+    }
+
+    .badge h3 {
+      color: rgb(116, 116, 116);
+    }
+
+    /* .badge h1::before {
+      content: "";
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      background-image: url(../src/assets/achv/Pok%3Fmon_World_Coronation_Series_Logo.webp);
+      background-size: contain;
+      margin: 0 13px;
+    }
+
+    .badge h1::after {
+      content: "";
+      display: inline-block;
+      width: 45px;
+      height: 45px;
+      background-image: url(../src/assets/achv/Pok%3Fmon_World_Coronation_Series_Logo.webp);
+      background-size: 10px;
+      margin: 0 13px;
+      transform: scaleX(-1);
+    } */
 
     .manholetable h1 {
       display: flex;
@@ -174,7 +240,7 @@
       display: inline-block;
       width: 34px;
       height: 34px;
-      background-image: url(../02.manholetable/src/icon_mb_g_red.png);
+      background-image: url(../src/assets/icon_mb_g_red.png);
       background-size: contain;
       margin: 0 13px;
     }
@@ -184,7 +250,7 @@
       display: inline-block;
       width: 34px;
       height: 34px;
-      background-image: url(../02.manholetable/src/icon_mb_g_red.png);
+      background-image: url(../src/assets/icon_mb_g_red.png);
       background-size: contain;
       margin: 0 13px;
     }
@@ -221,14 +287,33 @@
       width: 60px;
       display: grid;
       display: block;
-      margin: 0 auto;
+      /* margin: 0 auto; */
       /* box-shadow: 0px 0px 6px 5px gold; */
       filter: drop-shadow(0px 0px 15px rgb(169, 169, 169));
     }
 
+    .achv {
+      margin: 0 10px;
+      border: 3px solid transparent;
+      border-radius: 20px;
+      background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, rgb(237, 217, 66), rgb(255, 255, 255), rgb(216, 204, 39), rgb(239, 219, 62));
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+    }
+
+    /* .achv {
+      margin: 0 10px;
+      border: 3px solid transparent;
+      border-radius: 20px;
+      background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+    } */
+
     td h3 {
       text-align: left;
       margin: 0px;
+
     }
 
     td h4 {
@@ -256,18 +341,19 @@
 </head>
 <div>
   <div class="badge">
-    <h1>Badge</h1>
+    <h1>메달</h1>
     <div class="badgetable">
       <ul>
         <li>
           <h3>간토</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/불꽃.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/전기.webp" alt="">
           <ul>
-            <li><img class="badge_city" src="../src/assets/achv/badge/1.png" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/2.png" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/1.png" alt="">
+            </li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/2.png" alt="">
+            </li>
             <li><img class="badge_city" src="../src/assets/achv/badge/3.png" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/4.png" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/5.png" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/6.png" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/7.png" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/8.png" alt=""></li>
@@ -277,67 +363,75 @@
         </li>
         <li>
           <h3>긴키</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/불꽃.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/벌레.webp" alt="">
           <ul>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/41.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/42.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/43.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/44.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/45.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/46.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/47.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/48.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/49.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/50.webp" alt=""></li>
           </ul>
+
         </li>
         <li>
           <h3>주부</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/불꽃.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/에스퍼.webp" alt="">
           <ul>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/21.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/22.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/23.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/24.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/25.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/26.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/27.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/28.webp" alt=""></li>
           </ul>
         </li>
         <li>
           <h3>주고쿠•시코쿠</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/불꽃.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/물.webp" alt="">
           <ul>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/31.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/32.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/33.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/34.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/35.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/36.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/37.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/38.webp" alt=""></li>
           </ul>
         </li>
         <li>
           <h3>규슈•오키나와</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/불꽃.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/얼음.webp" alt="">
           <ul>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/11.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/12.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/13.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/14.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/15.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/16.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/17.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/18.webp" alt=""></li>
           </ul>
         </li>
         <li>
           <h3>홋카이도•도호쿠</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/불꽃.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/노말.webp" alt="">
           <ul>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
-            <li><img class="badge_city" src="../src/assets/achv/badge/불꽃.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/51.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/52.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/53.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/54.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/55.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/56.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/57.webp" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/badge/58.webp" alt=""></li>
           </ul>
         </li>
 
@@ -371,20 +465,24 @@
   <div class="tablecontainer">
     <!-- <audio id="player" src="../bgm/1-40. Goldenrod City.mp3" autoplay controls loop
       onloadstart="this.volume=0.15"></audio> -->
-    <!-- <img class="pikaoko" src="../src/achv/gif/ingeo.webp" alt="" />
-    <img class="redstand" src="../src/gif/redgif.gif" alt="" />
-    <img class="greenstand" src="../src/gif/greengif.gif" alt="" />
-    <img class="bluestand" src="../src/gif/bluegif2.gif" alt="" />
-    <img class="jamman" src="../src/achv/gif/perlgia.webp" alt="" /> -->
+    <img class="pikaoko" src="../src/assets/gif/pika.gif" alt="" />
+    <img class="redstand" src="../src/assets/achv/gif/pairi.webp" alt="" />
+    <img class="greenstand" src="../src/assets/achv/gif/isanghae.webp" alt="" />
+    <img class="bluestand" src="../src/assets/achv/gif/kobugi.webp" alt="" />
+    <img class="jamman" src="../src/assets/achv/gif/jamman.webp" alt="" />
     <div>
       <div class="manholetable">
-        <h1>Challenge</h1>
+        <h1>도전 과제</h1>
         <h5>총 도전 과제: 115</h5>
         <h6>전체 플레이어 대비 비율 (%)&nbsp;</h6>
         <h5>도전 과제 진행률: 83 / 115 (72%)</h5>
         <table class="manholetableline">
           <tr>
-            <th><img src="../src/assets/achv/pika.png" alt="" /></th>
+            <th>
+              <div class="achv">
+                <img src="../src/assets/achv/pika.png" alt="" />
+              </div>
+            </th>
             <td colspan="6">
               <h3>영원한 나의 친구</h3>
               <h4>5 / 13</h4>
@@ -393,7 +491,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/pairi.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/pairi.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>"꼬리가 타고 있는 작은 소리가 들려"</h3>
               <h4>5 / 13</h4>
@@ -402,7 +502,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/kobugi.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/kobugi.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>"눈물이 아니라 물대포야!"</h3>
               <h4>5 / 13</h4>
@@ -411,16 +513,20 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/isanghae.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/isanghae.png" alt="" /></div>
+            </th>
             <td colspan="6">
-              <h3>"햇빛을 받을수록 힘이 솟아나"</h3>
+              <h3>"햇빛을 받을수록 힘이 솟아나는"</h3>
               <h4>5 / 13</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 이상해씨를 발견하세요.</p>
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/3start.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/3start.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>최초의 삼총사</h3>
               <h4>5 / 13</h4>
@@ -429,7 +535,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/butterful.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/butterful.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>”예쁜 꽃의 꿀을 찾아서”</h3>
               <h4>5 / 13</h4>
@@ -438,7 +546,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/bird.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/bird.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>용감한 하늘의 에이스</h3>
               <h4>5 / 13</h4>
@@ -447,7 +557,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/purin.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/purin.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>잠이 올 것 같은 기분 좋은 노래</h3>
               <h4>5 / 13</h4>
@@ -456,7 +568,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/sixtale.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/sixtale.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>따스한 여섯 갈래의 꼬리</h3>
               <h4>5 / 13</h4>
@@ -465,7 +579,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/gorapaduk.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/gorapaduk.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>”항상 두통에 시달려”</h3>
               <h4>5 / 13</h4>
@@ -474,7 +590,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/yadon.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/yadon.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>물가에서 멍때리기</h3>
               <h4>5 / 13</h4>
@@ -483,7 +601,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/celler.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/celler.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>다이아몬드보다 딱딱한 껍질</h3>
               <h4>5 / 13</h4>
@@ -492,7 +612,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/yadoran.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/yadoran.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>기본적으로 멍하니 있음</h3>
               <h4>5 / 13</h4>
@@ -501,7 +623,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/eve.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/eve.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>수많은 가능성과 꿈을 가진</h3>
               <h4>5 / 13</h4>
@@ -510,16 +634,20 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/eevee.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/eevee.png" alt="" /></div>
+            </th>
             <td colspan="6">
-              <h3>이브이루션!</h3>
+              <h3>이브이루션 !</h3>
               <h4>5 / 13</h4>
               <h6>67%</h6>
               <p>이브이의 모든 진화형을 발견하세요.</p>
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/paori.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/paori.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>”파 줄기가 없으면 살 수 없다”</h3>
               <h4>5 / 13</h4>
@@ -528,7 +656,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/phantom.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/phantom.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>그림자 속의 저주</h3>
               <h4>5 / 13</h4>
@@ -537,7 +667,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/tangguri.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/tangguri.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>어미를 만날 수 없는 슬픔</h3>
               <h4>5 / 13</h4>
@@ -546,7 +678,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/byulgasari.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/byulgasari.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>바다로 떨어진 무수한 별들</h3>
               <h4>5 / 13</h4>
@@ -555,7 +689,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/ingeoking.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/ingeoking.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>튀어오르기를(을) 사용했다!</h3>
               <h4>5 / 13</h4>
@@ -564,7 +700,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/jamman.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/jamman.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>먹고나면 잘 뿐</h3>
               <h4>5 / 13</h4>
@@ -573,16 +711,20 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/pangdori.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/pangdori.png" alt="" /></div>
+            </th>
             <td colspan="6">
-              <h3>고집세지만 귀여워</h3>
+              <h3>고집불통 꼬마 펭귄</h3>
               <h4>5 / 13</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 펭도리를 발견하세요.</p>
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/bulkot.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/bulkot.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>손발에 불꽃을 두르고</h3>
               <h4>5 / 13</h4>
@@ -591,7 +733,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/mobugi.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/mobugi.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>어린잎거북이</h3>
               <h4>5 / 13</h4>
@@ -600,7 +744,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/hankariasu.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/hankariasu.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>신오지방의 하늘</h3>
               <h4>5 / 13</h4>
@@ -609,7 +755,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/darkrai.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/darkrai.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>악몽 속에 나타난 정체</h3>
               <h4>5 / 13</h4>
@@ -618,7 +766,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/nyasuper.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/nyasuper.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>초능력 냐옹</h3>
               <h4>5 / 13</h4>
@@ -627,7 +777,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/tarakyu.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/tarakyu.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>？？？</h3>
               <h4>5 / 13</h4>
@@ -636,7 +788,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/myu.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/myu.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>모든 것들의 선조</h3>
               <h4>5 / 13</h4>
@@ -645,7 +799,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/chilsaek.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/chilsaek.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>하늘에 뜬 무지개</h3>
               <h4>5 / 13</h4>
@@ -654,7 +810,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/lugia.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/lugia.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>생명과 공존의 상징</h3>
               <h4>5 / 13</h4>
@@ -663,25 +821,31 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/gaioga.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/gaioga.png" alt="" /></div>
+            </th>
             <td colspan="6">
-              <h3>폭풍을 불러들이는 대양의 힘</h3>
+              <h3>폭풍을 불러들이는 대양</h3>
               <h4>5 / 13</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 가이오가를 발견하세요.</p>
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/grandon.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/grandon.png" alt="" /></div>
+            </th>
             <td colspan="6">
-              <h3>대지를 쌓아올리는 대륙의 힘</h3>
+              <h3>대지를 쌓아올리는 대륙</h3>
               <h4>5 / 13</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 그란돈를 발견하세요.</p>
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/rekujya.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/rekujya.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>구름보다 아득히 먼 위</h3>
               <h4>5 / 13</h4>
@@ -690,7 +854,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/diaruga.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/diaruga.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>시간의 흐름을 만들어내는 존재</h3>
               <h3></h3>
@@ -700,7 +866,9 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/perlgia.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/perlgia.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>평행으로 늘어선 공간의 틈새</h3>
               <h4>5 / 13</h4>
@@ -709,10 +877,12 @@
             </td>
           </tr>
           <tr>
-            <th><img src="../src/assets/achv/arceus.png" alt="" /></th>
+            <th>
+              <div class="achv"><img src="../src/assets/achv/arceus.png" alt="" /></div>
+            </th>
             <td colspan="6">
               <h3>"아르세우스"</h3>
-              <h4>5 / 13</h4>
+              <h4>1 / 1</h4>
               <h6>67%</h6>
               <p>아르세우스를 발견하세요.</p>
             </td>
