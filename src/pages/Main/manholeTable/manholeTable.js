@@ -9,7 +9,7 @@ const component = (props) => {
     ${preManhole
       .map(
         (m) =>
-          `<img class="${
+          `<img class="manholitem ${
             m.isAchieve ? "" : "grayscale"
           }" src="http://localhost:5000/static/manhole/${
             m.manhole_img
@@ -22,10 +22,21 @@ const component = (props) => {
   );
 };
 
-function handlePrefecture() {
-  const table = document.querySelector(".manholetableline");
-  console.log(table);
-}
+const itemMotionInit = (object) => {
+  object.addEventListener("mousemove", function (e) {
+    var x = e.offsetX;
+    var y = e.offsetY;
+
+    const rotateX = (-40 / object.offsetHeight) * y + 20;
+    const rotateY = (-40 / object.offsetHeight) * x + 20;
+
+    object.style = `transform : perspective(700px) rotateX(${rotateX}deg) rotateY(${rotateY}deg);`;
+  });
+  object.onmouseout = function () {
+    object.style =
+      "transition: 1s all ease; transform: perspective(600px) rotateX(0deg) rotateY(0deg) translateZ(0px);";
+  };
+};
 
 const getManholeData = async (queryText) => {
   const url = SERVER.SERVER + "/manhole";
@@ -44,14 +55,18 @@ const getManholeData = async (queryText) => {
 const render = (root, component) => {
   root.innerHTML = component.join("");
   const tds = document.querySelectorAll(".manhole-td");
-  tds.forEach((th) =>
+  const manholitem = document.querySelectorAll(".manholitem");
+  tds.forEach((th) => {
     th.addEventListener("click", (e) => {
       location.href =
         location.origin +
         "/src/pages/Manhole/manholePage.html?prefecture=" +
         e.currentTarget.id;
-    })
-  );
+    });
+  });
+  manholitem.forEach((img) => {
+    itemMotionInit(img);
+  });
 };
 
 const openTable = async (queryText) => {

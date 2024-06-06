@@ -192,7 +192,7 @@ td {
   filter: grayscale(1);
 }
 
-img:hover {
+.manholitem > img:hover {
   opacity: 1;
   -webkit-animation: flash 14.5s;
   animation: flash 1.5s;
