@@ -21,6 +21,8 @@ body {
 .cityname {
   width: 100%;
   height: 20vh;
+  max-height: 188px;
+  min-height: 188px;
   background-color: white;
   border-bottom: 3px solid #dbdbdb;
   position: relative;
