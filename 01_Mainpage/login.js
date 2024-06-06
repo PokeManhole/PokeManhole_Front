@@ -1,3 +1,4 @@
+import SERVER from "/src/config/config.json" assert { type: "json" };
 const signUpButton = document.getElementById("signUp");
 const signInButton = document.getElementById("signIn");
 const container = document.getElementById("container");
@@ -16,7 +17,7 @@ signInButton.addEventListener("click", () => {
 
 function init() {
   loginForm.addEventListener("submit", () => {
-    fetch("http://127.0.0.1:5000/login", {
+    fetch(SERVER.SERVER + "/login", {
       headers: { "Content-Type": "application/json" },
       method: "POST",
       body: JSON.stringify({

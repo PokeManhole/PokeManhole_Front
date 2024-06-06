@@ -1,3 +1,4 @@
+import SERVER from "/src/config/config.json" assert { type: "json" };
 const signUpButton = document.getElementById("signUp");
 const signInButton = document.getElementById("signIn");
 const container = document.getElementById("container");
@@ -16,7 +17,7 @@ signInButton.addEventListener("click", () => {
 
 const tryLogin = async () => {
   try {
-    const response = await fetch("http://127.0.0.1:5000/login", {
+    const response = await fetch(SERVER.SERVER + "/login", {
       headers: { "Content-Type": "application/json" },
       method: "POST",
       body: JSON.stringify({
@@ -47,7 +48,7 @@ const isLogin = () => {
 
 const getUser = async (token) => {
   try {
-    const response = await fetch("http://127.0.0.1:5000/user", {
+    const response = await fetch(SERVER.SERVER + "/user", {
       headers: {
         Authorization: token,
       },

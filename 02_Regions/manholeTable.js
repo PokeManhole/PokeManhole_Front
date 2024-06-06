@@ -9,9 +9,7 @@ const component = (props) => {
     ${preManhole.map(
       (m) => `
     <img
-        src="${m.manhole_img[0] === "h" ? "" : "http://localhost:5000/"}${
-        m.manhole_img
-      }"
+        src="${m.manhole_img[0] === "h" ? "" : SERVER.SERVER}${m.manhole_img}"
         alt=""
         width=""
       />

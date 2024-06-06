@@ -6,7 +6,7 @@ const component = (props) => {
       (manhole) =>
         `<li class="manholitem" id="${manhole.id}" >
                 <img id="${manhole.isAchieve ? "" : "grayscale"}"
-                  src="${"http://localhost:5000/static/manhole/"}${
+                  src="${SERVER.SERVER + "/static/manhole/"}${
           manhole.manhole_img
         }"
                   alt=""
@@ -149,7 +149,7 @@ const manholeDetailComponent = (data) => {
           <div class="manhole_container">
             <img class="manholeshadow" id="${
               data.isAchieve ? "" : "grayscale"
-            }"  src="http://localhost:5000/static/manhole/${
+            }"  src="${SERVER.SERVER}/static/manhole/${
     data.manhole_img
   }" alt="">
           </div>
@@ -159,7 +159,7 @@ const manholeDetailComponent = (data) => {
             <img src="/src/assets/achv/gif/${
               data.pokemon_img ? data.pokemon_img : ""
             }" alt=""
-              style="position: absolute; width: 70px; left: 45%; bottom: 30%;">
+              style="position: absolute; width: 70px; left: 5%; bottom: 30%;">
             <!-- <img src="../src/assets/gif/trainerfront.gif" alt=""
               style="position: absolute; width: 50px; left: 30%; bottom: 10%;"> -->
             <img src="/src/assets/gif/" alt="" style="position: absolute; width: 50px; left: 20%; bottom: 10%;">
