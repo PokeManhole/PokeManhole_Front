@@ -1,0 +1,291 @@
+body {
+  margin: 0;
+  background-image: url(/src/assets/bg_dot.png);
+}
+
+.tablecontainer {
+  width: 100%;
+  height: 100vh;
+  border: 20px solid #dbdbdb;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.tablecontainer audio {
+  position: absolute;
+}
+
+.redstand {
+  position: absolute;
+  width: 150px;
+  right: 250px;
+  bottom: 10px;
+}
+
+.greenstand {
+  position: absolute;
+  width: 130px;
+  right: 140px;
+  bottom: 10px;
+}
+
+.bluestand {
+  position: absolute;
+  width: 130px;
+  right: 30px;
+  bottom: 10px;
+}
+
+.pikaoko {
+  position: absolute;
+  width: 120px;
+  left: 400px;
+  bottom: 10px;
+}
+
+.jamman {
+  position: absolute;
+  width: 320px;
+  left: 50px;
+  bottom: 10px;
+  transform: scaleX(-1);
+  /* filter: drop-shadow(1px 3px 10px rgba(0, 0, 0, 0.55)); */
+}
+
+.tablecontainer > div {
+  justify-content: center;
+  display: flex;
+}
+
+.manholetable {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  max-width: 805px;
+  height: 86vh;
+  /* 스크롤 박스 */
+  overflow-y: auto;
+  background-color: white;
+  border: 5px solid #c5c5c5;
+  border-collapse: collapse;
+  margin: 0;
+  border-radius: 10px;
+  box-shadow: 0 7px 10px 0 black;
+  padding: 10px;
+}
+
+.minimap {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  width: 100%;
+  height: 100%;
+  max-width: 390px;
+  max-height: 650px;
+  /* 스크롤 박스 */
+  background-image: url(../src/assets/achv/map.jpeg);
+  border: 5px solid #c5c5c5;
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: 0 7px 10px 0 black;
+  padding: 13px;
+}
+
+.badge {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  width: 100%;
+  height: 100%;
+  max-width: 390px;
+  max-height: 650px;
+  background-color: whitesmoke;
+  border: 5px solid #c5c5c5;
+  border-collapse: collapse;
+  border-radius: 10px;
+  box-shadow: 0 7px 10px 0 black;
+  padding: 0 13px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+.badgetable {
+  overflow-y: auto;
+}
+
+.badgetable ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.badgetable li {
+  list-style: none;
+  display: inline;
+}
+
+.badge_prefecture {
+  width: 100%;
+  max-width: 90px;
+}
+
+.badge_city {
+  width: 100%;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.badge h1 {
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.badgetable {
+  margin-top: 0px;
+}
+
+.badge h3::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: 10px auto;
+}
+
+.badge_city::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: 10px auto;
+}
+
+.badge h1::before {
+  content: "";
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-image: url(Substitute.png);
+  background-size: contain;
+  margin: 0 13px;
+}
+
+.badge h1::after {
+  content: "";
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-image: url(Substitute.png);
+  background-size: contain;
+  margin: 0 13px;
+  transform: scaleX(-1);
+}
+
+.manholetable h1 {
+  display: flex;
+  justify-content: center;
+  max-width: 92%;
+  font-size: 35px;
+  color: #929191;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.manholetable h5 {
+  display: flex;
+  justify-content: left;
+  color: black;
+  margin: 0 auto;
+}
+
+.manholetable h6 {
+  position: relative;
+  display: flex;
+  float: right;
+  margin: 0 auto;
+}
+
+.manholetable h1::before {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  background-image: url(../02.manholetable/src/icon_mb_g_red.png);
+  background-size: contain;
+  margin: 0 13px;
+}
+
+.manholetable h1::after {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  background-image: url(../02.manholetable/src/icon_mb_g_red.png);
+  background-size: contain;
+  margin: 0 13px;
+}
+
+.manholetableline th {
+  width: 90px;
+  height: 90px;
+  border: 3px solid #dbdbdb;
+  border-collapse: collapse;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+.manholetableline td {
+  width: 1000px;
+  height: 90px;
+  border: 3px solid #dbdbdb;
+  border-collapse: collapse;
+  border-left: white;
+  position: relative;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+td img {
+  width: 70px;
+  margin: 0px;
+}
+
+th img {
+  width: 60px;
+  display: grid;
+  display: block;
+  margin: 0 auto;
+  /* box-shadow: 0px 0px 6px 5px gold; */
+  filter: drop-shadow(0px 0px 15px rgb(169, 169, 169));
+}
+
+td h3 {
+  text-align: left;
+  margin: 0px;
+}
+
+td h4 {
+  position: relative;
+  float: right;
+  right: 30px;
+  bottom: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+td h6 {
+  position: relative;
+  float: right;
+  top: 8px;
+}
+
+td p {
+  text-align: left;
+  margin: 0px;
+  font-size: small;
+  color: #afaeae;
+}
