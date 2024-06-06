@@ -10,7 +10,36 @@
       margin: 0;
       background-image: url(../src/assets/bg_dot.png);
       -ms-overflow-style: none;
+
+
     }
+
+    img:hover {
+      opacity: 1;
+      -webkit-animation: flash 1.5s;
+      animation: flash 1.5s;
+    }
+
+    @-webkit-keyframes flash {
+      0% {
+        opacity: .4;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes flash {
+      0% {
+        opacity: .4;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
 
     ::-webkit-scrollbar {
       display: none;
@@ -337,13 +366,35 @@
       font-size: small;
       color: #afaeae;
     }
+
+    .container1 {
+      width: 100%;
+    }
   </style>
 </head>
 <div>
+
+
   <div class="badge">
+    <div class="container"></div>
     <h1>메달</h1>
     <div class="badgetable">
       <ul>
+        <li>
+          <h3>전국</h3>
+          <div class="container1"><img class="badge_prefecture" src="../src/assets/achv/champion.png" alt=""></div>
+          <ul>
+            <li><img class="badge_city" src="../src/assets/achv/Kanto.png" alt="">
+            </li>
+            <li><img class="badge_city" src="../src/assets/achv/Kinki.png" alt="">
+            </li>
+            <li><img class="badge_city" src="../src/assets/achv/Chubu.png" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/Chugoku.png" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/Kyusu.png" alt=""></li>
+            <li><img class="badge_city" src="../src/assets/achv/Hottkaido.png" alt=""></li>
+
+          </ul>
+        </li>
         <li>
           <h3>간토</h3>
           <img class="badge_prefecture" src="../src/assets/achv/badge/전기.webp" alt="">
@@ -394,7 +445,7 @@
         </li>
         <li>
           <h3>주고쿠•시코쿠</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/물.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/노말.webp" alt="">
           <ul>
             <li><img class="badge_city" src="../src/assets/achv/badge/31.webp" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/32.webp" alt=""></li>
@@ -408,7 +459,7 @@
         </li>
         <li>
           <h3>규슈•오키나와</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/얼음.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/물.webp" alt="">
           <ul>
             <li><img class="badge_city" src="../src/assets/achv/badge/11.webp" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/12.webp" alt=""></li>
@@ -422,7 +473,7 @@
         </li>
         <li>
           <h3>홋카이도•도호쿠</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/노말.webp" alt="">
+          <img class="badge_prefecture" src="../src/assets/achv/badge/얼음.webp" alt="">
           <ul>
             <li><img class="badge_city" src="../src/assets/achv/badge/51.webp" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/52.webp" alt=""></li>
@@ -891,6 +942,30 @@
       </div>
     </div>
   </div>
+  <div class="cursor">
+    <link rel="stylesheet" href="../06_/Cursor/cursor.css">
+    <script src="../06_/Cursor/cursor.js"></script>
+    <img src="../src/assets/gif/pokeball.gif" style="width: 5%;">
+  </div>
+  <script>
+    var container1 = document.querySelector('.container1')
+    container1.addEventListener('mousemove', function (e) {
+      var x = e.offsetX
+      var y = e.offsetY
+      console.log(x, y);
+      var rotateY = -1 / 5 * x + 10
+      var rotateX = -2 / 5 * y + 20
+      container1.style = `transform : perspective(300px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
+    })
+    container1.onmouseout = function () {
+      mouseHover = false;
+      container1.style.transform = 'perspective(60px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+    };
+
+    container1.onmouseover = function () {
+      mouseHover = true;
+    };
+  </script>
 </body>
 
 </html>
