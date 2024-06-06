@@ -153,9 +153,13 @@ const manholeDetailComponent = (data) => {
     data.manhole_img
   }" alt="">
           </div>
-          <div class="manholeleft_under">
-            <img src="" alt=""
-              style="position: absolute; width: 155px; left: 35%; bottom: 30%;">
+          <div class="manholeleft_under" style="background-image: url(/src/assets/background/${
+            data.under_img ? data.under_img : "chilsaekzo.png"
+          });">
+            <img src="/src/assets/achv/gif/${
+              data.pokemon_img ? data.pokemon_img : ""
+            }" alt=""
+              style="position: absolute; width: 70px; left: 45%; bottom: 30%;">
             <!-- <img src="../src/assets/gif/trainerfront.gif" alt=""
               style="position: absolute; width: 50px; left: 30%; bottom: 10%;"> -->
             <img src="/src/assets/gif/" alt="" style="position: absolute; width: 50px; left: 20%; bottom: 10%;">

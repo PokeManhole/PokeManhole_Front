@@ -63,7 +63,7 @@
   display: inline-block;
   width: 34px;
   height: 34px;
-  background-image: url(../src/assets/icon_mb_g_grey.png);
+  background-image: url(/src/assets/icon_mb_g_grey.png);
   background-size: contain;
   margin: 0 13px;
 }
@@ -73,7 +73,7 @@
   display: inline-block;
   width: 34px;
   height: 34px;
-  background-image: url(../src/assets/icon_mb_g_grey.png);
+  background-image: url(/src/assets/icon_mb_g_grey.png);
   background-size: contain;
   margin: 0 13px;
 }
@@ -90,7 +90,6 @@
   /* border-collapse: collapse; */
   border-radius: 10px;
   /* box-shadow: 0 7px 10px 0 black; */
-  background-image: url(../src/assets/background/chilsaekzo.png);
   background-size: 530px 100%;
 }
 
@@ -117,7 +116,7 @@
   /* border: 3px solid rgb(0, 183, 255); */
   border-radius: 7px;
   overflow-y: auto;
-  background-image: url(../src/assets/bg_dot.png);
+  background-image: url(/src/assets/background/back.png);
   display: flex;
   justify-content: center;
   bottom: 0;
