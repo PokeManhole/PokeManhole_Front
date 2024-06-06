@@ -351,7 +351,7 @@
     })
     container.onmouseout = function () {
       mouseHover = false;
-      container.style.transform = 'perspective(600px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+      container.style = 'transition: 0.5s all ease; transform: perspective(600px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
     };
 
     container.onmouseover = function () {

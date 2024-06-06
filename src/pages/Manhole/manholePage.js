@@ -103,11 +103,28 @@ const renderModal = (props) => {
       ? ""
       : "grayscale";
   });
+  modalManholeActionInit();
+
   manhole.addEventListener("click", (e) => e.stopPropagation());
   manholeDetail.addEventListener(
     "click",
     () => (manholeDetail.style = "display: none;")
   );
+};
+
+const modalManholeActionInit = () => {
+  var container = document.querySelector(".manhole_container");
+  container.addEventListener("mousemove", function (e) {
+    var x = e.offsetX;
+    var y = e.offsetY;
+    var rotateY = (-1 / 10) * x + 22;
+    var rotateX = (-1 / 10) * y + 20;
+    container.style = `transform : perspective(700px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+  });
+  container.onmouseout = function () {
+    container.style =
+      "transition: 0.5s all ease; transform: perspective(600px) rotateX(0deg) rotateY(0deg) translateZ(0px)";
+  };
 };
 
 const manholeDetailComponent = (data) => {
@@ -116,11 +133,13 @@ const manholeDetailComponent = (data) => {
       <div class="manhole">
         <div class="manholeleft">
           <h1>${data.city}</h1>
-          <img class="manholeshadow" id="${
-            data.isAchieve ? "" : "grayscale"
-          }"  src="http://localhost:5000/static/manhole/${
+          <div class="manhole_container">
+            <img class="manholeshadow" id="${
+              data.isAchieve ? "" : "grayscale"
+            }"  src="http://localhost:5000/static/manhole/${
     data.manhole_img
   }" alt="">
+          </div>
           <div class="manholeleft_under">
           <div class="manhole-control">
             <button class="manhole-control-button">확인</button>

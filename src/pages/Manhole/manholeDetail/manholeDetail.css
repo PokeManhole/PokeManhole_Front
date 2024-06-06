@@ -191,3 +191,29 @@ td {
 #grayscale {
   filter: grayscale(1);
 }
+
+img:hover {
+  opacity: 1;
+  -webkit-animation: flash 14.5s;
+  animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
