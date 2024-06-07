@@ -1,97 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mainpage</title>
-    <link rel="stylesheet" href="./manholeTable/manholeTable.css" />
-    <link rel="stylesheet" href="./MainPage.css" />
-    <link rel="stylesheet" href="main_trainer.css" />
-  </head>
-  <body>
-    <div class="manholetable-modal" style="display: none">
-      <div class="manholetable">
-        <h1 class="manholetable-name">간토</h1>
-        <h5>&nbsp;55%</h5>
-        <table class="manholetableline"></table>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mainpage</title>
+  <link rel="stylesheet" href="./manholeTable/manholeTable.css" />
+  <link rel="stylesheet" href="./MainPage.css" />
+  <link rel="stylesheet" href="main_trainer.css" />
+</head>
+
+<body>
+  <div class="manholetable-modal" style="display: none">
+    <div class="manholetable">
+      <h1 class="manholetable-name">간토</h1>
+      <h5>&nbsp;55%</h5>
+      <table class="manholetableline"></table>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal_popup">
+      <h3>우리가 누구냐고 물으신다면</h3>
+      <p>상준,민서,수호,민재,건하,민수다냐옹</p>
+      <button type="button" class="close_btn">알겠어!</button>
+    </div>
+  </div>
+  <div class="container1">
+    <audio id="player" src="/src/assets/bgm/1-40. Goldenrod City.mp3" autoplay controls loop
+      onloadstart="this.volume=0.15"></audio>
+    <!-- <audio src="../bgm/1-05. New Bark Town.mp3" autoplay loop onloadstart="this.volume=0.2"></audio> -->
+
+    <!--end 모달 팝업-->
+    <main>
+      <section>
+        <!-- <button class="modal_btn"> <img class="trainerpika" src="/src/assets/trainerwalk.png" width="50px" alt=""></button> -->
+        <a href="#" class="modal_btn">
+          <img class="trainercredit" src="/src/assets/trainerwalk.png" width="50px" alt="" /></a>
+      </section>
+    </main>
+    <!-- modal end -->
+    <div class="map">
+      <img src="/src/assets/manhole_main_grey.png" width="1000px" alt="" />
+      <a class="land-box" id="간토">
+        <div class="regionbox" style="left: 76%; bottom: 25%">
+          <h1 class="orange">간토</h1>
+        </div>
+      </a>
+      <a class="land-box" id="홋카이도.도호쿠">
+        <div class="regionbox" style="left: 67%; bottom: 70%">
+          <h1 class="blue">홋카이도•도호쿠</h1>
+        </div>
+      </a>
+      <a class="land-box" id="주부">
+        <div class="regionbox" style="left: 58%; bottom: 30%">
+          <h1 class="green">주부</h1>
+        </div>
+      </a>
+      <a class="land-box" id="긴키">
+        <div class="regionbox" style="left: 43%; bottom: 20%">
+          <h1 class="red">긴키</h1>
+        </div>
+      </a>
+      <a class="land-box" id="주고쿠.시코쿠">
+        <div class="regionbox" style="left: 22%; bottom: 30%">
+          <h1 class="yellow">주고쿠•시코쿠</h1>
+        </div>
+      </a>
+      <a class="land-box" id="규슈.오키나와">
+        <div class="regionbox" style="left: 2%; bottom: 15%">
+          <h1 class="pink">규슈•오키나와</h1>
+        </div>
+      </a>
     </div>
 
-    <div class="modal">
-      <div class="modal_popup">
-        <h3>우리가 누구냐고 물으신다면</h3>
-        <p>상준,민서,수호,민재,건하,민수다냐옹</p>
-        <button type="button" class="close_btn">알겠어!</button>
-      </div>
-    </div>
-    <div class="container1">
-      <audio
-        id="player"
-        src="/src/assets/bgm/1-40. Goldenrod City.mp3"
-        autoplay
-        controls
-        loop
-        onloadstart="this.volume=0.15"
-      ></audio>
-      <!-- <audio src="../bgm/1-05. New Bark Town.mp3" autoplay loop onloadstart="this.volume=0.2"></audio> -->
+    <img class="world" src="/src/assets/worldearth.png" alt="" />
+    <img class="trainerwalk" src="/src/assets/gif/trainerwalkgif.gif" alt="" />
 
-      <!--end 모달 팝업-->
-      <main>
-        <section>
-          <!-- <button class="modal_btn"> <img class="trainerpika" src="/src/assets/trainerwalk.png" width="50px" alt=""></button> -->
-          <a href="#" class="modal_btn">
-            <img
-              class="trainercredit"
-              src="/src/assets/trainerwalk.png"
-              width="50px"
-              alt=""
-          /></a>
-        </section>
-      </main>
-      <!-- modal end -->
-      <div class="map">
-        <img src="/src/assets/manhole_main_grey.png" width="1000px" alt="" />
-        <a class="land-box" id="간토">
-          <div class="regionbox" style="left: 76%; bottom: 25%">
-            <h1 class="orange">간토</h1>
-          </div>
-        </a>
-        <a class="land-box" id="홋카이도.도호쿠">
-          <div class="regionbox" style="left: 67%; bottom: 70%">
-            <h1 class="blue">홋카이도•도호쿠</h1>
-          </div>
-        </a>
-        <a class="land-box" id="주부">
-          <div class="regionbox" style="left: 58%; bottom: 30%">
-            <h1 class="green">주부</h1>
-          </div>
-        </a>
-        <a class="land-box" id="긴키">
-          <div class="regionbox" style="left: 43%; bottom: 20%">
-            <h1 class="red">긴키</h1>
-          </div>
-        </a>
-        <a class="land-box" id="주고쿠.시코쿠">
-          <div class="regionbox" style="left: 22%; bottom: 30%">
-            <h1 class="yellow">주고쿠•시코쿠</h1>
-          </div>
-        </a>
-        <a class="land-box" id="규슈.오키나와">
-          <div class="regionbox" style="left: 2%; bottom: 15%">
-            <h1 class="pink">규슈•오키나와</h1>
-          </div>
-        </a>
-      </div>
-
-      <img class="world" src="/src/assets/worldearth.png" alt="" />
-      <img
-        class="trainerwalk"
-        src="/src/assets/gif/trainerwalkgif.gif"
-        alt=""
-      />
-
-      <!-- logo 스크립트 -->
-      <!-- <script>
+    <!-- logo 스크립트 -->
+    <!-- <script>
     var containmove = document.querySelector(".containmove");
     var logoray = document.querySelector(".logoray");
     containmove.addEventListener("mousemove", function (e) {
@@ -113,212 +100,165 @@
         "transform : perspective(350px) rotateY(0deg) rotateX(0deg)";
     });
     </script> -->
-      <!-- logo -->
-      <!-- <div class="containmove">
+    <!-- logo -->
+    <!-- <div class="containmove">
     <div id="radial"></div>
     <script src="../poke/script.js"></script>
     <div class="logoray"></div>
     <div class="logo"></div>
     </div> -->
 
-      <div style="position: absolute; right: 40px; bottom: 50px">
-        <a
-          href="file:///Users/tamura/Documents/GitHub/PokeManhole_Front/hello.html"
-        >
-          <img
-            src="/src/assets/manhole_title_ko_grey_clean.png"
-            alt=""
-            width="250px"
-            class="logoshadow"
-          />
+    <div style="position: absolute; right: 40px; bottom: 50px">
+      <a href="file:///Users/tamura/Documents/GitHub/PokeManhole_Front/hello.html">
+        <img src="/src/assets/manhole_title_ko_grey_clean.png" alt="" width="250px" class="logoshadow" />
+      </a>
+    </div>
+  </div>
+</body>
+<!-- login -->
+<div class="container" id="container" style="position: absolute; left: 40px; top: 40px">
+  <div class="form-container sign-up-container">
+    <form action="#">
+      <h1>트레이너 등록</h1>
+      <div class="social-container">
+        <a href="#" class="social">
+          <img src="/src/assets/Google__G__logo.svg" alt="" width="30px" />
+        </a>
+        <a href="#" class="social">
+          <img src="/src/assets/icon_fb_b.svg" alt="" width="30px" /></a>
+        <a href="#" class="social"><img src="/src/assets/icon_x_b.svg" alt="" width="30px" /></a>
+      </div>
+      <span>또는 이메일을 사용해주세요</span>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button>등록하기</button>
+    </form>
+  </div>
+  <div class="form-container sign-in-container">
+    <form id="login-form" action="#">
+      <h1>Sign in</h1>
+      <div class="social-container">
+        <a href="#" class="social">
+          <img src="/src/assets/Google__G__logo.svg" alt="" width="30px" />
+        </a>
+        <a href="#" class="social">
+          <img src="/src/assets/icon_fb_b.svg" alt="" width="30px" />
+        </a>
+        <a href="#" class="social">
+          <img src="/src/assets/icon_x_b.svg" alt="" width="30px" />
         </a>
       </div>
-    </div>
-  </body>
-  <!-- login -->
-  <div
-    class="container"
-    id="container"
-    style="position: absolute; left: 40px; top: 40px"
-  >
-    <div class="form-container sign-up-container">
-      <form action="#">
-        <h1>트레이너 등록</h1>
-        <div class="social-container">
-          <a href="#" class="social">
-            <img src="/src/assets/Google__G__logo.svg" alt="" width="30px" />
-          </a>
-          <a href="#" class="social">
-            <img src="/src/assets/icon_fb_b.svg" alt="" width="30px"
-          /></a>
-          <a href="#" class="social"
-            ><img src="/src/assets/icon_x_b.svg" alt="" width="30px"
-          /></a>
-        </div>
-        <span>또는 이메일을 사용해주세요</span>
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <button>등록하기</button>
-      </form>
-    </div>
-    <div class="form-container sign-in-container">
-      <form id="login-form" action="#">
-        <h1>Sign in</h1>
-        <div class="social-container">
-          <a href="#" class="social">
-            <img src="/src/assets/Google__G__logo.svg" alt="" width="30px" />
-          </a>
-          <a href="#" class="social">
-            <img src="/src/assets/icon_fb_b.svg" alt="" width="30px" />
-          </a>
-          <a href="#" class="social">
-            <img src="/src/assets/icon_x_b.svg" alt="" width="30px" />
-          </a>
-        </div>
-        <span>오랜만이에요!</span>
-        <input id="login-email" type="email" placeholder="Email" />
-        <img
-          class="loginwalk"
-          src="/src/assets/gif/trainerwithpika.gif"
-          alt=""
-        />
-        <input id="login-password" type="password" placeholder="Password" />
-        <a href="#">비밀번호를 잊으셨나요?</a>
-        <button>Poke!</button>
-      </form>
-    </div>
-    <div class="overlay-container">
-      <div class="overlay">
-        <div class="overlay-panel overlay-left">
-          <h1>모험으로 <br />떠나세요!</h1>
-          <p>항상 새로움으로 가득한 포켓몬 세상으로</p>
-          <button class="ghost" id="signIn">시작하기</button>
-        </div>
-        <div class="overlay-panel overlay-right">
-          <h1>안녕하세요, 트레이너님 !</h1>
+      <span>오랜만이에요!</span>
+      <input id="login-email" type="email" placeholder="Email" />
+      <img class="loginwalk" src="/src/assets/gif/trainerwithpika.gif" alt="" />
+      <input id="login-password" type="password" placeholder="Password" />
+      <a href="#">비밀번호를 잊으셨나요?</a>
+      <button>Poke!</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h1>모험으로 <br />떠나세요!</h1>
+        <p>항상 새로움으로 가득한 포켓몬 세상으로</p>
+        <button class="ghost" id="signIn">시작하기</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <h1>안녕하세요, 트레이너님 !</h1>
 
-          <p>새로운 여정을 떠날 준비가 되셨나요?</p>
-          <button class="ghost" id="signUp">등록하기</button>
-        </div>
+        <p>새로운 여정을 떠날 준비가 되셨나요?</p>
+        <button class="ghost" id="signUp">등록하기</button>
       </div>
     </div>
   </div>
-  <!-- License -->
-  <div
-    class="containerlicense"
-    id="containerlicense"
-    style="position: absolute; left: 40px; top: 40px"
-  >
-    <div class="trainer-info">
-      <div class="trainer-info-photo-wrapper inner-shadow-box">
-        <img
-          src="/src/assets/trainer.png"
-          class="trainer-info-photo-item"
-          alt=""
-        />
-      </div>
+</div>
+<!-- License -->
+<div class="containerlicense" id="containerlicense" style="position: absolute; left: 40px; top: 40px">
+  <div class="trainer-info">
+    <div class="trainer-info-photo-wrapper inner-shadow-box">
+      <img src="/src/assets/trainer.png" class="trainer-info-photo-item" alt="" />
+    </div>
 
-      <div class="trainer-info-side">
-        <div class="trainer-info-side-pokemon">
-          <div class="trainer-info-side-pokemon-box">
-            <img src="/src/assets/achv/mini/pika.webp" alt="" />
-          </div>
-          <div class="trainer-info-side-pokemon-box">
-            <img src="/src/assets/achv/mini/darkrai.png" alt="" />
-          </div>
-          <div class="trainer-info-side-pokemon-box">
-            <img src="/src/assets/achv/mini/jam.png" alt="" />
-          </div>
-          <div class="trainer-info-side-pokemon-box">
-            <img src="/src/assets/achv/mini/seller.png" alt="" />
-          </div>
-          <div class="trainer-info-side-pokemon-box">
-            <img src="/src/assets/achv/mini/myu.webp" alt="" />
-          </div>
-          <div class="trainer-info-side-pokemon-box">
-            <img src="/src/assets/achv/mini/chilsaekzo.webp" alt="" />
-          </div>
+    <div class="trainer-info-side">
+      <div class="trainer-info-side-pokemon">
+        <div class="trainer-info-side-pokemon-box">
+          <img src="/src/assets/achv/mini/pika.webp" alt="" />
         </div>
-        <div class="trainer-info-side-class inner-shadow-box">
-          <a href="/src/pages/Achievements/AchievementsPage.html">도전과제</a>
+        <div class="trainer-info-side-pokemon-box">
+          <img src="/src/assets/achv/mini/darkrai.png" alt="" />
+        </div>
+        <div class="trainer-info-side-pokemon-box">
+          <img src="/src/assets/achv/mini/jam.png" alt="" />
+        </div>
+        <div class="trainer-info-side-pokemon-box">
+          <img src="/src/assets/achv/mini/seller.png" alt="" />
+        </div>
+        <div class="trainer-info-side-pokemon-box">
+          <img src="/src/assets/achv/mini/myu.webp" alt="" />
+        </div>
+        <div class="trainer-info-side-pokemon-box">
+          <img src="/src/assets/achv/mini/chilsaekzo.webp" alt="" />
         </div>
       </div>
-      <div class="trainer-info-status">
-        <div class="trainer-info-status-item inner-shadow-box">
-          <span> 이름: </span>
-          <span> 조민수 </span>
-        </div>
-        <div
-          class="trainer-info-status-item inner-shadow-box"
-          style="border-radius: 0 0 0 10px"
-        >
-          <span> 찾은 맨홀 수: </span>
-          <span>0</span>
-        </div>
+      <div class="trainer-info-side-class inner-shadow-box">
+        <a href="/src/pages/Achievements/AchievementsPage.html">도전과제</a>
       </div>
     </div>
-    <div class="trainer-main">
-      <div class="trainer-main-title">
-        <img src="/src/assets/trainerCard/trainerCard.png" alt="" />
+    <div class="trainer-info-status">
+      <div class="trainer-info-status-item inner-shadow-box">
+        <span> 이름: </span>
+        <span> 조민수 </span>
       </div>
-      <div class="trainer-main-badge-wrapper inner-shadow-box">
-        <img
-          class="trainer-main-badge-item"
-          src="/src/assets/achv/Kanto.png"
-          alt=""
-        />
-        <img
-          class="trainer-main-badge-item"
-          src="/src/assets/achv/Kinki.png"
-          alt=""
-        />
-        <img
-          class="trainer-main-badge-item"
-          src="/src/assets/achv/Chubu.png"
-          alt=""
-        />
-        <img
-          class="trainer-main-badge-item"
-          src="/src/assets/achv/Chugoku.png"
-          alt=""
-        />
-        <img
-          class="trainer-main-badge-item"
-          src="/src/assets/achv/Kyusu.png"
-          alt=""
-        />
-        <img
-          class="trainer-main-badge-item"
-          src="/src/assets/achv/Hottkaido.png"
-          alt=""
-        />
-      </div>
-      <div class="trainer-main-empty">
-        <img src="/src/assets/trainerCard/pokeball.png" alt="" />
+      <div class="trainer-info-status-item inner-shadow-box" style="border-radius: 0 0 0 10px">
+        <span> 찾은 맨홀 수: </span>
+        <span>0</span>
       </div>
     </div>
   </div>
-  <!-- License end -->
-  <link rel="stylesheet" href="./modal.css" />
-  <script>
-    const modal = document.querySelector(".modal");
-    const modalOpen = document.querySelector(".modal_btn");
-    const modalClose = document.querySelector(".close_btn");
+  <div class="trainer-main">
+    <div class="trainer-main-title">
+      <img src="/src/assets/trainerCard/trainerCard.png" alt="" />
+    </div>
+    <div class="trainer-main-badge-wrapper inner-shadow-box">
+      <img class="trainer-main-badge-item" src="/src/assets/achv/Kanto.png" alt="" />
+      <img class="trainer-main-badge-item" src="/src/assets/achv/Kinki.png" alt="" />
+      <img class="trainer-main-badge-item" src="/src/assets/achv/Chubu.png" alt="" />
+      <img class="trainer-main-badge-item" src="/src/assets/achv/Chugoku.png" alt="" />
+      <img class="trainer-main-badge-item" src="/src/assets/achv/Kyusu.png" alt="" />
+      <img class="trainer-main-badge-item" src="/src/assets/achv/Hottkaido.png" alt="" />
+    </div>
+    <div class="trainer-main-empty">
+      <img src="/src/assets/trainerCard/pokeball.png" alt="" />
+    </div>
+  </div>
+</div>
+<!-- License end -->
+<link rel="stylesheet" href="./modal.css" />
+<script>
+  const modal = document.querySelector(".modal");
+  const modalOpen = document.querySelector(".modal_btn");
+  const modalClose = document.querySelector(".close_btn");
 
-    //열기 버튼을 눌렀을 때 모달팝업이 열림
-    modalOpen.addEventListener("click", function () {
-      //display 속성을 block로 변경
-      modal.style.display = "block";
-    });
-    //닫기 버튼을 눌렀을 때 모달팝업이 닫힘
-    modalClose.addEventListener("click", function () {
-      //display 속성을 none으로 변경
-      modal.style.display = "none";
-    });
-  </script>
-  <link rel="stylesheet" href="./login_style_grey.css" />
-  <script type="module" src="./login.js"></script>
-  <script type="module" src="./manholeTable/manholeTable.js"></script>
-  <!-- login end -->
+  //열기 버튼을 눌렀을 때 모달팝업이 열림
+  modalOpen.addEventListener("click", function () {
+    //display 속성을 block로 변경
+    modal.style.display = "block";
+  });
+  //닫기 버튼을 눌렀을 때 모달팝업이 닫힘
+  modalClose.addEventListener("click", function () {
+    //display 속성을 none으로 변경
+    modal.style.display = "none";
+  });
+</script>
+<div class="cursor">
+  <link rel="stylesheet" href="../06_/Cursor/cursor.css">
+  <script src="../06_/Cursor/cursor.js"></script>
+  <img src="../06_/Cursor/pokeball.gif" style="width: 5%;">
+</div>
+<link rel="stylesheet" href="./login_style_grey.css" />
+<script type="module" src="./login.js"></script>
+<script type="module" src="./manholeTable/manholeTable.js"></script>
+<!-- login end -->
+
 </html>

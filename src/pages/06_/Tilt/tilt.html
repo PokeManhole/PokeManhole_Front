@@ -1,0 +1,33 @@
+<div class="container"><img class="card" src="./pngwing.com.png" alt=""></div>
+
+<script>
+    var container = document.querySelector('.container')
+    container.addEventListener('mousemove', function (e) {
+        var x = e.offsetX
+        var y = e.offsetY
+        var rotateY = -1 / 5 * x + 20
+        var rotateX = -1 / 5 * y + 20
+        container.style = `transform : perspective(350px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
+    })
+    container.onmouseout = function () {
+        mouseHover = false;
+        container.style.transform = 'perspective(600px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+    };
+
+    container.onmouseover = function () {
+        mouseHover = true;
+    };
+</script>
+
+<style>
+    .container {
+        width: 200px;
+        height: 200px;
+        ;
+    }
+
+    .card {
+        width: 200px;
+        height: 200px;
+    }
+</style>

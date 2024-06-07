@@ -119,7 +119,7 @@
     .minimap {
       position: absolute;
       top: 15%;
-      right: 3%;
+      right: 2%;
       width: 100%;
       height: 100%;
       max-width: 390px;
@@ -128,7 +128,7 @@
       background-image: url(../src/assets/achv/map.jpeg);
       border: 10px solid transparent;
       border-radius: 10px;
-      border-image: linear-gradient(to right, #fbfcb9, #ffcdf3, #65d3ff);
+      border-image: linear-gradient(to right, #fbfd87, #f998e2, #65d3ff);
       border-image-slice: 1;
       /* border: 5px solid #c5c5c5;
       border-collapse: collapse;
@@ -140,7 +140,7 @@
     .badge {
       position: absolute;
       top: 15%;
-      left: 5%;
+      left: 3%;
       width: 100%;
       height: 100%;
       max-width: 360px;
@@ -367,8 +367,9 @@
       color: #afaeae;
     }
 
-    .container1 {
-      width: 100%;
+    li div {
+      width: 90px;
+      margin: auto;
     }
   </style>
 </head>
@@ -376,7 +377,7 @@
 
 
   <div class="badge">
-    <div class="container"></div>
+
     <h1>메달</h1>
     <div class="badgetable">
       <ul>
@@ -384,7 +385,8 @@
           <h3>전국</h3>
           <div class="container1"><img class="badge_prefecture" src="../src/assets/achv/champion.png" alt=""></div>
           <ul>
-            <li><img class="badge_city" src="../src/assets/achv/Kanto.png" alt="">
+            <li>
+              <img class="badge_city" src="../src/assets/achv/Kanto.png" alt="">
             </li>
             <li><img class="badge_city" src="../src/assets/achv/Kinki.png" alt="">
             </li>
@@ -397,7 +399,8 @@
         </li>
         <li>
           <h3>간토</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/전기.webp" alt="">
+          <div class="container2"><img class="badge_prefecture" src="../src/assets/achv/badge/전기.webp" alt="">
+          </div>
           <ul>
             <li><img class="badge_city" src="../src/assets/achv/badge/1.png" alt="">
             </li>
@@ -414,7 +417,8 @@
         </li>
         <li>
           <h3>긴키</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/벌레.webp" alt="">
+          <div class="container3"><img class="badge_prefecture" src="../src/assets/achv/badge/벌레.webp" alt="">
+          </div>
           <ul>
             <li><img class="badge_city" src="../src/assets/achv/badge/41.webp" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/42.webp" alt=""></li>
@@ -431,7 +435,8 @@
         </li>
         <li>
           <h3>주부</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/에스퍼.webp" alt="">
+          <div class="container4"><img class="badge_prefecture" src="../src/assets/achv/badge/에스퍼.webp" alt="">
+          </div>
           <ul>
             <li><img class="badge_city" src="../src/assets/achv/badge/21.webp" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/22.webp" alt=""></li>
@@ -445,7 +450,8 @@
         </li>
         <li>
           <h3>주고쿠•시코쿠</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/노말.webp" alt="">
+          <div class="container5"><img class="badge_prefecture" src="../src/assets/achv/badge/노말.webp" alt="">
+          </div>
           <ul>
             <li><img class="badge_city" src="../src/assets/achv/badge/31.webp" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/32.webp" alt=""></li>
@@ -459,7 +465,8 @@
         </li>
         <li>
           <h3>규슈•오키나와</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/물.webp" alt="">
+          <div class="container6"><img class="badge_prefecture" src="../src/assets/achv/badge/물.webp" alt="">
+          </div>
           <ul>
             <li><img class="badge_city" src="../src/assets/achv/badge/11.webp" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/12.webp" alt=""></li>
@@ -472,8 +479,10 @@
           </ul>
         </li>
         <li>
+
           <h3>홋카이도•도호쿠</h3>
-          <img class="badge_prefecture" src="../src/assets/achv/badge/얼음.webp" alt="">
+          <div class="container7"><img class="badge_prefecture" src="../src/assets/achv/badge/얼음.webp" alt="">
+          </div>
           <ul>
             <li><img class="badge_city" src="../src/assets/achv/badge/51.webp" alt=""></li>
             <li><img class="badge_city" src="../src/assets/achv/badge/52.webp" alt=""></li>
@@ -514,8 +523,8 @@
 
 <body>
   <div class="tablecontainer">
-    <!-- <audio id="player" src="../bgm/1-40. Goldenrod City.mp3" autoplay controls loop
-      onloadstart="this.volume=0.15"></audio> -->
+    <audio id="player" src="../src/assets/bgm/1-40. Goldenrod City.mp3" autoplay loop
+      onloadstart="this.volume=0.15"></audio>
     <img class="pikaoko" src="../src/assets/gif/pika.gif" alt="" />
     <img class="redstand" src="../src/assets/achv/gif/pairi.webp" alt="" />
     <img class="greenstand" src="../src/assets/achv/gif/isanghae.webp" alt="" />
@@ -536,7 +545,7 @@
             </th>
             <td colspan="6">
               <h3>영원한 나의 친구</h3>
-              <h4>5 / 13</h4>
+              <h4>26 / 26</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 피카츄를 발견하세요.</p>
             </td>
@@ -547,7 +556,7 @@
             </th>
             <td colspan="6">
               <h3>"꼬리가 타고 있는 작은 소리가 들려"</h3>
-              <h4>5 / 13</h4>
+              <h4>5 / 15</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 파이리를 발견하세요.</p>
             </td>
@@ -558,7 +567,7 @@
             </th>
             <td colspan="6">
               <h3>"눈물이 아니라 물대포야!"</h3>
-              <h4>5 / 13</h4>
+              <h4>5 / 14</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 꼬부기를 발견하세요.</p>
             </td>
@@ -580,7 +589,7 @@
             </th>
             <td colspan="6">
               <h3>최초의 삼총사</h3>
-              <h4>5 / 13</h4>
+              <h4>5 / 10</h4>
               <h6>67%</h6>
               <p>파이리,꼬부기,이상해씨를 발견하세요.</p>
             </td>
@@ -591,7 +600,7 @@
             </th>
             <td colspan="6">
               <h3>”예쁜 꽃의 꿀을 찾아서”</h3>
-              <h4>5 / 13</h4>
+              <h4>5 / 10</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 버터플을 발견하세요.</p>
             </td>
@@ -602,7 +611,7 @@
             </th>
             <td colspan="6">
               <h3>용감한 하늘의 에이스</h3>
-              <h4>5 / 13</h4>
+              <h4>5 / 10</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 피죤투를 발견하세요.</p>
             </td>
@@ -613,7 +622,7 @@
             </th>
             <td colspan="6">
               <h3>잠이 올 것 같은 기분 좋은 노래</h3>
-              <h4>5 / 13</h4>
+              <h4>5 / 10</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 푸린을 발견하세요.</p>
             </td>
@@ -624,7 +633,7 @@
             </th>
             <td colspan="6">
               <h3>따스한 여섯 갈래의 꼬리</h3>
-              <h4>5 / 13</h4>
+              <h4>5 / 10</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 식스테일을 발견하세요.</p>
             </td>
@@ -635,7 +644,7 @@
             </th>
             <td colspan="6">
               <h3>”항상 두통에 시달려”</h3>
-              <h4>5 / 13</h4>
+              <h4>5 / 10</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 고라파덕을 발견하세요.</p>
             </td>
@@ -646,7 +655,7 @@
             </th>
             <td colspan="6">
               <h3>물가에서 멍때리기</h3>
-              <h4>5 / 13</h4>
+              <h4>5 / 10</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 야돈을 발견하세요.</p>
             </td>
@@ -657,7 +666,7 @@
             </th>
             <td colspan="6">
               <h3>다이아몬드보다 딱딱한 껍질</h3>
-              <h4>5 / 13</h4>
+              <h4>5 / 10</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 셀러를 발견하세요.</p>
             </td>
@@ -800,7 +809,7 @@
             </th>
             <td colspan="6">
               <h3>신오지방의 하늘</h3>
-              <h4>5 / 13</h4>
+              <h4>8 / 8</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 한카리아스를 발견하세요.</p>
             </td>
@@ -811,7 +820,7 @@
             </th>
             <td colspan="6">
               <h3>악몽 속에 나타난 정체</h3>
-              <h4>5 / 13</h4>
+              <h4>7 / 7</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 다크라이를 발견하세요.</p>
             </td>
@@ -822,7 +831,7 @@
             </th>
             <td colspan="6">
               <h3>초능력 냐옹</h3>
-              <h4>5 / 13</h4>
+              <h4>5 / 5</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 냐스퍼를 발견하세요.</p>
             </td>
@@ -833,7 +842,7 @@
             </th>
             <td colspan="6">
               <h3>？？？</h3>
-              <h4>5 / 13</h4>
+              <h4>? / ?</h4>
               <h6>67%</h6>
               <p>모？ ？？에 ？는 ？？큐를 ？견？？요.</p>
             </td>
@@ -844,7 +853,7 @@
             </th>
             <td colspan="6">
               <h3>모든 것들의 선조</h3>
-              <h4>5 / 13</h4>
+              <h4>1 / 1</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 뮤를 발견하세요.</p>
             </td>
@@ -855,7 +864,7 @@
             </th>
             <td colspan="6">
               <h3>하늘에 뜬 무지개</h3>
-              <h4>5 / 13</h4>
+              <h4>1 / 1</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 칠색조를 발견하세요.</p>
             </td>
@@ -866,7 +875,7 @@
             </th>
             <td colspan="6">
               <h3>생명과 공존의 상징</h3>
-              <h4>5 / 13</h4>
+              <h4>3 / 3</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 루기아를 발견하세요.</p>
             </td>
@@ -877,7 +886,7 @@
             </th>
             <td colspan="6">
               <h3>폭풍을 불러들이는 대양</h3>
-              <h4>5 / 13</h4>
+              <h4>2 / 2</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 가이오가를 발견하세요.</p>
             </td>
@@ -888,7 +897,7 @@
             </th>
             <td colspan="6">
               <h3>대지를 쌓아올리는 대륙</h3>
-              <h4>5 / 13</h4>
+              <h4>2 / 2</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 그란돈를 발견하세요.</p>
             </td>
@@ -899,7 +908,7 @@
             </th>
             <td colspan="6">
               <h3>구름보다 아득히 먼 위</h3>
-              <h4>5 / 13</h4>
+              <h4>2 / 2</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 레쿠쟈를 발견하세요.</p>
             </td>
@@ -911,7 +920,7 @@
             <td colspan="6">
               <h3>시간의 흐름을 만들어내는 존재</h3>
               <h3></h3>
-              <h4>5 / 13</h4>
+              <h4>1 / 1</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 디아루가를 발견하세요.</p>
             </td>
@@ -922,7 +931,7 @@
             </th>
             <td colspan="6">
               <h3>평행으로 늘어선 공간의 틈새</h3>
-              <h4>5 / 13</h4>
+              <h4>1 / 1</h4>
               <h6>67%</h6>
               <p>모든 지방에 있는 펄기아를 발견하세요.</p>
             </td>
@@ -947,25 +956,7 @@
     <script src="../06_/Cursor/cursor.js"></script>
     <img src="../src/assets/gif/pokeball.gif" style="width: 5%;">
   </div>
-  <script>
-    var container1 = document.querySelector('.container1')
-    container1.addEventListener('mousemove', function (e) {
-      var x = e.offsetX
-      var y = e.offsetY
-      console.log(x, y);
-      var rotateY = -1 / 5 * x + 10
-      var rotateX = -2 / 5 * y + 20
-      container1.style = `transform : perspective(300px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
-    })
-    container1.onmouseout = function () {
-      mouseHover = false;
-      container1.style.transform = 'perspective(60px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
-    };
-
-    container1.onmouseover = function () {
-      mouseHover = true;
-    };
-  </script>
+  <script src="tilt.js"></script>
 </body>
 
 </html>
