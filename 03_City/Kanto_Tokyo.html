@@ -141,7 +141,7 @@
       width: 200px;
       position: absolute;
       right: 40px;
-      top: 40px;
+      top: 52px;
     }
   </style>
 </head>
@@ -149,9 +149,10 @@
 <body>
   <!-- container -->
   <div class="city">
-    <div class="cityname">
+    <div class="cityname"><audio id="player" src="../src/assets/bgm/1-40. Goldenrod City.mp3" autoplay loop
+        onloadstart="this.volume=0.15"></audio>
       <h1>도쿄</h1>
-      <h4>&nbsp;77%</h4>
+      <h4>&nbsp;100%</h4>
     </div>
 
     <div class="citymanhole">
@@ -165,20 +166,25 @@
           <h5>마치다</h5>
         </li>
         <li class="manholitem">
-          <a href="../04.manhole/manhole().html"><img src="../src/assets/hole/Kanto/Tokyo/machida4/machida4_l.png"
+          <a href="../04_Manhole/manhole_Kobugi.html"><img src="../src/assets/hole/Kanto/Tokyo/machida4/machida4_l.png"
               alt="" width="130px" /></a>
           <h5>마치다</h5>
         </li>
         <li class="manholitem">
-          <img src="../src/assets/hole/Kanto/Tokyo/machida1/machida1_l.png" alt="" width="130px" />
+          <a href="../04_Manhole/manhole_Chilsaekzo.html"><img src="../src/assets/hole/Kinki/Kyoto/kyoto5/kyoto5_l.png"
+              alt="" width="130px" /></a>
           <h5>마치다</h5>
         </li>
         <li class="manholitem">
-          <img src="../src/assets/hole/Kanto/Tokyo/machida2/machida2_l.png" alt="" width="130px" />
+          <a href="../04_Manhole/manhole_Pikachu.html"><img
+              src="../src/assets/hole/Kanto/Kanagawa/yokohama4/yokohama4_l.png" alt="" width="130px" />
+          </a>
           <h5>마치다</h5>
         </li>
         <li class="manholitem">
-          <img src="../src/assets/hole/Kanto/Tokyo/machida3/machida3_l.png" alt="" width="130px" />
+          <a href="../04_Manhole/manhole_Gaioga.html"><img
+              src="../src/assets/hole/Kyushu-Okinawa/Okinawa/miyakojima_l.png" alt="" width="130px" />
+          </a>
           <h5>마치다</h5>
         </li>
 
@@ -199,11 +205,12 @@
           <h5>오가사와라</h5>
         </li>
         <li class="manholitem">
-          <img src="../src/assets/hole/Kanto/Tokyo/ueno1/ueno1_sml.png" alt="" width="130px" />
+          <img src="../src/assets/hole/Kinki/Hyogo/awaji3/awaji3_l.png" alt="" width="130px" />
           <h5>우에노</h5>
         </li>
         <li class="manholitem">
-          <img src="../src/assets/hole/Kanto/Tokyo/ueno2/ueno2_l.png" alt="" width="130px" />
+          <a href="../04_Manhole/manhole_Yadon.html"><img src="../src/assets/hole/Chugoku-Shikoku/Kagawa/Mitoyo_l.png"
+              alt="" width="130px" /></a>
           <h5>우에노</h5>
         </li>
       </ul>
@@ -215,6 +222,12 @@
       <img src="../01_Mainpage/src/manhole_title_ko_grey_clean.png" alt="" width="250px" class="logoshadow" />
     </a>
   </div>
+  <div class="cursor">
+    <link rel="stylesheet" href="../06_/Cursor/cursor.css">
+    <script src="../06_/Cursor/cursor.js"></script>
+    <img src="../src/assets/gif/pokeball.gif" style="width: 5%;">
+  </div>
+  <script src="tilt.js"></script>
 </body>
 
 </html>
