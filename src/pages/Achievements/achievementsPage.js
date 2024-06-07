@@ -16,7 +16,9 @@ const achievementsTableComponent = (props) => {
   return props
     .map(
       (achieve) => `<tr>
-  <th><img src="/src/assets/achv/pika.png" alt="" /></th>
+  <th><img src="/src/assets/achv/${
+    achieve.thumbnail_img ? achieve.thumbnail_img : "pika.png"
+  }" alt="" /></th>
   <td colspan="6">
     <h3>${achieve.name}</h3>
     <h4>${achieve.rate} / ${achieve.conditions}</h4>
