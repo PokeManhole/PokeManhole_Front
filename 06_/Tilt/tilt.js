@@ -138,160 +138,16 @@
 
     
 //
-// tilting small----------------------------
+// tilting----------------------------
     
      var container8 = document.querySelector('.container8')
     container8.addEventListener('mousemove', function (e) {
       var x = e.offsetX
       var y = e.offsetY
       console.log(x, y);
-      var rotateY = -1 / 2 * x + 100
-      var rotateX = -2 / 3 * y + 200
-      container8.style = `transform : perspective(100px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
-    })
-    container8.onmouseout = function () {
-      mouseHover = false;
-      container8.style.transform = 'perspective(60px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
-    };
-
-    container8.onmouseover = function () {
-      mouseHover = true;
-    };// tilting small----------------------------
-    
-     var container8 = document.querySelector('.container8')
-    container8.addEventListener('mousemove', function (e) {
-      var x = e.offsetX
-      var y = e.offsetY
-      console.log(x, y);
-      var rotateY = -1 / 2 * x + 100
-      var rotateX = -2 / 3 * y + 200
-      container8.style = `transform : perspective(100px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
-    })
-    container8.onmouseout = function () {
-      mouseHover = false;
-      container8.style.transform = 'perspective(60px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
-    };
-
-    container8.onmouseover = function () {
-      mouseHover = true;
-    };// tilting small----------------------------
-    
-     var container8 = document.querySelector('.container8')
-    container8.addEventListener('mousemove', function (e) {
-      var x = e.offsetX
-      var y = e.offsetY
-      console.log(x, y);
-      var rotateY = -1 / 2 * x + 100
-      var rotateX = -2 / 3 * y + 200
-      container8.style = `transform : perspective(100px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
-    })
-    container8.onmouseout = function () {
-      mouseHover = false;
-      container8.style.transform = 'perspective(60px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
-    };
-
-    container8.onmouseover = function () {
-      mouseHover = true;
-    };// tilting small----------------------------
-    
-     var container8 = document.querySelector('.container8')
-    container8.addEventListener('mousemove', function (e) {
-      var x = e.offsetX
-      var y = e.offsetY
-      console.log(x, y);
-      var rotateY = -1 / 2 * x + 100
-      var rotateX = -2 / 3 * y + 200
-      container8.style = `transform : perspective(100px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
-    })
-    container8.onmouseout = function () {
-      mouseHover = false;
-      container8.style.transform = 'perspective(60px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
-    };
-
-    container8.onmouseover = function () {
-      mouseHover = true;
-    };// tilting small----------------------------
-    
-     var container8 = document.querySelector('.container8')
-    container8.addEventListener('mousemove', function (e) {
-      var x = e.offsetX
-      var y = e.offsetY
-      console.log(x, y);
-      var rotateY = -1 / 2 * x + 100
-      var rotateX = -2 / 3 * y + 200
-      container8.style = `transform : perspective(100px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
-    })
-    container8.onmouseout = function () {
-      mouseHover = false;
-      container8.style.transform = 'perspective(60px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
-    };
-
-    container8.onmouseover = function () {
-      mouseHover = true;
-    };// tilting small----------------------------
-    
-     var container8 = document.querySelector('.container8')
-    container8.addEventListener('mousemove', function (e) {
-      var x = e.offsetX
-      var y = e.offsetY
-      console.log(x, y);
-      var rotateY = -1 / 2 * x + 100
-      var rotateX = -2 / 3 * y + 200
-      container8.style = `transform : perspective(100px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
-    })
-    container8.onmouseout = function () {
-      mouseHover = false;
-      container8.style.transform = 'perspective(60px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
-    };
-
-    container8.onmouseover = function () {
-      mouseHover = true;
-    };// tilting small----------------------------
-    
-     var container8 = document.querySelector('.container8')
-    container8.addEventListener('mousemove', function (e) {
-      var x = e.offsetX
-      var y = e.offsetY
-      console.log(x, y);
-      var rotateY = -1 / 2 * x + 100
-      var rotateX = -2 / 3 * y + 200
-      container8.style = `transform : perspective(100px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
-    })
-    container8.onmouseout = function () {
-      mouseHover = false;
-      container8.style.transform = 'perspective(60px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
-    };
-
-    container8.onmouseover = function () {
-      mouseHover = true;
-    };// tilting small----------------------------
-    
-     var container8 = document.querySelector('.container8')
-    container8.addEventListener('mousemove', function (e) {
-      var x = e.offsetX
-      var y = e.offsetY
-      console.log(x, y);
-      var rotateY = -1 / 2 * x + 100
-      var rotateX = -2 / 3 * y + 200
-      container8.style = `transform : perspective(100px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
-    })
-    container8.onmouseout = function () {
-      mouseHover = false;
-      container8.style.transform = 'perspective(60px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
-    };
-
-    container8.onmouseover = function () {
-      mouseHover = true;
-    };// tilting small----------------------------
-    
-     var container8 = document.querySelector('.container8')
-    container8.addEventListener('mousemove', function (e) {
-      var x = e.offsetX
-      var y = e.offsetY
-      console.log(x, y);
-      var rotateY = -1 / 2 * x + 100
-      var rotateX = -2 / 3 * y + 200
-      container8.style = `transform : perspective(100px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
+      var rotateY = -1 / 5 * x + 10
+      var rotateX = -2 / 5 * y + 20
+      container8.style = `transform : perspective(300px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
     })
     container8.onmouseout = function () {
       mouseHover = false;
@@ -301,3 +157,45 @@
     container8.onmouseover = function () {
       mouseHover = true;
     };
+
+    // tilting----------------------------
+    
+     var container9 = document.querySelector('.container9')
+    container9.addEventListener('mousemove', function (e) {
+      var x = e.offsetX
+      var y = e.offsetY
+      console.log(x, y);
+      var rotateY = -1 / 5 * x + 10
+      var rotateX = -2 / 5 * y + 20
+      container9.style = `transform : perspective(300px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
+    })
+    container9.onmouseout = function () {
+      mouseHover = false;
+      container9.style.transform = 'perspective(60px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+    };
+
+    container9.onmouseover = function () {
+      mouseHover = true;
+    };
+
+    // tilting----------------------------
+    
+     var container7 = document.querySelector('.container7')
+    container7.addEventListener('mousemove', function (e) {
+      var x = e.offsetX
+      var y = e.offsetY
+      console.log(x, y);
+      var rotateY = -1 / 5 * x + 10
+      var rotateX = -2 / 5 * y + 20
+      container7.style = `transform : perspective(300px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
+    })
+    container7.onmouseout = function () {
+      mouseHover = false;
+      container7.style.transform = 'perspective(60px) rotateX(0deg) rotateY(0deg) translateZ(0px)';
+    };
+
+    container7.onmouseover = function () {
+      mouseHover = true;
+    };
+
+    
